@@ -1,0 +1,1083 @@
+spriteTypes = {
+
+	### Chrome - the tool's own frame, flat and edged, so the
+	### panel does not read as the RT56 host tool it came from.
+	spriteType = {
+		name = "GFX_ht_window_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_window_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_section_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_section_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_row_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_row_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_row_bg_accent"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_row_bg_accent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_row_half_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_row_half_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_row_third_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_row_third_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_header_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_header_bg.dds"
+	}
+
+	### Metric plates. The icon is composed from the game's own
+	### texture, so it follows whatever game is loaded.
+	spriteType = {
+		name = "GFX_ht_plate_stability_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_stability_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_war_support_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_war_support_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_political_power_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_political_power_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_manpower_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_manpower_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_command_power_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_command_power_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_army_xp_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_army_xp_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_navy_xp_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_navy_xp_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_air_xp_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_air_xp_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_research_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_research_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_mio_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_mio_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_plate_breakthrough_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_plate_breakthrough_bg.dds"
+	}
+
+	### Tabs: two sprites per section. The engine cannot restyle
+	### a sprite, so 'active' is a second button in the same slot.
+	spriteType = {
+		name = "GFX_ht_tab_states_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_states_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_states_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_states_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_politics_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_politics_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_politics_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_politics_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_buildings_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_buildings_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_buildings_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_buildings_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_resources_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_resources_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_resources_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_resources_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_equipment_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_equipment_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_nation_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_nation_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_nation_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_nation_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_diplomacy_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_diplomacy_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tab_diplomacy_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tab_diplomacy_active_button.dds"
+		clicksound = click_chat
+	}
+
+	### Step buttons. 100000 points at the 50 mark: same pip
+	### count, so a separate texture would be identical.
+	spriteType = {
+		name = "GFX_ht_add_1_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_add_1_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_sub_1_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_1_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_add_5_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_add_5_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_sub_5_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_5_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_add_10_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_add_10_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_sub_10_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_10_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_add_50_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_add_50_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_sub_50_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_50_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_add_100_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_add_100_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_sub_100_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_100_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_add_1000_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_add_1000_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_sub_1000_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_1000_button.dds"
+		clicksound = click_chat
+	}
+
+	### Modifiers window: its own frame, its category column,
+	### its row plates and four step magnitudes each way.
+	spriteType = {
+		name = "GFX_ht_modifiers_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_modifiers_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_value_bg"
+		texturefile = "gfx\\ccshtool\\backgrounds\\ht_mod_value_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_cat_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_cat_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_cat_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_cat_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_pick_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_pick_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_pick_active_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_pick_active_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_add1_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_add1_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_sub1_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_sub1_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_add2_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_add2_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_sub2_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_sub2_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_add3_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_add3_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_sub3_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_sub3_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_add4_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_add4_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mod_sub4_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mod_sub4_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_reset_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_reset_button.dds"
+		clicksound = click_chat
+	}
+
+	### MIO category filters - the game's own four checkbox
+	### icons, lit and dimmed, two buttons in one slot.
+	spriteType = {
+		name = "GFX_ht_mio_filter_materiel_on_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_materiel_on_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_materiel_off_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_materiel_off_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_tank_on_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_tank_on_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_tank_off_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_tank_off_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_plane_on_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_plane_on_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_plane_off_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_plane_off_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_ship_on_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_ship_on_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mio_filter_ship_off_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mio_filter_ship_off_button.dds"
+		clicksound = click_chat
+	}
+
+	### Title bar and generic slots
+	spriteType = {
+		name = "GFX_ht_close_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_close_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_info_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_info_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_switch_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_switch_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_open_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_open_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_action_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_action_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_small_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_small_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_icon_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_icon_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_long_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_long_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_modifiers_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_modifiers_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_in_use_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_in_use_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_lock_on_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_lock_on_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_lock_off_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_lock_off_button.dds"
+		clicksound = click_chat
+	}
+
+	### Autonomy - one icon per status, from the game's own
+	### diplomacy art, so a button shows the familiar symbol.
+	spriteType = {
+		name = "GFX_ht_autonomy_annex_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_annex_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_puppet_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_puppet_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_reichskommissariat_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_reichskommissariat_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_imperial_associate_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_imperial_associate_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_colony_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_colony_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_dominion_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_dominion_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_personal_union_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_personal_union_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_collaboration_government_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_collaboration_government_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_protected_government_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_protected_government_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_autonomy_free_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_autonomy_free_button.dds"
+		clicksound = click_chat
+	}
+
+	### State, diplomacy and equipment actions
+	spriteType = {
+		name = "GFX_ht_act_transfer_states_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_transfer_states_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_set_compliance_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_set_compliance_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_core_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_core_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_claim_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_claim_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_white_peace_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_white_peace_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_declare_war_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_declare_war_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_join_faction_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_join_faction_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_leave_faction_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_leave_faction_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_refresh_focus_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_refresh_focus_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_tag_switch_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_tag_switch_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_delete_units_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_delete_units_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_add_host_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_add_host_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_remove_host_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_remove_host_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_equipment_add_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_equipment_add_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_equipment_remove_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_equipment_remove_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_equipment_detail_open_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_equipment_detail_open_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_act_equipment_detail_close_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_act_equipment_detail_close_button.dds"
+		clicksound = click_chat
+	}
+
+	### State marking - live plate, and its greyed twin for the
+	### placeholder shown while no state is selected.
+	spriteType = {
+		name = "GFX_ht_mark_mark_state_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_mark_state_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_mark_state_dummy_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_mark_state_dummy_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_unmark_state_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_unmark_state_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_unmark_state_dummy_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_unmark_state_dummy_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_mark_all_states_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_mark_all_states_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_mark_all_states_dummy_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_mark_all_states_dummy_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_unmark_all_states_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_unmark_all_states_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_mark_unmark_all_states_dummy_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_mark_unmark_all_states_dummy_button.dds"
+	}
+
+	### Buildings - the game's icon strip on the tool's plate
+	spriteType = {
+		name = "GFX_ht_building_industrial_complex_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_industrial_complex_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_arms_factory_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_arms_factory_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_dockyard_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_dockyard_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_infrastructure_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_infrastructure_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_air_base_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_air_base_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_anti_air_building_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_anti_air_building_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_radar_station_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_radar_station_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_synthetic_refinery_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_synthetic_refinery_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_fuel_silo_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_fuel_silo_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_rocket_site_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_rocket_site_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_nuclear_reactor_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_nuclear_reactor_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_energy_infrastructure_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_energy_infrastructure_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_industrial_infrastructure_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_industrial_infrastructure_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_commercial_nuclear_reactor_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_commercial_nuclear_reactor_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_nuclear_reactor_heavy_water_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_nuclear_reactor_heavy_water_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_stronghold_network_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_stronghold_network_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_mega_gun_emplacement_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_mega_gun_emplacement_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_land_facility_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_land_facility_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_air_facility_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_air_facility_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_naval_facility_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_naval_facility_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_nuclear_facility_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_nuclear_facility_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_supply_node_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_supply_node_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_naval_supply_hub_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_naval_supply_hub_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_naval_base_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_naval_base_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_building_naval_headquarters_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_building_naval_headquarters_button.dds"
+		clicksound = click_chat
+	}
+
+	### Resources - GFX_resources_strip, same treatment. The
+	### seven of common/resources, coal included.
+	spriteType = {
+		name = "GFX_ht_resource_oil_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_oil_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_resource_aluminium_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_aluminium_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_resource_rubber_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_rubber_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_resource_tungsten_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_tungsten_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_resource_steel_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_steel_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_resource_chromium_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_chromium_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_resource_coal_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_resource_coal_button.dds"
+		clicksound = click_chat
+	}
+
+	### Equipment - the mod's own artwork, grouped by branch.
+	### The list is per build: all three ship their own files.
+	spriteType = {
+		name = "GFX_ht_equipment_infantry_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_infantry_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_support_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_support_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_artillery_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_artillery_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_anti_tank_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_anti_tank_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_anti_air_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_anti_air_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_motorized_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_motorized_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_mechanized_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_mechanized_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_light_tank_chassis_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_light_tank_chassis_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_medium_tank_chassis_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_medium_tank_chassis_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_heavy_tank_chassis_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_heavy_tank_chassis_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_small_plane_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_small_plane_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_small_plane_cas_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_small_plane_cas_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_small_plane_naval_bomber_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_small_plane_naval_bomber_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_medium_plane_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_medium_plane_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_medium_plane_fighter_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_medium_plane_fighter_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_medium_plane_scout_plane_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_medium_plane_scout_plane_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_large_plane_airframe_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_large_plane_airframe_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_transport_plane_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_transport_plane_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_convoy_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_convoy_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_train_equipment_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_train_equipment_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_equipment_special_projects_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_equipment_special_projects_button.dds"
+		clicksound = click_chat
+	}
+
+	### The detail panel: sub-type and tier plates, and the
+	### expand toggle (two sprites in one slot, like a tab).
+	spriteType = {
+		name = "GFX_ht_sub_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_sub_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_tier_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_tier_button.dds"
+		clicksound = click_chat
+	}
+
+	### Party marks
+	spriteType = {
+		name = "GFX_ht_party_totalist_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_totalist_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_syndicalist_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_syndicalist_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_radical_socialist_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_radical_socialist_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_social_democrat_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_social_democrat_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_social_liberal_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_social_liberal_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_market_liberal_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_market_liberal_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_social_conservative_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_social_conservative_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_authoritarian_democrat_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_authoritarian_democrat_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_paternal_autocrat_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_paternal_autocrat_button.dds"
+		clicksound = click_chat
+	}
+
+	spriteType = {
+		name = "GFX_ht_party_national_populist_button"
+		texturefile = "gfx\\ccshtool\\buttons\\ht_party_national_populist_button.dds"
+		clicksound = click_chat
+	}
+
+}

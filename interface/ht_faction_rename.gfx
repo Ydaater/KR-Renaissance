@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ht_rename_bg"
+		textureFile = "gfx/ccshtool/backgrounds/ht_rename_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ccshtool_rf_blank"
+		textureFile = "gfx/interface/ccshtool_rf_blank.dds"
+	}
+	spriteType = {
+		name = "GFX_ccshtool_rf_lang"
+		textureFile = "gfx/interface/ccshtool_rf_lang.dds"
+		noOfFrames = 7
+	}
+}

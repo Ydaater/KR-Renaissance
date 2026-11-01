@@ -1,0 +1,155 @@
+ideas = {
+	country = {		
+		ARG_Trade_Agreement_GER = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ARG_Trade_Agreement"
+				GER = {
+					add_opinion_modifier = {
+						target = ARG
+						modifier = KR_approves_of_govt
+					}
+				}
+				ARG = {
+					add_opinion_modifier = {
+						target = GER
+						modifier = KR_approves_of_govt
+					}
+				}
+			}
+			on_remove = {
+				log = "[GetDateText]: [Root.GetName]: remove idea ARG_Trade_Agreement"
+				GER = {
+					remove_opinion_modifier = {
+						target = ARG
+						modifier = KR_approves_of_govt
+					}
+				}
+				ARG = {
+					remove_opinion_modifier = {
+						target = GER
+						modifier = KR_approves_of_govt
+					}
+				}
+			}
+			picture = LIB_ger_bailout
+			allowed = { always = no }
+			available = {
+				GER = {
+					exists = yes
+					NOT = { has_war_with = ARG }
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.05
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+		ARG_Trade_Agreement_CAN = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ARG_Trade_Agreement"
+				CAN = {
+					add_opinion_modifier = {
+						target = ARG
+						modifier = KR_approves_of_govt
+					}
+				}
+				ARG = {
+					add_opinion_modifier = {
+						target = CAN
+						modifier = KR_approves_of_govt
+					}
+				}
+			}
+			on_remove = {
+				log = "[GetDateText]: [Root.GetName]: remove idea ARG_Trade_Agreement"
+				CAN = {
+					remove_opinion_modifier = {
+						target = ARG
+						modifier = KR_approves_of_govt
+					}
+				}
+				ARG = {
+					remove_opinion_modifier = {
+						target = CAN
+						modifier = KR_approves_of_govt
+					}
+				}
+			}
+			picture = ACW_entente_help
+			allowed = { always = no }
+			available = {
+				CAN = {
+					exists = yes
+					NOT = { has_war_with = ARG }
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			targeted_modifier = {
+				tag = CAN
+				cic_to_target_factor = 0.05
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+		ARG_Trade_Agreement_Harsh_GER = {
+			name = ARG_Trade_Agreement_GER
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea ARG_Trade_Agreement_Harsh"
+				GER = {
+					add_opinion_modifier = {
+						target = ARG
+						modifier = KR_approves_of_govt
+					}
+				}
+				ARG = {
+					add_opinion_modifier = {
+						target = GER
+						modifier = KR_approves_of_govt
+					}
+				}
+			}
+			on_remove = {
+				log = "[GetDateText]: [Root.GetName]: remove idea ARG_Trade_Agreement_Harsh"
+				GER = {
+					remove_opinion_modifier = {
+						target = ARG
+						modifier = KR_approves_of_govt
+					}
+				}
+				ARG = {
+					remove_opinion_modifier = {
+						target = GER
+						modifier = KR_approves_of_govt
+					}
+				}
+			}
+			picture = LIB_ger_bailout
+			allowed = { always = no }
+			available = {
+				GER = {
+					exists = yes
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.1
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+	}
+}

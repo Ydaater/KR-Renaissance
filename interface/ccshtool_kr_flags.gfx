@@ -1,0 +1,1545 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_AUS"
+		texturefile = "gfx/flags/small/AUS_empire.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FRA"
+		texturefile = "gfx/flags/small/FRA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_IMP"
+		texturefile = "gfx/flags/small/CAN_entente.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_JAP"
+		texturefile = "gfx/flags/small/JAP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NFA"
+		texturefile = "gfx/flags/small/NFA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GER"
+		texturefile = "gfx/flags/small/GER.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TUR"
+		texturefile = "gfx/flags/small/TUR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_RUS"
+		texturefile = "gfx/flags/small/RUS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ENG"
+		texturefile = "gfx/flags/small/ENG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_USA"
+		texturefile = "gfx/flags/small/america_blue.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_AFG"
+		texturefile = "gfx/flags/small/AFG_paternal_autocrat.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ALB"
+		texturefile = "gfx/flags/small/ALB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ARG"
+		texturefile = "gfx/flags/small/ARG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_AZR"
+		texturefile = "gfx/flags/small/AZR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HND"
+		texturefile = "gfx/flags/small/HND.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BHU"
+		texturefile = "gfx/flags/small/BHU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CZE"
+		texturefile = "gfx/flags/small/CZE_habsburg.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BOL"
+		texturefile = "gfx/flags/small/BOL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BRA"
+		texturefile = "gfx/flags/small/BRA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BUK"
+		texturefile = "gfx/flags/small/BUK.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BUL"
+		texturefile = "gfx/flags/small/BUL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CHL"
+		texturefile = "gfx/flags/small/CHL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_COL"
+		texturefile = "gfx/flags/small/COL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_AST"
+		texturefile = "gfx/flags/small/AST_australasia_entente.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PHI"
+		texturefile = "gfx/flags/small/PHI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_COS"
+		texturefile = "gfx/flags/small/COS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CUB"
+		texturefile = "gfx/flags/small/CUB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_DEN"
+		texturefile = "gfx/flags/small/DEN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_DOM"
+		texturefile = "gfx/flags/small/DOM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_RAJ"
+		texturefile = "gfx/flags/small/RAJ.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_DEI"
+		texturefile = "gfx/flags/small/DEI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ECU"
+		texturefile = "gfx/flags/small/ECU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ELS"
+		texturefile = "gfx/flags/small/ELS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LBA"
+		texturefile = "gfx/flags/small/LBA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ETH"
+		texturefile = "gfx/flags/small/ETH.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FNG"
+		texturefile = "gfx/flags/small/FNG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BEL"
+		texturefile = "gfx/flags/small/BEL_flanders_wallonia.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GAL"
+		texturefile = "gfx/flags/small/GAL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GEO"
+		texturefile = "gfx/flags/small/GEO.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GEA"
+		texturefile = "gfx/flags/small/GEA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GRE"
+		texturefile = "gfx/flags/small/GRE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GUA"
+		texturefile = "gfx/flags/small/GUA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HAI"
+		texturefile = "gfx/flags/small/HAI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HON"
+		texturefile = "gfx/flags/small/HON.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HNN"
+		texturefile = "gfx/flags/small/HNN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HUN"
+		texturefile = "gfx/flags/small/HUN_habsburg.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ICE"
+		texturefile = "gfx/flags/small/ICE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CRO"
+		texturefile = "gfx/flags/small/CRO_illyria_habsburg.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_IRE"
+		texturefile = "gfx/flags/small/IRE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ITA"
+		texturefile = "gfx/flags/small/ITA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_JBS"
+		texturefile = "gfx/flags/small/JBS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KHI"
+		texturefile = "gfx/flags/small/KHI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_EGY"
+		texturefile = "gfx/flags/small/EGY.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FIN"
+		texturefile = "gfx/flags/small/FIN_monarchy.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SIA"
+		texturefile = "gfx/flags/small/SIA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SPA"
+		texturefile = "gfx/flags/small/SPA_kingdom.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KUM"
+		texturefile = "gfx/flags/small/KUM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LEP"
+		texturefile = "gfx/flags/small/LEP_LEP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LEC"
+		texturefile = "gfx/flags/small/LEC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GXC"
+		texturefile = "gfx/flags/small/GXC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LIB"
+		texturefile = "gfx/flags/small/LIB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LIT"
+		texturefile = "gfx/flags/small/LIT_monarchy.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_XSM"
+		texturefile = "gfx/flags/small/XSM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MEX"
+		texturefile = "gfx/flags/small/MEX.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CHI"
+		texturefile = "gfx/flags/small/CHI_insurgency.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MAF"
+		texturefile = "gfx/flags/small/MAF.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MON"
+		texturefile = "gfx/flags/small/MON.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MOR"
+		texturefile = "gfx/flags/small/MOR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_OMA"
+		texturefile = "gfx/flags/small/OMA_paternal_autocrat.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PAL"
+		texturefile = "gfx/flags/small/PAL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SAU"
+		texturefile = "gfx/flags/small/SAU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NEP"
+		texturefile = "gfx/flags/small/NEP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HOL"
+		texturefile = "gfx/flags/small/HOL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NIC"
+		texturefile = "gfx/flags/small/NIC_syndicalist.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NOR"
+		texturefile = "gfx/flags/small/NOR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PAN"
+		texturefile = "gfx/flags/small/PAN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PAP"
+		texturefile = "gfx/flags/small/PAP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PAR"
+		texturefile = "gfx/flags/small/PAR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FOP"
+		texturefile = "gfx/flags/small/FOP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PER"
+		texturefile = "gfx/flags/small/PER_monarchy.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PRU"
+		texturefile = "gfx/flags/small/PRU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_POL"
+		texturefile = "gfx/flags/small/POL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_POR"
+		texturefile = "gfx/flags/small/POR_monarchy.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PRF"
+		texturefile = "gfx/flags/small/PRF.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_QIE"
+		texturefile = "gfx/flags/small/QIE_government_qing.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BRM"
+		texturefile = "gfx/flags/small/BRM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ROM"
+		texturefile = "gfx/flags/small/ROM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SRD"
+		texturefile = "gfx/flags/small/SRD.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SER"
+		texturefile = "gfx/flags/small/SER.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SHD"
+		texturefile = "gfx/flags/small/SHD.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SHX"
+		texturefile = "gfx/flags/small/SHX.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SZC"
+		texturefile = "gfx/flags/small/SZC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SRI"
+		texturefile = "gfx/flags/small/SRI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SOM"
+		texturefile = "gfx/flags/small/SOM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SWE"
+		texturefile = "gfx/flags/small/SWE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SWI"
+		texturefile = "gfx/flags/small/SWI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TIB"
+		texturefile = "gfx/flags/small/TIB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TRK"
+		texturefile = "gfx/flags/small/TRK_authoritarian_democrat.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SIC"
+		texturefile = "gfx/flags/small/SIC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_UKR"
+		texturefile = "gfx/flags/small/UKR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SAF"
+		texturefile = "gfx/flags/small/SAF_union.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BAT"
+		texturefile = "gfx/flags/small/BAT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_URG"
+		texturefile = "gfx/flags/small/URG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_VEN"
+		texturefile = "gfx/flags/small/VEN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_WIF"
+		texturefile = "gfx/flags/small/WIF_entente.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BLR"
+		texturefile = "gfx/flags/small/BLR_GER.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SIK"
+		texturefile = "gfx/flags/small/SIK.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_YEM"
+		texturefile = "gfx/flags/small/YEM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_YUN"
+		texturefile = "gfx/flags/small/YUN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ADA"
+		texturefile = "gfx/flags/small/ADA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ALG"
+		texturefile = "gfx/flags/small/ALG_paternal_autocrat.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_AMA"
+		texturefile = "gfx/flags/small/AMA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ACC"
+		texturefile = "gfx/flags/small/ACC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_APG"
+		texturefile = "gfx/flags/small/APG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KDR"
+		texturefile = "gfx/flags/small/KDR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ANG"
+		texturefile = "gfx/flags/small/ANG_colonial.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ANQ"
+		texturefile = "gfx/flags/small/ANQ.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ANT"
+		texturefile = "gfx/flags/small/ANT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ARM"
+		texturefile = "gfx/flags/small/ARM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ASM"
+		texturefile = "gfx/flags/small/ASM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ASY"
+		texturefile = "gfx/flags/small/ASY.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BAH"
+		texturefile = "gfx/flags/small/BAH.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GUJ"
+		texturefile = "gfx/flags/small/GUJ.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BRT"
+		texturefile = "gfx/flags/small/BRT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BAS"
+		texturefile = "gfx/flags/small/BAS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BOT"
+		texturefile = "gfx/flags/small/BOT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BNG"
+		texturefile = "gfx/flags/small/BNG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KBR"
+		texturefile = "gfx/flags/small/KBR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BOS"
+		texturefile = "gfx/flags/small/BOS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BRI"
+		texturefile = "gfx/flags/small/BRI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CAM"
+		texturefile = "gfx/flags/small/CAM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CMR"
+		texturefile = "gfx/flags/small/CMR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CAT"
+		texturefile = "gfx/flags/small/CAT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CEN"
+		texturefile = "gfx/flags/small/CEN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CEY"
+		texturefile = "gfx/flags/small/CEY.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_COG"
+		texturefile = "gfx/flags/small/COG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CUR"
+		texturefile = "gfx/flags/small/CUR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CYP"
+		texturefile = "gfx/flags/small/CYP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_DAH"
+		texturefile = "gfx/flags/small/DAH.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TZN"
+		texturefile = "gfx/flags/small/TZN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_EPR"
+		texturefile = "gfx/flags/small/EPR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ETS"
+		texturefile = "gfx/flags/small/ETS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_EQG"
+		texturefile = "gfx/flags/small/EQG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ERI"
+		texturefile = "gfx/flags/small/ERI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_EST"
+		texturefile = "gfx/flags/small/EST.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FER"
+		texturefile = "gfx/flags/small/FER_army.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FLA"
+		texturefile = "gfx/flags/small/FLA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_FRP"
+		texturefile = "gfx/flags/small/FRP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_RSA"
+		texturefile = "gfx/flags/small/RSA_army.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GAB"
+		texturefile = "gfx/flags/small/GAB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GLC"
+		texturefile = "gfx/flags/small/GLC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HIN"
+		texturefile = "gfx/flags/small/HIN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GRU"
+		texturefile = "gfx/flags/small/GRU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GHA"
+		texturefile = "gfx/flags/small/GHA_ENG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GOY"
+		texturefile = "gfx/flags/small/GOY.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GBP"
+		texturefile = "gfx/flags/small/GBP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GRP"
+		texturefile = "gfx/flags/small/GRP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GNA"
+		texturefile = "gfx/flags/small/GNA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GYA"
+		texturefile = "gfx/flags/small/GYA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HAU"
+		texturefile = "gfx/flags/small/HAU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HAW"
+		texturefile = "gfx/flags/small/HAW.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HEJ"
+		texturefile = "gfx/flags/small/HEJ.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_HYD"
+		texturefile = "gfx/flags/small/HYD.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_IKH"
+		texturefile = "gfx/flags/small/IKH.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SUD"
+		texturefile = "gfx/flags/small/SUD.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MAC"
+		texturefile = "gfx/flags/small/MAC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_INC"
+		texturefile = "gfx/flags/small/INC_radical_socialist.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_INS"
+		texturefile = "gfx/flags/small/INS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_AAA"
+		texturefile = "gfx/flags/small/AAA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_IRQ"
+		texturefile = "gfx/flags/small/IRQ.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_IVO"
+		texturefile = "gfx/flags/small/IVO.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_JAM"
+		texturefile = "gfx/flags/small/JAM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KAC"
+		texturefile = "gfx/flags/small/KAC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KAS"
+		texturefile = "gfx/flags/small/KAS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KTG"
+		texturefile = "gfx/flags/small/KTG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KAZ"
+		texturefile = "gfx/flags/small/KAZ.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KEN"
+		texturefile = "gfx/flags/small/KEN_ENG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KHA"
+		texturefile = "gfx/flags/small/KHA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LAO"
+		texturefile = "gfx/flags/small/LAO.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KIV"
+		texturefile = "gfx/flags/small/KIV.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KUR"
+		texturefile = "gfx/flags/small/KUR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LAT"
+		texturefile = "gfx/flags/small/LAT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LEB"
+		texturefile = "gfx/flags/small/LEB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LOM"
+		texturefile = "gfx/flags/small/LOM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MAD"
+		texturefile = "gfx/flags/small/MAD_paternal_autocrat.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MDR"
+		texturefile = "gfx/flags/small/MDR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BOM"
+		texturefile = "gfx/flags/small/BOM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MAL"
+		texturefile = "gfx/flags/small/MAL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MLI"
+		texturefile = "gfx/flags/small/MLI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MLT"
+		texturefile = "gfx/flags/small/MLT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_EMI"
+		texturefile = "gfx/flags/small/EMI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MNT"
+		texturefile = "gfx/flags/small/MNT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MNR"
+		texturefile = "gfx/flags/small/MNR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MZB"
+		texturefile = "gfx/flags/small/MZB_colonial.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MYS"
+		texturefile = "gfx/flags/small/MYS_social_conservative.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NMB"
+		texturefile = "gfx/flags/small/NMB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NEE"
+		texturefile = "gfx/flags/small/NEE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NZL"
+		texturefile = "gfx/flags/small/NZL_entente.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NGR"
+		texturefile = "gfx/flags/small/NGR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NGA"
+		texturefile = "gfx/flags/small/NGA_ENG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SCA"
+		texturefile = "gfx/flags/small/SCA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NGF"
+		texturefile = "gfx/flags/small/NGF.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_NIR"
+		texturefile = "gfx/flags/small/NIR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MLW"
+		texturefile = "gfx/flags/small/MLW.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ORI"
+		texturefile = "gfx/flags/small/ORI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PNG"
+		texturefile = "gfx/flags/small/PNG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PIR"
+		texturefile = "gfx/flags/small/PIR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_GNB"
+		texturefile = "gfx/flags/small/GNB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PRE"
+		texturefile = "gfx/flags/small/PRE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PUE"
+		texturefile = "gfx/flags/small/PUE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_PJB"
+		texturefile = "gfx/flags/small/PJB.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_QUE"
+		texturefile = "gfx/flags/small/QUE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SAR"
+		texturefile = "gfx/flags/small/SAR_monarchy.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_RJS"
+		texturefile = "gfx/flags/small/RJS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_KOR"
+		texturefile = "gfx/flags/small/KOR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MAN"
+		texturefile = "gfx/flags/small/MAN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TAI"
+		texturefile = "gfx/flags/small/TAI_authoritarian_democrat.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_RHI"
+		texturefile = "gfx/flags/small/RHI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_RWA"
+		texturefile = "gfx/flags/small/RWA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SCO"
+		texturefile = "gfx/flags/small/SCO.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SEN"
+		texturefile = "gfx/flags/small/SEN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SHA"
+		texturefile = "gfx/flags/small/SHA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SIE"
+		texturefile = "gfx/flags/small/SIE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SKM"
+		texturefile = "gfx/flags/small/SKM.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SLO"
+		texturefile = "gfx/flags/small/SLO.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SLV"
+		texturefile = "gfx/flags/small/SLV.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BAY"
+		texturefile = "gfx/flags/small/BAY.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SSI"
+		texturefile = "gfx/flags/small/SSI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ZIM"
+		texturefile = "gfx/flags/small/ZIM_rhodesia.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SUR"
+		texturefile = "gfx/flags/small/SUR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SYR"
+		texturefile = "gfx/flags/small/SYR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_SPO"
+		texturefile = "gfx/flags/small/SPO.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TOG"
+		texturefile = "gfx/flags/small/TOG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TRS"
+		texturefile = "gfx/flags/small/TRS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_MRT"
+		texturefile = "gfx/flags/small/MRT.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TRV"
+		texturefile = "gfx/flags/small/TRV.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TRI"
+		texturefile = "gfx/flags/small/TRI.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TRP"
+		texturefile = "gfx/flags/small/TRP.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TRU"
+		texturefile = "gfx/flags/small/TRU.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TKE"
+		texturefile = "gfx/flags/small/TKE.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TUN"
+		texturefile = "gfx/flags/small/TUN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_TUS"
+		texturefile = "gfx/flags/small/TUS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CAR"
+		texturefile = "gfx/flags/small/CAR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_UGA"
+		texturefile = "gfx/flags/small/UGA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_VOL"
+		texturefile = "gfx/flags/small/VOL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_BRD"
+		texturefile = "gfx/flags/small/BRD.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_VNC"
+		texturefile = "gfx/flags/small/VNC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_VCR"
+		texturefile = "gfx/flags/small/VCR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_VIN"
+		texturefile = "gfx/flags/small/VIN.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_CHA"
+		texturefile = "gfx/flags/small/CHA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_WLS"
+		texturefile = "gfx/flags/small/WLS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_WAL"
+		texturefile = "gfx/flags/small/WAL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_LIL"
+		texturefile = "gfx/flags/small/LIL.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_WCA"
+		texturefile = "gfx/flags/small/WCA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_YUC"
+		texturefile = "gfx/flags/small/YUC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ZAM"
+		texturefile = "gfx/flags/small/ZAM_ENG.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ccshtool_kr_flag_ZAN"
+		texturefile = "gfx/flags/small/ZAN.tga"
+		legacy_lazy_load = no
+	}
+
+}

@@ -1,0 +1,1069 @@
+# Generated keyboard effects for the Target faction rename popup.
+ccshtool_rf_apply_effect = {
+	if = {
+        limit = {
+            NOT = {
+                check_variable = { ccshtool_rf_current_char = 0 }
+                check_variable = { ccshtool_rf_chars^0 = 0 }
+            }
+        }
+		meta_effect = {
+			text = {
+				var:global.ccshtool_target_var = { faction_leader = { set_faction_name = "[CHAR_1][CHAR_2][CHAR_3][CHAR_4][CHAR_5][CHAR_6][CHAR_7][CHAR_8][CHAR_9][CHAR_10][CHAR_11][CHAR_12][CHAR_13][CHAR_14][CHAR_15][CHAR_16][CHAR_17][CHAR_18][CHAR_19][CHAR_20][CHAR_21][CHAR_22][CHAR_23][CHAR_24][CHAR_25][CHAR_26][CHAR_27][CHAR_28][CHAR_29][CHAR_30][CHAR_31][CHAR_32]" } }
+					log = "<CCSHTOOL> Host: ([?ROOT.GetTag]) [?ROOT.GetName]; Action: Renamed the faction of ([?global.ccshtool_target_var.GetTag])"
+			}
+			CHAR_1 = "[This.CCSHTOOL_RF_GET_CHAR_1]"
+			CHAR_2 = "[This.CCSHTOOL_RF_GET_CHAR_2]"
+			CHAR_3 = "[This.CCSHTOOL_RF_GET_CHAR_3]"
+			CHAR_4 = "[This.CCSHTOOL_RF_GET_CHAR_4]"
+			CHAR_5 = "[This.CCSHTOOL_RF_GET_CHAR_5]"
+			CHAR_6 = "[This.CCSHTOOL_RF_GET_CHAR_6]"
+			CHAR_7 = "[This.CCSHTOOL_RF_GET_CHAR_7]"
+			CHAR_8 = "[This.CCSHTOOL_RF_GET_CHAR_8]"
+			CHAR_9 = "[This.CCSHTOOL_RF_GET_CHAR_9]"
+			CHAR_10 = "[This.CCSHTOOL_RF_GET_CHAR_10]"
+			CHAR_11 = "[This.CCSHTOOL_RF_GET_CHAR_11]"
+			CHAR_12 = "[This.CCSHTOOL_RF_GET_CHAR_12]"
+			CHAR_13 = "[This.CCSHTOOL_RF_GET_CHAR_13]"
+			CHAR_14 = "[This.CCSHTOOL_RF_GET_CHAR_14]"
+			CHAR_15 = "[This.CCSHTOOL_RF_GET_CHAR_15]"
+			CHAR_16 = "[This.CCSHTOOL_RF_GET_CHAR_16]"
+			CHAR_17 = "[This.CCSHTOOL_RF_GET_CHAR_17]"
+			CHAR_18 = "[This.CCSHTOOL_RF_GET_CHAR_18]"
+			CHAR_19 = "[This.CCSHTOOL_RF_GET_CHAR_19]"
+			CHAR_20 = "[This.CCSHTOOL_RF_GET_CHAR_20]"
+			CHAR_21 = "[This.CCSHTOOL_RF_GET_CHAR_21]"
+			CHAR_22 = "[This.CCSHTOOL_RF_GET_CHAR_22]"
+			CHAR_23 = "[This.CCSHTOOL_RF_GET_CHAR_23]"
+			CHAR_24 = "[This.CCSHTOOL_RF_GET_CHAR_24]"
+			CHAR_25 = "[This.CCSHTOOL_RF_GET_CHAR_25]"
+			CHAR_26 = "[This.CCSHTOOL_RF_GET_CHAR_26]"
+			CHAR_27 = "[This.CCSHTOOL_RF_GET_CHAR_27]"
+			CHAR_28 = "[This.CCSHTOOL_RF_GET_CHAR_28]"
+			CHAR_29 = "[This.CCSHTOOL_RF_GET_CHAR_29]"
+			CHAR_30 = "[This.CCSHTOOL_RF_GET_CHAR_30]"
+			CHAR_31 = "[This.CCSHTOOL_RF_GET_CHAR_31]"
+			CHAR_32 = "[This.CCSHTOOL_RF_GET_CHAR_32]"
+		}
+	}
+}
+
+ccshtool_rf_keypress_init = {
+    if = {
+        limit = { NOT = { has_variable = ccshtool_rf_current_char } }
+        set_variable = { ccshtool_rf_current_char = -1 }
+        resize_array = {
+            array = ccshtool_rf_chars
+            size = 32
+        }
+    }
+    add_to_variable = { ccshtool_rf_current_char = 1 }
+}
+
+ccshtool_rf_get_keypress_backspace = {
+    set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 0 }
+    subtract_from_variable = { ccshtool_rf_current_char = 1 }
+    clamp_variable = {
+        var = ccshtool_rf_current_char
+        min = 0
+        max = 32
+    }
+}
+
+ccshtool_rf_get_keypress_space = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 32 }
+}
+ccshtool_rf_get_keypress_exclamation_mark = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 33 }
+}
+ccshtool_rf_get_keypress_lbracket = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 40 }
+}
+ccshtool_rf_get_keypress_rbracket = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 41 }
+}
+ccshtool_rf_get_keypress_asterix = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 42 }
+}
+ccshtool_rf_get_keypress_plus = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 43 }
+}
+ccshtool_rf_get_keypress_comma = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 44 }
+}
+ccshtool_rf_get_keypress_hyphen = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 45 }
+}
+ccshtool_rf_get_keypress_dot = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 46 }
+}
+ccshtool_rf_get_keypress_slash = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 47 }
+}
+ccshtool_rf_get_keypress_colon = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 58 }
+}
+ccshtool_rf_get_keypress_semicolon = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 59 }
+}
+ccshtool_rf_get_keypress_lesser_than = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 60 }
+}
+ccshtool_rf_get_keypress_equal_to = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 61 }
+}
+ccshtool_rf_get_keypress_greater_than = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 62 }
+}
+ccshtool_rf_get_keypress_question_mark = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 63 }
+}
+ccshtool_rf_get_keypress_at = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 64 }
+}
+ccshtool_rf_get_keypress_0 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 48 }
+}
+ccshtool_rf_get_keypress_1 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 49 }
+}
+ccshtool_rf_get_keypress_2 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 50 }
+}
+ccshtool_rf_get_keypress_3 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 51 }
+}
+ccshtool_rf_get_keypress_4 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 52 }
+}
+ccshtool_rf_get_keypress_5 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 53 }
+}
+ccshtool_rf_get_keypress_6 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 54 }
+}
+ccshtool_rf_get_keypress_7 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 55 }
+}
+ccshtool_rf_get_keypress_8 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 56 }
+}
+ccshtool_rf_get_keypress_9 = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 57 }
+}
+ccshtool_rf_get_keypress_shift_A = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_A = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 65 }
+	}
+}
+ccshtool_rf_get_keypress_shift_B = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_B = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 66 }
+	}
+}
+ccshtool_rf_get_keypress_shift_C = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_C = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 67 }
+	}
+}
+ccshtool_rf_get_keypress_shift_D = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_D = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 68 }
+	}
+}
+ccshtool_rf_get_keypress_shift_E = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_E = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 69 }
+	}
+}
+ccshtool_rf_get_keypress_shift_F = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_F = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 70 }
+	}
+}
+ccshtool_rf_get_keypress_shift_G = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_G = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 71 }
+	}
+}
+ccshtool_rf_get_keypress_shift_H = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_H = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 72 }
+	}
+}
+ccshtool_rf_get_keypress_shift_I = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_I = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 73 }
+	}
+}
+ccshtool_rf_get_keypress_shift_J = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_J = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 74 }
+	}
+}
+ccshtool_rf_get_keypress_shift_K = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_K = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 75 }
+	}
+}
+ccshtool_rf_get_keypress_shift_L = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_L = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 76 }
+	}
+}
+ccshtool_rf_get_keypress_shift_M = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_M = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 77 }
+	}
+}
+ccshtool_rf_get_keypress_shift_N = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_N = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 78 }
+	}
+}
+ccshtool_rf_get_keypress_shift_O = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_O = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 79 }
+	}
+}
+ccshtool_rf_get_keypress_shift_P = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_P = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 80 }
+	}
+}
+ccshtool_rf_get_keypress_shift_Q = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_Q = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 81 }
+	}
+}
+ccshtool_rf_get_keypress_shift_R = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_R = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 82 }
+	}
+}
+ccshtool_rf_get_keypress_shift_S = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_S = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 83 }
+	}
+}
+ccshtool_rf_get_keypress_shift_T = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_T = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 84 }
+	}
+}
+ccshtool_rf_get_keypress_shift_U = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_U = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 85 }
+	}
+}
+ccshtool_rf_get_keypress_shift_V = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_V = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 86 }
+	}
+}
+ccshtool_rf_get_keypress_shift_W = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_W = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 87 }
+	}
+}
+ccshtool_rf_get_keypress_shift_X = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_X = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 88 }
+	}
+}
+ccshtool_rf_get_keypress_shift_Y = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_Y = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 89 }
+	}
+}
+ccshtool_rf_get_keypress_shift_Z = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_shift_Z = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 90 }
+	}
+}
+ccshtool_rf_get_keypress_a = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_a = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 97 }
+	}
+}
+ccshtool_rf_get_keypress_b = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_b = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 98 }
+	}
+}
+ccshtool_rf_get_keypress_c = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_c = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 99 }
+	}
+}
+ccshtool_rf_get_keypress_d = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_d = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 100 }
+	}
+}
+ccshtool_rf_get_keypress_e = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_e = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 101 }
+	}
+}
+ccshtool_rf_get_keypress_f = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_f = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 102 }
+	}
+}
+ccshtool_rf_get_keypress_g = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_g = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 103 }
+	}
+}
+ccshtool_rf_get_keypress_h = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_h = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 104 }
+	}
+}
+ccshtool_rf_get_keypress_i = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_i = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 105 }
+	}
+}
+ccshtool_rf_get_keypress_j = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_j = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 106 }
+	}
+}
+ccshtool_rf_get_keypress_k = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_k = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 107 }
+	}
+}
+ccshtool_rf_get_keypress_l = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_l = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 108 }
+	}
+}
+ccshtool_rf_get_keypress_m = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_m = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 109 }
+	}
+}
+ccshtool_rf_get_keypress_n = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_n = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 110 }
+	}
+}
+ccshtool_rf_get_keypress_o = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_o = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 111 }
+	}
+}
+ccshtool_rf_get_keypress_p = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_p = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 112 }
+	}
+}
+ccshtool_rf_get_keypress_q = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_q = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 113 }
+	}
+}
+ccshtool_rf_get_keypress_r = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_r = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 114 }
+	}
+}
+ccshtool_rf_get_keypress_s = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_s = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 115 }
+	}
+}
+ccshtool_rf_get_keypress_t = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_t = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 116 }
+	}
+}
+ccshtool_rf_get_keypress_u = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_u = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 117 }
+	}
+}
+ccshtool_rf_get_keypress_v = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_v = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 118 }
+	}
+}
+ccshtool_rf_get_keypress_w = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_w = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 119 }
+	}
+}
+ccshtool_rf_get_keypress_x = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_x = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 120 }
+	}
+}
+ccshtool_rf_get_keypress_y = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_y = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 121 }
+	}
+}
+ccshtool_rf_get_keypress_z = {
+	ccshtool_rf_keypress_init = yes
+	if = {
+		limit = { check_variable = { ROOT.ccshtool_rf_language = 2 } }
+		ccshtool_rf_get_ru_keypress_z = yes
+	}
+	else = {
+		set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 122 }
+	}
+}
+
+#RU
+ccshtool_rf_get_ru_keypress_shift_A = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 123 }
+}
+ccshtool_rf_get_ru_keypress_shift_B = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 124 }
+}
+ccshtool_rf_get_ru_keypress_shift_C = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 125 }
+}
+ccshtool_rf_get_ru_keypress_shift_D = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 126 }
+}
+ccshtool_rf_get_ru_keypress_shift_E = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 127 }
+}
+ccshtool_rf_get_ru_keypress_shift_F = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 128 }
+}
+ccshtool_rf_get_ru_keypress_shift_G = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 129 }
+}
+ccshtool_rf_get_ru_keypress_shift_H = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 130 }
+}
+ccshtool_rf_get_ru_keypress_shift_I = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 131 }
+}
+ccshtool_rf_get_ru_keypress_shift_J = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 132 }
+}
+ccshtool_rf_get_ru_keypress_shift_K = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 133 }
+}
+ccshtool_rf_get_ru_keypress_shift_L = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 134 }
+}
+ccshtool_rf_get_ru_keypress_shift_M = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 135 }
+}
+ccshtool_rf_get_ru_keypress_shift_N = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 136 }
+}
+ccshtool_rf_get_ru_keypress_shift_O = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 137 }
+}
+ccshtool_rf_get_ru_keypress_shift_P = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 138 }
+}
+ccshtool_rf_get_ru_keypress_shift_Q = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 139 }
+}
+ccshtool_rf_get_ru_keypress_shift_R = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 140 }
+}
+ccshtool_rf_get_ru_keypress_shift_S = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 141 }
+}
+ccshtool_rf_get_ru_keypress_shift_T = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 142 }
+}
+ccshtool_rf_get_ru_keypress_shift_U = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 143 }
+}
+ccshtool_rf_get_ru_keypress_shift_V = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 144 }
+}
+ccshtool_rf_get_ru_keypress_shift_W = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 145 }
+}
+ccshtool_rf_get_ru_keypress_shift_X = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 146 }
+}
+ccshtool_rf_get_ru_keypress_shift_Y = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 147 }
+}
+ccshtool_rf_get_ru_keypress_shift_Z = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 148 }
+}
+ccshtool_rf_get_ru_keypress_a = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 149 }
+}
+ccshtool_rf_get_ru_keypress_b = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 150 }
+}
+ccshtool_rf_get_ru_keypress_c = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 151 }
+}
+ccshtool_rf_get_ru_keypress_d = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 152 }
+}
+ccshtool_rf_get_ru_keypress_e = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 153 }
+}
+ccshtool_rf_get_ru_keypress_f = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 154 }
+}
+ccshtool_rf_get_ru_keypress_g = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 155 }
+}
+ccshtool_rf_get_ru_keypress_h = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 156 }
+}
+ccshtool_rf_get_ru_keypress_i = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 157 }
+}
+ccshtool_rf_get_ru_keypress_j = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 158 }
+}
+ccshtool_rf_get_ru_keypress_k = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 159 }
+}
+ccshtool_rf_get_ru_keypress_l = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 160 }
+}
+ccshtool_rf_get_ru_keypress_m = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 161 }
+}
+ccshtool_rf_get_ru_keypress_n = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 162 }
+}
+ccshtool_rf_get_ru_keypress_o = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 163 }
+}
+ccshtool_rf_get_ru_keypress_p = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 164 }
+}
+ccshtool_rf_get_ru_keypress_q = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 165 }
+}
+ccshtool_rf_get_ru_keypress_r = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 166 }
+}
+ccshtool_rf_get_ru_keypress_s = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 167 }
+}
+ccshtool_rf_get_ru_keypress_t = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 168 }
+}
+ccshtool_rf_get_ru_keypress_u = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 169 }
+}
+ccshtool_rf_get_ru_keypress_v = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 170 }
+}
+ccshtool_rf_get_ru_keypress_w = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 171 }
+}
+ccshtool_rf_get_ru_keypress_x = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 172 }
+}
+ccshtool_rf_get_ru_keypress_y = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 173 }
+}
+ccshtool_rf_get_ru_keypress_z = {
+	
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 174 }
+}
+
+
+#extra_russian_word
+ccshtool_rf_get_ru_keypress_shift_ru_X = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 175 }
+}
+ccshtool_rf_get_ru_keypress_shift_TV_ZNAK = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 176 }
+}
+ccshtool_rf_get_ru_keypress_shift_JJ = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 177 }
+}
+ccshtool_rf_get_ru_keypress_shift_IE = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 178 }
+}
+ccshtool_rf_get_ru_keypress_shift_ru_B = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 179 }
+}
+ccshtool_rf_get_ru_keypress_shift_YU = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 180 }
+}
+
+#little
+ccshtool_rf_get_ru_keypress_ru_x = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 181 }
+}
+ccshtool_rf_get_ru_keypress_tv_znak = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 182 }
+}
+ccshtool_rf_get_ru_keypress_jj = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 183 }
+}
+ccshtool_rf_get_ru_keypress_ie = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 184 }
+}
+ccshtool_rf_get_ru_keypress_ru_b = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 185 }
+}
+ccshtool_rf_get_ru_keypress_yu = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 186 }
+}
+
+get_pl_keypress_shift_an = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 187 }
+}
+get_pl_keypress_shift_ci = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 188 }
+}
+get_pl_keypress_shift_ly = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 189 }
+}
+get_pl_keypress_shift_ni = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 190 }
+}
+get_pl_keypress_shift_ou = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 191 }
+}
+get_pl_keypress_shift_si = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 192 }
+}
+get_pl_keypress_shift_zi = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 193 }
+}
+get_pl_keypress_shift_zz = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 194 }
+}
+get_pl_keypress_an = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 195 }
+}
+get_pl_keypress_ci = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 196 }
+}
+get_pl_keypress_ly = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 197 }
+}
+get_pl_keypress_ni = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 198 }
+}
+get_pl_keypress_ou = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 199 }
+}
+get_pl_keypress_si = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 200 }
+}
+get_pl_keypress_zi = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 201 }
+}
+get_pl_keypress_zz = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 202 }
+}
+get_pl_keypress_shift_en = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 203 }
+}
+get_pl_keypress_en = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 204 }
+}
+
+ccshtool_rf_get_de_keypress_shift_ae = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 205 }
+}
+ccshtool_rf_get_de_keypress_shift_oe = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 206 }
+}
+ccshtool_rf_get_de_keypress_shift_ue = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 207 }
+}
+ccshtool_rf_get_de_keypress_shift_ss = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 208 }
+}
+ccshtool_rf_get_de_keypress_ae = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 209 }
+}
+ccshtool_rf_get_de_keypress_oe = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 210 }
+}
+ccshtool_rf_get_de_keypress_ue = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 211 }
+}
+ccshtool_rf_get_de_keypress_ss = {
+	ccshtool_rf_keypress_init = yes
+	set_variable = { ccshtool_rf_chars^ccshtool_rf_current_char = 212 }
+}

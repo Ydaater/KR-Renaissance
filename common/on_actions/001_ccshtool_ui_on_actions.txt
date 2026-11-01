@@ -1,0 +1,20 @@
+# Generated with the interface - the tab variable has to be initialised
+# or the panel opens with no section selected: an unset variable reads 0.
+on_actions = {
+	on_startup = {
+		effect = {
+			set_variable = { global.ccshtool_tab_var = 1 }
+			set_variable = { global.ccshtool_equipment_qty = 100 }
+			set_variable = { global.ccshtool_equipment_var = 1 }
+			set_variable = { global.ccshtool_equipment_sub = 0 }
+			set_variable = { global.ccshtool_equipment_tier = 0 }
+			set_variable = { global.ccshtool_equipment_detail = 0 }
+			set_variable = { global.ccshtool_modcat_var = 1 }
+			set_variable = { global.ccshtool_mod_var = 0 }
+			set_variable = { global.ccshtool_mio_f_materiel = 1 }
+			set_variable = { global.ccshtool_mio_f_tank = 1 }
+			set_variable = { global.ccshtool_mio_f_plane = 1 }
+			set_variable = { global.ccshtool_mio_f_ship = 1 }
+		}
+	}
+}

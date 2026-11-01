@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_heat_specialist"
+		texturefile = "gfx/interface/traits/trait_heat_specialist.png"
+	}
+	spriteType = {
+		name = "GFX_trait_heat_expert"
+		texturefile = "gfx/interface/traits/trait_heat_expert.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_robert_knauss_army_small"
+		texturefile = "gfx/interface/advisors/GER/GER_robert_knauss.png"
+	}
+}

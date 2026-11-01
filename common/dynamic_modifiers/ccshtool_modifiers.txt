@@ -1,0 +1,978 @@
+# Generated with the interface. One dynamic modifier per row of the
+# Modifiers window; its value is a country variable the tool writes
+# on the TARGET, which is the scope the modifier is carried by.
+#
+# No `modifier = { }` block: an entry here writes its stats flat.
+# Measured on the game's 11 files - 0 nest one - and the nested form
+# parses fine and then applies nothing, with no line in the log.
+
+ccshtool_dynmod_political_power_factor = {
+	enable = { always = yes }
+	political_power_factor = ccshtool_modv_political_power_factor
+}
+
+ccshtool_dynmod_political_power_gain = {
+	enable = { always = yes }
+	political_power_gain = ccshtool_modv_political_power_gain
+}
+
+ccshtool_dynmod_legitimacy_daily = {
+	enable = { always = yes }
+	legitimacy_daily = ccshtool_modv_legitimacy_daily
+}
+
+ccshtool_dynmod_legitimacy_gain_factor = {
+	enable = { always = yes }
+	legitimacy_gain_factor = ccshtool_modv_legitimacy_gain_factor
+}
+
+ccshtool_dynmod_stability_factor = {
+	enable = { always = yes }
+	stability_factor = ccshtool_modv_stability_factor
+}
+
+ccshtool_dynmod_stability_weekly = {
+	enable = { always = yes }
+	stability_weekly = ccshtool_modv_stability_weekly
+}
+
+ccshtool_dynmod_war_support_factor = {
+	enable = { always = yes }
+	war_support_factor = ccshtool_modv_war_support_factor
+}
+
+ccshtool_dynmod_war_support_weekly = {
+	enable = { always = yes }
+	war_support_weekly = ccshtool_modv_war_support_weekly
+}
+
+ccshtool_dynmod_surrender_limit = {
+	enable = { always = yes }
+	surrender_limit = ccshtool_modv_surrender_limit
+}
+
+ccshtool_dynmod_max_surrender_limit_offset = {
+	enable = { always = yes }
+	max_surrender_limit_offset = ccshtool_modv_max_surrender_limit_offset
+}
+
+ccshtool_dynmod_totalist_drift = {
+	enable = { always = yes }
+	totalist_drift = ccshtool_modv_totalist_drift
+}
+
+ccshtool_dynmod_syndicalist_drift = {
+	enable = { always = yes }
+	syndicalist_drift = ccshtool_modv_syndicalist_drift
+}
+
+ccshtool_dynmod_radical_socialist_drift = {
+	enable = { always = yes }
+	radical_socialist_drift = ccshtool_modv_radical_socialist_drift
+}
+
+ccshtool_dynmod_social_democrat_drift = {
+	enable = { always = yes }
+	social_democrat_drift = ccshtool_modv_social_democrat_drift
+}
+
+ccshtool_dynmod_social_liberal_drift = {
+	enable = { always = yes }
+	social_liberal_drift = ccshtool_modv_social_liberal_drift
+}
+
+ccshtool_dynmod_market_liberal_drift = {
+	enable = { always = yes }
+	market_liberal_drift = ccshtool_modv_market_liberal_drift
+}
+
+ccshtool_dynmod_social_conservative_drift = {
+	enable = { always = yes }
+	social_conservative_drift = ccshtool_modv_social_conservative_drift
+}
+
+ccshtool_dynmod_authoritarian_democrat_drift = {
+	enable = { always = yes }
+	authoritarian_democrat_drift = ccshtool_modv_authoritarian_democrat_drift
+}
+
+ccshtool_dynmod_paternal_autocrat_drift = {
+	enable = { always = yes }
+	paternal_autocrat_drift = ccshtool_modv_paternal_autocrat_drift
+}
+
+ccshtool_dynmod_national_populist_drift = {
+	enable = { always = yes }
+	national_populist_drift = ccshtool_modv_national_populist_drift
+}
+
+ccshtool_dynmod_autonomy_gain = {
+	enable = { always = yes }
+	autonomy_gain = ccshtool_modv_autonomy_gain
+}
+
+ccshtool_dynmod_subjects_autonomy_gain = {
+	enable = { always = yes }
+	subjects_autonomy_gain = ccshtool_modv_subjects_autonomy_gain
+}
+
+ccshtool_dynmod_justify_war_goal_time = {
+	enable = { always = yes }
+	justify_war_goal_time = ccshtool_modv_justify_war_goal_time
+}
+
+ccshtool_dynmod_enemy_justify_war_goal_time = {
+	enable = { always = yes }
+	enemy_justify_war_goal_time = ccshtool_modv_enemy_justify_war_goal_time
+}
+
+ccshtool_dynmod_foreign_subversive_activites = {
+	enable = { always = yes }
+	foreign_subversive_activites = ccshtool_modv_foreign_subversive_activites
+}
+
+ccshtool_dynmod_subversive_activites_upkeep = {
+	enable = { always = yes }
+	subversive_activites_upkeep = ccshtool_modv_subversive_activites_upkeep
+}
+
+ccshtool_dynmod_guarantee_cost = {
+	enable = { always = yes }
+	guarantee_cost = ccshtool_modv_guarantee_cost
+}
+
+ccshtool_dynmod_send_volunteer_divisions_required = {
+	enable = { always = yes }
+	send_volunteer_divisions_required = ccshtool_modv_send_volunteer_divisions_required
+}
+
+ccshtool_dynmod_send_volunteer_size = {
+	enable = { always = yes }
+	send_volunteer_size = ccshtool_modv_send_volunteer_size
+}
+
+ccshtool_dynmod_air_volunteer_cap = {
+	enable = { always = yes }
+	air_volunteer_cap = ccshtool_modv_air_volunteer_cap
+}
+
+ccshtool_dynmod_guarantee_tension = {
+	enable = { always = yes }
+	guarantee_tension = ccshtool_modv_guarantee_tension
+}
+
+ccshtool_dynmod_lend_lease_tension = {
+	enable = { always = yes }
+	lend_lease_tension = ccshtool_modv_lend_lease_tension
+}
+
+ccshtool_dynmod_send_volunteers_tension = {
+	enable = { always = yes }
+	send_volunteers_tension = ccshtool_modv_send_volunteers_tension
+}
+
+ccshtool_dynmod_join_faction_tension = {
+	enable = { always = yes }
+	join_faction_tension = ccshtool_modv_join_faction_tension
+}
+
+ccshtool_dynmod_generate_wargoal_tension = {
+	enable = { always = yes }
+	generate_wargoal_tension = ccshtool_modv_generate_wargoal_tension
+}
+
+ccshtool_dynmod_global_building_slots_factor = {
+	enable = { always = yes }
+	global_building_slots_factor = ccshtool_modv_global_building_slots_factor
+}
+
+ccshtool_dynmod_production_speed_buildings_factor = {
+	enable = { always = yes }
+	production_speed_buildings_factor = ccshtool_modv_production_speed_buildings_factor
+}
+
+ccshtool_dynmod_industry_repair_factor = {
+	enable = { always = yes }
+	industry_repair_factor = ccshtool_modv_industry_repair_factor
+}
+
+ccshtool_dynmod_industry_free_repair_factor = {
+	enable = { always = yes }
+	industry_free_repair_factor = ccshtool_modv_industry_free_repair_factor
+}
+
+ccshtool_dynmod_local_resources_factor = {
+	enable = { always = yes }
+	local_resources_factor = ccshtool_modv_local_resources_factor
+}
+
+ccshtool_dynmod_fuel_gain_factor = {
+	enable = { always = yes }
+	fuel_gain_factor = ccshtool_modv_fuel_gain_factor
+}
+
+ccshtool_dynmod_fuel_gain_factor_from_states = {
+	enable = { always = yes }
+	fuel_gain_factor_from_states = ccshtool_modv_fuel_gain_factor_from_states
+}
+
+ccshtool_dynmod_base_fuel_gain = {
+	enable = { always = yes }
+	base_fuel_gain = ccshtool_modv_base_fuel_gain
+}
+
+ccshtool_dynmod_base_fuel_gain_factor = {
+	enable = { always = yes }
+	base_fuel_gain_factor = ccshtool_modv_base_fuel_gain_factor
+}
+
+ccshtool_dynmod_production_factory_max_efficiency_factor = {
+	enable = { always = yes }
+	production_factory_max_efficiency_factor = ccshtool_modv_production_factory_max_efficiency_factor
+}
+
+ccshtool_dynmod_production_factory_efficiency_gain_factor = {
+	enable = { always = yes }
+	production_factory_efficiency_gain_factor = ccshtool_modv_production_factory_efficiency_gain_factor
+}
+
+ccshtool_dynmod_production_factory_start_efficiency_factor = {
+	enable = { always = yes }
+	production_factory_start_efficiency_factor = ccshtool_modv_production_factory_start_efficiency_factor
+}
+
+ccshtool_dynmod_industrial_capacity_factory = {
+	enable = { always = yes }
+	industrial_capacity_factory = ccshtool_modv_industrial_capacity_factory
+}
+
+ccshtool_dynmod_industrial_capacity_dockyard = {
+	enable = { always = yes }
+	industrial_capacity_dockyard = ccshtool_modv_industrial_capacity_dockyard
+}
+
+ccshtool_dynmod_nuclear_production = {
+	enable = { always = yes }
+	nuclear_production = ccshtool_modv_nuclear_production
+}
+
+ccshtool_dynmod_nuclear_production_factor = {
+	enable = { always = yes }
+	nuclear_production_factor = ccshtool_modv_nuclear_production_factor
+}
+
+ccshtool_dynmod_monthly_population = {
+	enable = { always = yes }
+	monthly_population = ccshtool_modv_monthly_population
+}
+
+ccshtool_dynmod_consumer_goods_factor = {
+	enable = { always = yes }
+	consumer_goods_factor = ccshtool_modv_consumer_goods_factor
+}
+
+ccshtool_dynmod_min_export = {
+	enable = { always = yes }
+	min_export = ccshtool_modv_min_export
+}
+
+ccshtool_dynmod_resistance_target = {
+	enable = { always = yes }
+	resistance_target = ccshtool_modv_resistance_target
+}
+
+ccshtool_dynmod_resistance_target_on_our_occupied_states = {
+	enable = { always = yes }
+	resistance_target_on_our_occupied_states = ccshtool_modv_resistance_target_on_our_occupied_states
+}
+
+ccshtool_dynmod_resistance_growth = {
+	enable = { always = yes }
+	resistance_growth = ccshtool_modv_resistance_growth
+}
+
+ccshtool_dynmod_resistance_damage_to_garrison = {
+	enable = { always = yes }
+	resistance_damage_to_garrison = ccshtool_modv_resistance_damage_to_garrison
+}
+
+ccshtool_dynmod_starting_compliance = {
+	enable = { always = yes }
+	starting_compliance = ccshtool_modv_starting_compliance
+}
+
+ccshtool_dynmod_compliance_gain = {
+	enable = { always = yes }
+	compliance_gain = ccshtool_modv_compliance_gain
+}
+
+ccshtool_dynmod_compliance_growth = {
+	enable = { always = yes }
+	compliance_growth = ccshtool_modv_compliance_growth
+}
+
+ccshtool_dynmod_compliance_growth_on_our_occupied_states = {
+	enable = { always = yes }
+	compliance_growth_on_our_occupied_states = ccshtool_modv_compliance_growth_on_our_occupied_states
+}
+
+ccshtool_dynmod_max_command_power = {
+	enable = { always = yes }
+	max_command_power = ccshtool_modv_max_command_power
+}
+
+ccshtool_dynmod_command_power_gain = {
+	enable = { always = yes }
+	command_power_gain = ccshtool_modv_command_power_gain
+}
+
+ccshtool_dynmod_command_power_gain_mult = {
+	enable = { always = yes }
+	command_power_gain_mult = ccshtool_modv_command_power_gain_mult
+}
+
+ccshtool_dynmod_conscription_factor = {
+	enable = { always = yes }
+	conscription_factor = ccshtool_modv_conscription_factor
+}
+
+ccshtool_dynmod_conscription = {
+	enable = { always = yes }
+	conscription = ccshtool_modv_conscription
+}
+
+ccshtool_dynmod_non_core_manpower = {
+	enable = { always = yes }
+	non_core_manpower = ccshtool_modv_non_core_manpower
+}
+
+ccshtool_dynmod_army_attack_factor = {
+	enable = { always = yes }
+	army_attack_factor = ccshtool_modv_army_attack_factor
+}
+
+ccshtool_dynmod_army_defence_factor = {
+	enable = { always = yes }
+	army_defence_factor = ccshtool_modv_army_defence_factor
+}
+
+ccshtool_dynmod_army_core_attack_factor = {
+	enable = { always = yes }
+	army_core_attack_factor = ccshtool_modv_army_core_attack_factor
+}
+
+ccshtool_dynmod_army_core_defence_factor = {
+	enable = { always = yes }
+	army_core_defence_factor = ccshtool_modv_army_core_defence_factor
+}
+
+ccshtool_dynmod_army_speed_factor = {
+	enable = { always = yes }
+	army_speed_factor = ccshtool_modv_army_speed_factor
+}
+
+ccshtool_dynmod_minimum_training_level = {
+	enable = { always = yes }
+	minimum_training_level = ccshtool_modv_minimum_training_level
+}
+
+ccshtool_dynmod_training_time_factor = {
+	enable = { always = yes }
+	training_time_factor = ccshtool_modv_training_time_factor
+}
+
+ccshtool_dynmod_special_forces_min = {
+	enable = { always = yes }
+	special_forces_min = ccshtool_modv_special_forces_min
+}
+
+ccshtool_dynmod_special_forces_cap = {
+	enable = { always = yes }
+	special_forces_cap = ccshtool_modv_special_forces_cap
+}
+
+ccshtool_dynmod_experience_gain_army_unit = {
+	enable = { always = yes }
+	experience_gain_army_unit = ccshtool_modv_experience_gain_army_unit
+}
+
+ccshtool_dynmod_experience_gain_army_unit_factor = {
+	enable = { always = yes }
+	experience_gain_army_unit_factor = ccshtool_modv_experience_gain_army_unit_factor
+}
+
+ccshtool_dynmod_experience_loss_factor = {
+	enable = { always = yes }
+	experience_loss_factor = ccshtool_modv_experience_loss_factor
+}
+
+ccshtool_dynmod_army_org = {
+	enable = { always = yes }
+	army_org = ccshtool_modv_army_org
+}
+
+ccshtool_dynmod_army_org_factor = {
+	enable = { always = yes }
+	army_org_factor = ccshtool_modv_army_org_factor
+}
+
+ccshtool_dynmod_army_org_regain = {
+	enable = { always = yes }
+	army_org_regain = ccshtool_modv_army_org_regain
+}
+
+ccshtool_dynmod_org_loss_when_moving = {
+	enable = { always = yes }
+	org_loss_when_moving = ccshtool_modv_org_loss_when_moving
+}
+
+ccshtool_dynmod_army_morale = {
+	enable = { always = yes }
+	army_morale = ccshtool_modv_army_morale
+}
+
+ccshtool_dynmod_army_morale_factor = {
+	enable = { always = yes }
+	army_morale_factor = ccshtool_modv_army_morale_factor
+}
+
+ccshtool_dynmod_land_reinforce_rate = {
+	enable = { always = yes }
+	land_reinforce_rate = ccshtool_modv_land_reinforce_rate
+}
+
+ccshtool_dynmod_max_planning = {
+	enable = { always = yes }
+	max_planning = ccshtool_modv_max_planning
+}
+
+ccshtool_dynmod_planning_speed = {
+	enable = { always = yes }
+	planning_speed = ccshtool_modv_planning_speed
+}
+
+ccshtool_dynmod_attrition = {
+	enable = { always = yes }
+	attrition = ccshtool_modv_attrition
+}
+
+ccshtool_dynmod_heat_attrition_factor = {
+	enable = { always = yes }
+	heat_attrition_factor = ccshtool_modv_heat_attrition_factor
+}
+
+ccshtool_dynmod_winter_attrition_factor = {
+	enable = { always = yes }
+	winter_attrition_factor = ccshtool_modv_winter_attrition_factor
+}
+
+ccshtool_dynmod_acclimatization_cold_climate_gain_factor = {
+	enable = { always = yes }
+	acclimatization_cold_climate_gain_factor = ccshtool_modv_acclimatization_cold_climate_gain_factor
+}
+
+ccshtool_dynmod_acclimatization_hot_climate_gain_factor = {
+	enable = { always = yes }
+	acclimatization_hot_climate_gain_factor = ccshtool_modv_acclimatization_hot_climate_gain_factor
+}
+
+ccshtool_dynmod_terrain_penalty_reduction = {
+	enable = { always = yes }
+	terrain_penalty_reduction = ccshtool_modv_terrain_penalty_reduction
+}
+
+ccshtool_dynmod_max_dig_in = {
+	enable = { always = yes }
+	max_dig_in = ccshtool_modv_max_dig_in
+}
+
+ccshtool_dynmod_max_dig_in_factor = {
+	enable = { always = yes }
+	max_dig_in_factor = ccshtool_modv_max_dig_in_factor
+}
+
+ccshtool_dynmod_dig_in_speed = {
+	enable = { always = yes }
+	dig_in_speed = ccshtool_modv_dig_in_speed
+}
+
+ccshtool_dynmod_dig_in_speed_factor = {
+	enable = { always = yes }
+	dig_in_speed_factor = ccshtool_modv_dig_in_speed_factor
+}
+
+ccshtool_dynmod_supply_consumption_factor = {
+	enable = { always = yes }
+	supply_consumption_factor = ccshtool_modv_supply_consumption_factor
+}
+
+ccshtool_dynmod_out_of_supply_factor = {
+	enable = { always = yes }
+	out_of_supply_factor = ccshtool_modv_out_of_supply_factor
+}
+
+ccshtool_dynmod_no_supply_grace = {
+	enable = { always = yes }
+	no_supply_grace = ccshtool_modv_no_supply_grace
+}
+
+ccshtool_dynmod_amphibious_invasion = {
+	enable = { always = yes }
+	amphibious_invasion = ccshtool_modv_amphibious_invasion
+}
+
+ccshtool_dynmod_invasion_preparation = {
+	enable = { always = yes }
+	invasion_preparation = ccshtool_modv_invasion_preparation
+}
+
+ccshtool_dynmod_land_night_attack = {
+	enable = { always = yes }
+	land_night_attack = ccshtool_modv_land_night_attack
+}
+
+ccshtool_dynmod_army_leader_start_level = {
+	enable = { always = yes }
+	army_leader_start_level = ccshtool_modv_army_leader_start_level
+}
+
+ccshtool_dynmod_army_leader_start_attack_level = {
+	enable = { always = yes }
+	army_leader_start_attack_level = ccshtool_modv_army_leader_start_attack_level
+}
+
+ccshtool_dynmod_army_leader_start_defense_level = {
+	enable = { always = yes }
+	army_leader_start_defense_level = ccshtool_modv_army_leader_start_defense_level
+}
+
+ccshtool_dynmod_army_leader_start_planning_level = {
+	enable = { always = yes }
+	army_leader_start_planning_level = ccshtool_modv_army_leader_start_planning_level
+}
+
+ccshtool_dynmod_army_leader_start_logistics_level = {
+	enable = { always = yes }
+	army_leader_start_logistics_level = ccshtool_modv_army_leader_start_logistics_level
+}
+
+ccshtool_dynmod_experience_gain_navy_unit = {
+	enable = { always = yes }
+	experience_gain_navy_unit = ccshtool_modv_experience_gain_navy_unit
+}
+
+ccshtool_dynmod_experience_gain_navy_unit_factor = {
+	enable = { always = yes }
+	experience_gain_navy_unit_factor = ccshtool_modv_experience_gain_navy_unit_factor
+}
+
+ccshtool_dynmod_naval_speed_factor = {
+	enable = { always = yes }
+	naval_speed_factor = ccshtool_modv_naval_speed_factor
+}
+
+ccshtool_dynmod_navy_max_range_factor = {
+	enable = { always = yes }
+	navy_max_range_factor = ccshtool_modv_navy_max_range_factor
+}
+
+ccshtool_dynmod_sortie_efficiency = {
+	enable = { always = yes }
+	sortie_efficiency = ccshtool_modv_sortie_efficiency
+}
+
+ccshtool_dynmod_naval_hit_chance = {
+	enable = { always = yes }
+	naval_hit_chance = ccshtool_modv_naval_hit_chance
+}
+
+ccshtool_dynmod_naval_coordination = {
+	enable = { always = yes }
+	naval_coordination = ccshtool_modv_naval_coordination
+}
+
+ccshtool_dynmod_ships_at_battle_start = {
+	enable = { always = yes }
+	ships_at_battle_start = ccshtool_modv_ships_at_battle_start
+}
+
+ccshtool_dynmod_naval_retreat_speed = {
+	enable = { always = yes }
+	naval_retreat_speed = ccshtool_modv_naval_retreat_speed
+}
+
+ccshtool_dynmod_naval_retreat_chance = {
+	enable = { always = yes }
+	naval_retreat_chance = ccshtool_modv_naval_retreat_chance
+}
+
+ccshtool_dynmod_convoy_escort_efficiency = {
+	enable = { always = yes }
+	convoy_escort_efficiency = ccshtool_modv_convoy_escort_efficiency
+}
+
+ccshtool_dynmod_convoy_raiding_efficiency_factor = {
+	enable = { always = yes }
+	convoy_raiding_efficiency_factor = ccshtool_modv_convoy_raiding_efficiency_factor
+}
+
+ccshtool_dynmod_navy_submarine_detection_factor = {
+	enable = { always = yes }
+	navy_submarine_detection_factor = ccshtool_modv_navy_submarine_detection_factor
+}
+
+ccshtool_dynmod_navy_anti_air_attack_factor = {
+	enable = { always = yes }
+	navy_anti_air_attack_factor = ccshtool_modv_navy_anti_air_attack_factor
+}
+
+ccshtool_dynmod_naval_invasion_capacity = {
+	enable = { always = yes }
+	naval_invasion_capacity = ccshtool_modv_naval_invasion_capacity
+}
+
+ccshtool_dynmod_carrier_capacity_penalty_reduction = {
+	enable = { always = yes }
+	carrier_capacity_penalty_reduction = ccshtool_modv_carrier_capacity_penalty_reduction
+}
+
+ccshtool_dynmod_port_strike = {
+	enable = { always = yes }
+	port_strike = ccshtool_modv_port_strike
+}
+
+ccshtool_dynmod_navy_leader_start_level = {
+	enable = { always = yes }
+	navy_leader_start_level = ccshtool_modv_navy_leader_start_level
+}
+
+ccshtool_dynmod_navy_leader_start_attack_level = {
+	enable = { always = yes }
+	navy_leader_start_attack_level = ccshtool_modv_navy_leader_start_attack_level
+}
+
+ccshtool_dynmod_navy_leader_start_defense_level = {
+	enable = { always = yes }
+	navy_leader_start_defense_level = ccshtool_modv_navy_leader_start_defense_level
+}
+
+ccshtool_dynmod_navy_leader_start_maneuvering_level = {
+	enable = { always = yes }
+	navy_leader_start_maneuvering_level = ccshtool_modv_navy_leader_start_maneuvering_level
+}
+
+ccshtool_dynmod_navy_leader_start_coordination_level = {
+	enable = { always = yes }
+	navy_leader_start_coordination_level = ccshtool_modv_navy_leader_start_coordination_level
+}
+
+ccshtool_dynmod_air_range_factor = {
+	enable = { always = yes }
+	air_range_factor = ccshtool_modv_air_range_factor
+}
+
+ccshtool_dynmod_air_training_xp_gain_factor = {
+	enable = { always = yes }
+	air_training_xp_gain_factor = ccshtool_modv_air_training_xp_gain_factor
+}
+
+ccshtool_dynmod_air_mission_xp_gain_factor = {
+	enable = { always = yes }
+	air_mission_xp_gain_factor = ccshtool_modv_air_mission_xp_gain_factor
+}
+
+ccshtool_dynmod_army_bonus_air_superiority_factor = {
+	enable = { always = yes }
+	army_bonus_air_superiority_factor = ccshtool_modv_army_bonus_air_superiority_factor
+}
+
+ccshtool_dynmod_enemy_army_bonus_air_superiority_factor = {
+	enable = { always = yes }
+	enemy_army_bonus_air_superiority_factor = ccshtool_modv_enemy_army_bonus_air_superiority_factor
+}
+
+ccshtool_dynmod_air_night_penalty = {
+	enable = { always = yes }
+	air_night_penalty = ccshtool_modv_air_night_penalty
+}
+
+ccshtool_dynmod_air_weather_penalty = {
+	enable = { always = yes }
+	air_weather_penalty = ccshtool_modv_air_weather_penalty
+}
+
+ccshtool_dynmod_air_accidents_factor = {
+	enable = { always = yes }
+	air_accidents_factor = ccshtool_modv_air_accidents_factor
+}
+
+ccshtool_dynmod_air_strategic_bomber_night_penalty = {
+	enable = { always = yes }
+	air_strategic_bomber_night_penalty = ccshtool_modv_air_strategic_bomber_night_penalty
+}
+
+ccshtool_dynmod_air_ace_generation_chance_factor = {
+	enable = { always = yes }
+	air_ace_generation_chance_factor = ccshtool_modv_air_ace_generation_chance_factor
+}
+
+ccshtool_dynmod_air_cas_present_factor = {
+	enable = { always = yes }
+	air_cas_present_factor = ccshtool_modv_air_cas_present_factor
+}
+
+ccshtool_dynmod_air_strategic_bomber_bombing_factor = {
+	enable = { always = yes }
+	air_strategic_bomber_bombing_factor = ccshtool_modv_air_strategic_bomber_bombing_factor
+}
+
+ccshtool_dynmod_air_mission_efficiency = {
+	enable = { always = yes }
+	air_mission_efficiency = ccshtool_modv_air_mission_efficiency
+}
+
+ccshtool_dynmod_air_superiority_efficiency = {
+	enable = { always = yes }
+	air_superiority_efficiency = ccshtool_modv_air_superiority_efficiency
+}
+
+ccshtool_dynmod_air_escort_efficiency = {
+	enable = { always = yes }
+	air_escort_efficiency = ccshtool_modv_air_escort_efficiency
+}
+
+ccshtool_dynmod_air_intercept_efficiency = {
+	enable = { always = yes }
+	air_intercept_efficiency = ccshtool_modv_air_intercept_efficiency
+}
+
+ccshtool_dynmod_air_cas_efficiency = {
+	enable = { always = yes }
+	air_cas_efficiency = ccshtool_modv_air_cas_efficiency
+}
+
+ccshtool_dynmod_air_nav_efficiency = {
+	enable = { always = yes }
+	air_nav_efficiency = ccshtool_modv_air_nav_efficiency
+}
+
+ccshtool_dynmod_naval_strike_targetting_factor = {
+	enable = { always = yes }
+	naval_strike_targetting_factor = ccshtool_modv_naval_strike_targetting_factor
+}
+
+ccshtool_dynmod_air_bombing_targetting = {
+	enable = { always = yes }
+	air_bombing_targetting = ccshtool_modv_air_bombing_targetting
+}
+
+ccshtool_dynmod_air_detection = {
+	enable = { always = yes }
+	air_detection = ccshtool_modv_air_detection
+}
+
+ccshtool_dynmod_air_interception_detect_factor = {
+	enable = { always = yes }
+	air_interception_detect_factor = ccshtool_modv_air_interception_detect_factor
+}
+
+ccshtool_dynmod_air_superiority_detect_factor = {
+	enable = { always = yes }
+	air_superiority_detect_factor = ccshtool_modv_air_superiority_detect_factor
+}
+
+ccshtool_dynmod_research_speed_factor = {
+	enable = { always = yes }
+	research_speed_factor = ccshtool_modv_research_speed_factor
+}
+
+ccshtool_dynmod_experience_gain_army = {
+	enable = { always = yes }
+	experience_gain_army = ccshtool_modv_experience_gain_army
+}
+
+ccshtool_dynmod_experience_gain_army_factor = {
+	enable = { always = yes }
+	experience_gain_army_factor = ccshtool_modv_experience_gain_army_factor
+}
+
+ccshtool_dynmod_experience_gain_navy = {
+	enable = { always = yes }
+	experience_gain_navy = ccshtool_modv_experience_gain_navy
+}
+
+ccshtool_dynmod_experience_gain_navy_factor = {
+	enable = { always = yes }
+	experience_gain_navy_factor = ccshtool_modv_experience_gain_navy_factor
+}
+
+ccshtool_dynmod_experience_gain_air = {
+	enable = { always = yes }
+	experience_gain_air = ccshtool_modv_experience_gain_air
+}
+
+ccshtool_dynmod_experience_gain_air_factor = {
+	enable = { always = yes }
+	experience_gain_air_factor = ccshtool_modv_experience_gain_air_factor
+}
+
+ccshtool_dynmod_decryption_factor = {
+	enable = { always = yes }
+	decryption_factor = ccshtool_modv_decryption_factor
+}
+
+ccshtool_dynmod_encryption_factor = {
+	enable = { always = yes }
+	encryption_factor = ccshtool_modv_encryption_factor
+}
+
+ccshtool_dynmod_civilian_intel_factor = {
+	enable = { always = yes }
+	civilian_intel_factor = ccshtool_modv_civilian_intel_factor
+}
+
+ccshtool_dynmod_army_intel_factor = {
+	enable = { always = yes }
+	army_intel_factor = ccshtool_modv_army_intel_factor
+}
+
+ccshtool_dynmod_navy_intel_factor = {
+	enable = { always = yes }
+	navy_intel_factor = ccshtool_modv_navy_intel_factor
+}
+
+ccshtool_dynmod_airforce_intel_factor = {
+	enable = { always = yes }
+	airforce_intel_factor = ccshtool_modv_airforce_intel_factor
+}
+
+ccshtool_dynmod_operative_slot = {
+	enable = { always = yes }
+	operative_slot = ccshtool_modv_operative_slot
+}
+
+ccshtool_dynmod_new_operative_slot_bonus = {
+	enable = { always = yes }
+	new_operative_slot_bonus = ccshtool_modv_new_operative_slot_bonus
+}
+
+ccshtool_dynmod_agency_upgrade_time = {
+	enable = { always = yes }
+	agency_upgrade_time = ccshtool_modv_agency_upgrade_time
+}
+
+ccshtool_dynmod_intelligence_agency_defense = {
+	enable = { always = yes }
+	intelligence_agency_defense = ccshtool_modv_intelligence_agency_defense
+}
+
+ccshtool_dynmod_defense_impact_on_blueprint_stealing = {
+	enable = { always = yes }
+	defense_impact_on_blueprint_stealing = ccshtool_modv_defense_impact_on_blueprint_stealing
+}
+
+ccshtool_dynmod_intel_network_gain = {
+	enable = { always = yes }
+	intel_network_gain = ccshtool_modv_intel_network_gain
+}
+
+ccshtool_dynmod_intel_network_gain_factor = {
+	enable = { always = yes }
+	intel_network_gain_factor = ccshtool_modv_intel_network_gain_factor
+}
+
+ccshtool_dynmod_intel_from_operatives_factor = {
+	enable = { always = yes }
+	intel_from_operatives_factor = ccshtool_modv_intel_from_operatives_factor
+}
+
+ccshtool_dynmod_boost_ideology_mission_factor = {
+	enable = { always = yes }
+	boost_ideology_mission_factor = ccshtool_modv_boost_ideology_mission_factor
+}
+
+ccshtool_dynmod_control_trade_mission_factor = {
+	enable = { always = yes }
+	control_trade_mission_factor = ccshtool_modv_control_trade_mission_factor
+}
+
+ccshtool_dynmod_propaganda_mission_factor = {
+	enable = { always = yes }
+	propaganda_mission_factor = ccshtool_modv_propaganda_mission_factor
+}
+
+ccshtool_dynmod_diplomatic_pressure_mission_factor = {
+	enable = { always = yes }
+	diplomatic_pressure_mission_factor = ccshtool_modv_diplomatic_pressure_mission_factor
+}
+
+ccshtool_dynmod_boost_resistance_factor = {
+	enable = { always = yes }
+	boost_resistance_factor = ccshtool_modv_boost_resistance_factor
+}
+
+ccshtool_dynmod_root_out_resistance_effectiveness_factor = {
+	enable = { always = yes }
+	root_out_resistance_effectiveness_factor = ccshtool_modv_root_out_resistance_effectiveness_factor
+}
+
+ccshtool_dynmod_army_intel_decryption_bonus = {
+	enable = { always = yes }
+	army_intel_decryption_bonus = ccshtool_modv_army_intel_decryption_bonus
+}
+
+ccshtool_dynmod_navy_intel_decryption_bonus = {
+	enable = { always = yes }
+	navy_intel_decryption_bonus = ccshtool_modv_navy_intel_decryption_bonus
+}
+
+ccshtool_dynmod_airforce_intel_decryption_bonus = {
+	enable = { always = yes }
+	airforce_intel_decryption_bonus = ccshtool_modv_airforce_intel_decryption_bonus
+}
+
+ccshtool_dynmod_civilian_intel_decryption_bonus = {
+	enable = { always = yes }
+	civilian_intel_decryption_bonus = ccshtool_modv_civilian_intel_decryption_bonus
+}
+
+ccshtool_dynmod_own_operative_detection_chance = {
+	enable = { always = yes }
+	own_operative_detection_chance = ccshtool_modv_own_operative_detection_chance
+}
+
+ccshtool_dynmod_own_operative_detection_chance_factor = {
+	enable = { always = yes }
+	own_operative_detection_chance_factor = ccshtool_modv_own_operative_detection_chance_factor
+}
+
+ccshtool_dynmod_enemy_operative_recruitment_chance = {
+	enable = { always = yes }
+	enemy_operative_recruitment_chance = ccshtool_modv_enemy_operative_recruitment_chance
+}
+
+ccshtool_dynmod_enemy_operative_detection_chance = {
+	enable = { always = yes }
+	enemy_operative_detection_chance = ccshtool_modv_enemy_operative_detection_chance
+}
+
+ccshtool_dynmod_enemy_operative_detection_chance_factor = {
+	enable = { always = yes }
+	enemy_operative_detection_chance_factor = ccshtool_modv_enemy_operative_detection_chance_factor
+}
+
+ccshtool_dynmod_crypto_strength = {
+	enable = { always = yes }
+	crypto_strength = ccshtool_modv_crypto_strength
+}
+
+ccshtool_dynmod_decryption_power = {
+	enable = { always = yes }
+	decryption_power = ccshtool_modv_decryption_power
+}
+
+ccshtool_dynmod_decryption_power_factor = {
+	enable = { always = yes }
+	decryption_power_factor = ccshtool_modv_decryption_power_factor
+}
+

@@ -1,0 +1,3905 @@
+# Generated with the interface.
+#
+# All of these run in a COUNTRY scope and are called from inside
+# `var:global.ccshtool_target_var = { ... }`: the variable a dynamic
+# modifier reads lives on the country that CARRIES the modifier, so
+# it has to be the target's, never the host's.
+
+ccshtool_modon_political_power_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_political_power_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_political_power_factor }
+		set_country_flag = ccshtool_modon_political_power_factor
+	}
+}
+
+ccshtool_modon_political_power_factor_clear = {
+	set_variable = { ccshtool_modv_political_power_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_political_power_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_political_power_factor }
+		clr_country_flag = ccshtool_modon_political_power_factor
+	}
+}
+
+ccshtool_modon_political_power_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_political_power_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_political_power_gain }
+		set_country_flag = ccshtool_modon_political_power_gain
+	}
+}
+
+ccshtool_modon_political_power_gain_clear = {
+	set_variable = { ccshtool_modv_political_power_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_political_power_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_political_power_gain }
+		clr_country_flag = ccshtool_modon_political_power_gain
+	}
+}
+
+ccshtool_modon_legitimacy_daily_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_legitimacy_daily } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_legitimacy_daily }
+		set_country_flag = ccshtool_modon_legitimacy_daily
+	}
+}
+
+ccshtool_modon_legitimacy_daily_clear = {
+	set_variable = { ccshtool_modv_legitimacy_daily = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_legitimacy_daily }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_legitimacy_daily }
+		clr_country_flag = ccshtool_modon_legitimacy_daily
+	}
+}
+
+ccshtool_modon_legitimacy_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_legitimacy_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_legitimacy_gain_factor }
+		set_country_flag = ccshtool_modon_legitimacy_gain_factor
+	}
+}
+
+ccshtool_modon_legitimacy_gain_factor_clear = {
+	set_variable = { ccshtool_modv_legitimacy_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_legitimacy_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_legitimacy_gain_factor }
+		clr_country_flag = ccshtool_modon_legitimacy_gain_factor
+	}
+}
+
+ccshtool_modon_stability_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_stability_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_stability_factor }
+		set_country_flag = ccshtool_modon_stability_factor
+	}
+}
+
+ccshtool_modon_stability_factor_clear = {
+	set_variable = { ccshtool_modv_stability_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_stability_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_stability_factor }
+		clr_country_flag = ccshtool_modon_stability_factor
+	}
+}
+
+ccshtool_modon_stability_weekly_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_stability_weekly } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_stability_weekly }
+		set_country_flag = ccshtool_modon_stability_weekly
+	}
+}
+
+ccshtool_modon_stability_weekly_clear = {
+	set_variable = { ccshtool_modv_stability_weekly = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_stability_weekly }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_stability_weekly }
+		clr_country_flag = ccshtool_modon_stability_weekly
+	}
+}
+
+ccshtool_modon_war_support_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_war_support_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_war_support_factor }
+		set_country_flag = ccshtool_modon_war_support_factor
+	}
+}
+
+ccshtool_modon_war_support_factor_clear = {
+	set_variable = { ccshtool_modv_war_support_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_war_support_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_war_support_factor }
+		clr_country_flag = ccshtool_modon_war_support_factor
+	}
+}
+
+ccshtool_modon_war_support_weekly_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_war_support_weekly } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_war_support_weekly }
+		set_country_flag = ccshtool_modon_war_support_weekly
+	}
+}
+
+ccshtool_modon_war_support_weekly_clear = {
+	set_variable = { ccshtool_modv_war_support_weekly = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_war_support_weekly }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_war_support_weekly }
+		clr_country_flag = ccshtool_modon_war_support_weekly
+	}
+}
+
+ccshtool_modon_surrender_limit_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_surrender_limit } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_surrender_limit }
+		set_country_flag = ccshtool_modon_surrender_limit
+	}
+}
+
+ccshtool_modon_surrender_limit_clear = {
+	set_variable = { ccshtool_modv_surrender_limit = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_surrender_limit }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_surrender_limit }
+		clr_country_flag = ccshtool_modon_surrender_limit
+	}
+}
+
+ccshtool_modon_max_surrender_limit_offset_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_max_surrender_limit_offset } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_max_surrender_limit_offset }
+		set_country_flag = ccshtool_modon_max_surrender_limit_offset
+	}
+}
+
+ccshtool_modon_max_surrender_limit_offset_clear = {
+	set_variable = { ccshtool_modv_max_surrender_limit_offset = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_max_surrender_limit_offset }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_max_surrender_limit_offset }
+		clr_country_flag = ccshtool_modon_max_surrender_limit_offset
+	}
+}
+
+ccshtool_modon_totalist_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_totalist_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_totalist_drift }
+		set_country_flag = ccshtool_modon_totalist_drift
+	}
+}
+
+ccshtool_modon_totalist_drift_clear = {
+	set_variable = { ccshtool_modv_totalist_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_totalist_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_totalist_drift }
+		clr_country_flag = ccshtool_modon_totalist_drift
+	}
+}
+
+ccshtool_modon_syndicalist_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_syndicalist_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_syndicalist_drift }
+		set_country_flag = ccshtool_modon_syndicalist_drift
+	}
+}
+
+ccshtool_modon_syndicalist_drift_clear = {
+	set_variable = { ccshtool_modv_syndicalist_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_syndicalist_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_syndicalist_drift }
+		clr_country_flag = ccshtool_modon_syndicalist_drift
+	}
+}
+
+ccshtool_modon_radical_socialist_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_radical_socialist_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_radical_socialist_drift }
+		set_country_flag = ccshtool_modon_radical_socialist_drift
+	}
+}
+
+ccshtool_modon_radical_socialist_drift_clear = {
+	set_variable = { ccshtool_modv_radical_socialist_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_radical_socialist_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_radical_socialist_drift }
+		clr_country_flag = ccshtool_modon_radical_socialist_drift
+	}
+}
+
+ccshtool_modon_social_democrat_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_social_democrat_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_social_democrat_drift }
+		set_country_flag = ccshtool_modon_social_democrat_drift
+	}
+}
+
+ccshtool_modon_social_democrat_drift_clear = {
+	set_variable = { ccshtool_modv_social_democrat_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_social_democrat_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_social_democrat_drift }
+		clr_country_flag = ccshtool_modon_social_democrat_drift
+	}
+}
+
+ccshtool_modon_social_liberal_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_social_liberal_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_social_liberal_drift }
+		set_country_flag = ccshtool_modon_social_liberal_drift
+	}
+}
+
+ccshtool_modon_social_liberal_drift_clear = {
+	set_variable = { ccshtool_modv_social_liberal_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_social_liberal_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_social_liberal_drift }
+		clr_country_flag = ccshtool_modon_social_liberal_drift
+	}
+}
+
+ccshtool_modon_market_liberal_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_market_liberal_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_market_liberal_drift }
+		set_country_flag = ccshtool_modon_market_liberal_drift
+	}
+}
+
+ccshtool_modon_market_liberal_drift_clear = {
+	set_variable = { ccshtool_modv_market_liberal_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_market_liberal_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_market_liberal_drift }
+		clr_country_flag = ccshtool_modon_market_liberal_drift
+	}
+}
+
+ccshtool_modon_social_conservative_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_social_conservative_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_social_conservative_drift }
+		set_country_flag = ccshtool_modon_social_conservative_drift
+	}
+}
+
+ccshtool_modon_social_conservative_drift_clear = {
+	set_variable = { ccshtool_modv_social_conservative_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_social_conservative_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_social_conservative_drift }
+		clr_country_flag = ccshtool_modon_social_conservative_drift
+	}
+}
+
+ccshtool_modon_authoritarian_democrat_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_authoritarian_democrat_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_authoritarian_democrat_drift }
+		set_country_flag = ccshtool_modon_authoritarian_democrat_drift
+	}
+}
+
+ccshtool_modon_authoritarian_democrat_drift_clear = {
+	set_variable = { ccshtool_modv_authoritarian_democrat_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_authoritarian_democrat_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_authoritarian_democrat_drift }
+		clr_country_flag = ccshtool_modon_authoritarian_democrat_drift
+	}
+}
+
+ccshtool_modon_paternal_autocrat_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_paternal_autocrat_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_paternal_autocrat_drift }
+		set_country_flag = ccshtool_modon_paternal_autocrat_drift
+	}
+}
+
+ccshtool_modon_paternal_autocrat_drift_clear = {
+	set_variable = { ccshtool_modv_paternal_autocrat_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_paternal_autocrat_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_paternal_autocrat_drift }
+		clr_country_flag = ccshtool_modon_paternal_autocrat_drift
+	}
+}
+
+ccshtool_modon_national_populist_drift_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_national_populist_drift } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_national_populist_drift }
+		set_country_flag = ccshtool_modon_national_populist_drift
+	}
+}
+
+ccshtool_modon_national_populist_drift_clear = {
+	set_variable = { ccshtool_modv_national_populist_drift = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_national_populist_drift }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_national_populist_drift }
+		clr_country_flag = ccshtool_modon_national_populist_drift
+	}
+}
+
+ccshtool_modon_autonomy_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_autonomy_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_autonomy_gain }
+		set_country_flag = ccshtool_modon_autonomy_gain
+	}
+}
+
+ccshtool_modon_autonomy_gain_clear = {
+	set_variable = { ccshtool_modv_autonomy_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_autonomy_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_autonomy_gain }
+		clr_country_flag = ccshtool_modon_autonomy_gain
+	}
+}
+
+ccshtool_modon_subjects_autonomy_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_subjects_autonomy_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_subjects_autonomy_gain }
+		set_country_flag = ccshtool_modon_subjects_autonomy_gain
+	}
+}
+
+ccshtool_modon_subjects_autonomy_gain_clear = {
+	set_variable = { ccshtool_modv_subjects_autonomy_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_subjects_autonomy_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_subjects_autonomy_gain }
+		clr_country_flag = ccshtool_modon_subjects_autonomy_gain
+	}
+}
+
+ccshtool_modon_justify_war_goal_time_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_justify_war_goal_time } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_justify_war_goal_time }
+		set_country_flag = ccshtool_modon_justify_war_goal_time
+	}
+}
+
+ccshtool_modon_justify_war_goal_time_clear = {
+	set_variable = { ccshtool_modv_justify_war_goal_time = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_justify_war_goal_time }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_justify_war_goal_time }
+		clr_country_flag = ccshtool_modon_justify_war_goal_time
+	}
+}
+
+ccshtool_modon_enemy_justify_war_goal_time_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_enemy_justify_war_goal_time } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_justify_war_goal_time }
+		set_country_flag = ccshtool_modon_enemy_justify_war_goal_time
+	}
+}
+
+ccshtool_modon_enemy_justify_war_goal_time_clear = {
+	set_variable = { ccshtool_modv_enemy_justify_war_goal_time = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_enemy_justify_war_goal_time }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_justify_war_goal_time }
+		clr_country_flag = ccshtool_modon_enemy_justify_war_goal_time
+	}
+}
+
+ccshtool_modon_foreign_subversive_activites_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_foreign_subversive_activites } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_foreign_subversive_activites }
+		set_country_flag = ccshtool_modon_foreign_subversive_activites
+	}
+}
+
+ccshtool_modon_foreign_subversive_activites_clear = {
+	set_variable = { ccshtool_modv_foreign_subversive_activites = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_foreign_subversive_activites }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_foreign_subversive_activites }
+		clr_country_flag = ccshtool_modon_foreign_subversive_activites
+	}
+}
+
+ccshtool_modon_subversive_activites_upkeep_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_subversive_activites_upkeep } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_subversive_activites_upkeep }
+		set_country_flag = ccshtool_modon_subversive_activites_upkeep
+	}
+}
+
+ccshtool_modon_subversive_activites_upkeep_clear = {
+	set_variable = { ccshtool_modv_subversive_activites_upkeep = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_subversive_activites_upkeep }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_subversive_activites_upkeep }
+		clr_country_flag = ccshtool_modon_subversive_activites_upkeep
+	}
+}
+
+ccshtool_modon_guarantee_cost_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_guarantee_cost } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_guarantee_cost }
+		set_country_flag = ccshtool_modon_guarantee_cost
+	}
+}
+
+ccshtool_modon_guarantee_cost_clear = {
+	set_variable = { ccshtool_modv_guarantee_cost = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_guarantee_cost }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_guarantee_cost }
+		clr_country_flag = ccshtool_modon_guarantee_cost
+	}
+}
+
+ccshtool_modon_send_volunteer_divisions_required_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_send_volunteer_divisions_required } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_send_volunteer_divisions_required }
+		set_country_flag = ccshtool_modon_send_volunteer_divisions_required
+	}
+}
+
+ccshtool_modon_send_volunteer_divisions_required_clear = {
+	set_variable = { ccshtool_modv_send_volunteer_divisions_required = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_send_volunteer_divisions_required }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_send_volunteer_divisions_required }
+		clr_country_flag = ccshtool_modon_send_volunteer_divisions_required
+	}
+}
+
+ccshtool_modon_send_volunteer_size_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_send_volunteer_size } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_send_volunteer_size }
+		set_country_flag = ccshtool_modon_send_volunteer_size
+	}
+}
+
+ccshtool_modon_send_volunteer_size_clear = {
+	set_variable = { ccshtool_modv_send_volunteer_size = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_send_volunteer_size }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_send_volunteer_size }
+		clr_country_flag = ccshtool_modon_send_volunteer_size
+	}
+}
+
+ccshtool_modon_air_volunteer_cap_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_volunteer_cap } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_volunteer_cap }
+		set_country_flag = ccshtool_modon_air_volunteer_cap
+	}
+}
+
+ccshtool_modon_air_volunteer_cap_clear = {
+	set_variable = { ccshtool_modv_air_volunteer_cap = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_volunteer_cap }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_volunteer_cap }
+		clr_country_flag = ccshtool_modon_air_volunteer_cap
+	}
+}
+
+ccshtool_modon_guarantee_tension_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_guarantee_tension } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_guarantee_tension }
+		set_country_flag = ccshtool_modon_guarantee_tension
+	}
+}
+
+ccshtool_modon_guarantee_tension_clear = {
+	set_variable = { ccshtool_modv_guarantee_tension = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_guarantee_tension }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_guarantee_tension }
+		clr_country_flag = ccshtool_modon_guarantee_tension
+	}
+}
+
+ccshtool_modon_lend_lease_tension_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_lend_lease_tension } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_lend_lease_tension }
+		set_country_flag = ccshtool_modon_lend_lease_tension
+	}
+}
+
+ccshtool_modon_lend_lease_tension_clear = {
+	set_variable = { ccshtool_modv_lend_lease_tension = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_lend_lease_tension }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_lend_lease_tension }
+		clr_country_flag = ccshtool_modon_lend_lease_tension
+	}
+}
+
+ccshtool_modon_send_volunteers_tension_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_send_volunteers_tension } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_send_volunteers_tension }
+		set_country_flag = ccshtool_modon_send_volunteers_tension
+	}
+}
+
+ccshtool_modon_send_volunteers_tension_clear = {
+	set_variable = { ccshtool_modv_send_volunteers_tension = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_send_volunteers_tension }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_send_volunteers_tension }
+		clr_country_flag = ccshtool_modon_send_volunteers_tension
+	}
+}
+
+ccshtool_modon_join_faction_tension_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_join_faction_tension } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_join_faction_tension }
+		set_country_flag = ccshtool_modon_join_faction_tension
+	}
+}
+
+ccshtool_modon_join_faction_tension_clear = {
+	set_variable = { ccshtool_modv_join_faction_tension = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_join_faction_tension }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_join_faction_tension }
+		clr_country_flag = ccshtool_modon_join_faction_tension
+	}
+}
+
+ccshtool_modon_generate_wargoal_tension_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_generate_wargoal_tension } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_generate_wargoal_tension }
+		set_country_flag = ccshtool_modon_generate_wargoal_tension
+	}
+}
+
+ccshtool_modon_generate_wargoal_tension_clear = {
+	set_variable = { ccshtool_modv_generate_wargoal_tension = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_generate_wargoal_tension }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_generate_wargoal_tension }
+		clr_country_flag = ccshtool_modon_generate_wargoal_tension
+	}
+}
+
+ccshtool_modon_global_building_slots_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_global_building_slots_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_global_building_slots_factor }
+		set_country_flag = ccshtool_modon_global_building_slots_factor
+	}
+}
+
+ccshtool_modon_global_building_slots_factor_clear = {
+	set_variable = { ccshtool_modv_global_building_slots_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_global_building_slots_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_global_building_slots_factor }
+		clr_country_flag = ccshtool_modon_global_building_slots_factor
+	}
+}
+
+ccshtool_modon_production_speed_buildings_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_production_speed_buildings_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_production_speed_buildings_factor }
+		set_country_flag = ccshtool_modon_production_speed_buildings_factor
+	}
+}
+
+ccshtool_modon_production_speed_buildings_factor_clear = {
+	set_variable = { ccshtool_modv_production_speed_buildings_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_production_speed_buildings_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_production_speed_buildings_factor }
+		clr_country_flag = ccshtool_modon_production_speed_buildings_factor
+	}
+}
+
+ccshtool_modon_industry_repair_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_industry_repair_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_industry_repair_factor }
+		set_country_flag = ccshtool_modon_industry_repair_factor
+	}
+}
+
+ccshtool_modon_industry_repair_factor_clear = {
+	set_variable = { ccshtool_modv_industry_repair_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_industry_repair_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_industry_repair_factor }
+		clr_country_flag = ccshtool_modon_industry_repair_factor
+	}
+}
+
+ccshtool_modon_industry_free_repair_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_industry_free_repair_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_industry_free_repair_factor }
+		set_country_flag = ccshtool_modon_industry_free_repair_factor
+	}
+}
+
+ccshtool_modon_industry_free_repair_factor_clear = {
+	set_variable = { ccshtool_modv_industry_free_repair_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_industry_free_repair_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_industry_free_repair_factor }
+		clr_country_flag = ccshtool_modon_industry_free_repair_factor
+	}
+}
+
+ccshtool_modon_local_resources_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_local_resources_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_local_resources_factor }
+		set_country_flag = ccshtool_modon_local_resources_factor
+	}
+}
+
+ccshtool_modon_local_resources_factor_clear = {
+	set_variable = { ccshtool_modv_local_resources_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_local_resources_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_local_resources_factor }
+		clr_country_flag = ccshtool_modon_local_resources_factor
+	}
+}
+
+ccshtool_modon_fuel_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_fuel_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_fuel_gain_factor }
+		set_country_flag = ccshtool_modon_fuel_gain_factor
+	}
+}
+
+ccshtool_modon_fuel_gain_factor_clear = {
+	set_variable = { ccshtool_modv_fuel_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_fuel_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_fuel_gain_factor }
+		clr_country_flag = ccshtool_modon_fuel_gain_factor
+	}
+}
+
+ccshtool_modon_fuel_gain_factor_from_states_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_fuel_gain_factor_from_states } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_fuel_gain_factor_from_states }
+		set_country_flag = ccshtool_modon_fuel_gain_factor_from_states
+	}
+}
+
+ccshtool_modon_fuel_gain_factor_from_states_clear = {
+	set_variable = { ccshtool_modv_fuel_gain_factor_from_states = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_fuel_gain_factor_from_states }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_fuel_gain_factor_from_states }
+		clr_country_flag = ccshtool_modon_fuel_gain_factor_from_states
+	}
+}
+
+ccshtool_modon_base_fuel_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_base_fuel_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_base_fuel_gain }
+		set_country_flag = ccshtool_modon_base_fuel_gain
+	}
+}
+
+ccshtool_modon_base_fuel_gain_clear = {
+	set_variable = { ccshtool_modv_base_fuel_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_base_fuel_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_base_fuel_gain }
+		clr_country_flag = ccshtool_modon_base_fuel_gain
+	}
+}
+
+ccshtool_modon_base_fuel_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_base_fuel_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_base_fuel_gain_factor }
+		set_country_flag = ccshtool_modon_base_fuel_gain_factor
+	}
+}
+
+ccshtool_modon_base_fuel_gain_factor_clear = {
+	set_variable = { ccshtool_modv_base_fuel_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_base_fuel_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_base_fuel_gain_factor }
+		clr_country_flag = ccshtool_modon_base_fuel_gain_factor
+	}
+}
+
+ccshtool_modon_production_factory_max_efficiency_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_production_factory_max_efficiency_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_production_factory_max_efficiency_factor }
+		set_country_flag = ccshtool_modon_production_factory_max_efficiency_factor
+	}
+}
+
+ccshtool_modon_production_factory_max_efficiency_factor_clear = {
+	set_variable = { ccshtool_modv_production_factory_max_efficiency_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_production_factory_max_efficiency_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_production_factory_max_efficiency_factor }
+		clr_country_flag = ccshtool_modon_production_factory_max_efficiency_factor
+	}
+}
+
+ccshtool_modon_production_factory_efficiency_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_production_factory_efficiency_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_production_factory_efficiency_gain_factor }
+		set_country_flag = ccshtool_modon_production_factory_efficiency_gain_factor
+	}
+}
+
+ccshtool_modon_production_factory_efficiency_gain_factor_clear = {
+	set_variable = { ccshtool_modv_production_factory_efficiency_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_production_factory_efficiency_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_production_factory_efficiency_gain_factor }
+		clr_country_flag = ccshtool_modon_production_factory_efficiency_gain_factor
+	}
+}
+
+ccshtool_modon_production_factory_start_efficiency_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_production_factory_start_efficiency_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_production_factory_start_efficiency_factor }
+		set_country_flag = ccshtool_modon_production_factory_start_efficiency_factor
+	}
+}
+
+ccshtool_modon_production_factory_start_efficiency_factor_clear = {
+	set_variable = { ccshtool_modv_production_factory_start_efficiency_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_production_factory_start_efficiency_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_production_factory_start_efficiency_factor }
+		clr_country_flag = ccshtool_modon_production_factory_start_efficiency_factor
+	}
+}
+
+ccshtool_modon_industrial_capacity_factory_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_industrial_capacity_factory } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_industrial_capacity_factory }
+		set_country_flag = ccshtool_modon_industrial_capacity_factory
+	}
+}
+
+ccshtool_modon_industrial_capacity_factory_clear = {
+	set_variable = { ccshtool_modv_industrial_capacity_factory = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_industrial_capacity_factory }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_industrial_capacity_factory }
+		clr_country_flag = ccshtool_modon_industrial_capacity_factory
+	}
+}
+
+ccshtool_modon_industrial_capacity_dockyard_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_industrial_capacity_dockyard } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_industrial_capacity_dockyard }
+		set_country_flag = ccshtool_modon_industrial_capacity_dockyard
+	}
+}
+
+ccshtool_modon_industrial_capacity_dockyard_clear = {
+	set_variable = { ccshtool_modv_industrial_capacity_dockyard = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_industrial_capacity_dockyard }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_industrial_capacity_dockyard }
+		clr_country_flag = ccshtool_modon_industrial_capacity_dockyard
+	}
+}
+
+ccshtool_modon_nuclear_production_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_nuclear_production } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_nuclear_production }
+		set_country_flag = ccshtool_modon_nuclear_production
+	}
+}
+
+ccshtool_modon_nuclear_production_clear = {
+	set_variable = { ccshtool_modv_nuclear_production = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_nuclear_production }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_nuclear_production }
+		clr_country_flag = ccshtool_modon_nuclear_production
+	}
+}
+
+ccshtool_modon_nuclear_production_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_nuclear_production_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_nuclear_production_factor }
+		set_country_flag = ccshtool_modon_nuclear_production_factor
+	}
+}
+
+ccshtool_modon_nuclear_production_factor_clear = {
+	set_variable = { ccshtool_modv_nuclear_production_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_nuclear_production_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_nuclear_production_factor }
+		clr_country_flag = ccshtool_modon_nuclear_production_factor
+	}
+}
+
+ccshtool_modon_monthly_population_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_monthly_population } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_monthly_population }
+		set_country_flag = ccshtool_modon_monthly_population
+	}
+}
+
+ccshtool_modon_monthly_population_clear = {
+	set_variable = { ccshtool_modv_monthly_population = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_monthly_population }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_monthly_population }
+		clr_country_flag = ccshtool_modon_monthly_population
+	}
+}
+
+ccshtool_modon_consumer_goods_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_consumer_goods_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_consumer_goods_factor }
+		set_country_flag = ccshtool_modon_consumer_goods_factor
+	}
+}
+
+ccshtool_modon_consumer_goods_factor_clear = {
+	set_variable = { ccshtool_modv_consumer_goods_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_consumer_goods_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_consumer_goods_factor }
+		clr_country_flag = ccshtool_modon_consumer_goods_factor
+	}
+}
+
+ccshtool_modon_min_export_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_min_export } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_min_export }
+		set_country_flag = ccshtool_modon_min_export
+	}
+}
+
+ccshtool_modon_min_export_clear = {
+	set_variable = { ccshtool_modv_min_export = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_min_export }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_min_export }
+		clr_country_flag = ccshtool_modon_min_export
+	}
+}
+
+ccshtool_modon_resistance_target_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_resistance_target } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_target }
+		set_country_flag = ccshtool_modon_resistance_target
+	}
+}
+
+ccshtool_modon_resistance_target_clear = {
+	set_variable = { ccshtool_modv_resistance_target = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_resistance_target }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_target }
+		clr_country_flag = ccshtool_modon_resistance_target
+	}
+}
+
+ccshtool_modon_resistance_target_on_our_occupied_states_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_resistance_target_on_our_occupied_states } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_target_on_our_occupied_states }
+		set_country_flag = ccshtool_modon_resistance_target_on_our_occupied_states
+	}
+}
+
+ccshtool_modon_resistance_target_on_our_occupied_states_clear = {
+	set_variable = { ccshtool_modv_resistance_target_on_our_occupied_states = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_resistance_target_on_our_occupied_states }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_target_on_our_occupied_states }
+		clr_country_flag = ccshtool_modon_resistance_target_on_our_occupied_states
+	}
+}
+
+ccshtool_modon_resistance_growth_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_resistance_growth } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_growth }
+		set_country_flag = ccshtool_modon_resistance_growth
+	}
+}
+
+ccshtool_modon_resistance_growth_clear = {
+	set_variable = { ccshtool_modv_resistance_growth = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_resistance_growth }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_growth }
+		clr_country_flag = ccshtool_modon_resistance_growth
+	}
+}
+
+ccshtool_modon_resistance_damage_to_garrison_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_resistance_damage_to_garrison } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_damage_to_garrison }
+		set_country_flag = ccshtool_modon_resistance_damage_to_garrison
+	}
+}
+
+ccshtool_modon_resistance_damage_to_garrison_clear = {
+	set_variable = { ccshtool_modv_resistance_damage_to_garrison = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_resistance_damage_to_garrison }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_resistance_damage_to_garrison }
+		clr_country_flag = ccshtool_modon_resistance_damage_to_garrison
+	}
+}
+
+ccshtool_modon_starting_compliance_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_starting_compliance } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_starting_compliance }
+		set_country_flag = ccshtool_modon_starting_compliance
+	}
+}
+
+ccshtool_modon_starting_compliance_clear = {
+	set_variable = { ccshtool_modv_starting_compliance = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_starting_compliance }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_starting_compliance }
+		clr_country_flag = ccshtool_modon_starting_compliance
+	}
+}
+
+ccshtool_modon_compliance_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_compliance_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_compliance_gain }
+		set_country_flag = ccshtool_modon_compliance_gain
+	}
+}
+
+ccshtool_modon_compliance_gain_clear = {
+	set_variable = { ccshtool_modv_compliance_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_compliance_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_compliance_gain }
+		clr_country_flag = ccshtool_modon_compliance_gain
+	}
+}
+
+ccshtool_modon_compliance_growth_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_compliance_growth } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_compliance_growth }
+		set_country_flag = ccshtool_modon_compliance_growth
+	}
+}
+
+ccshtool_modon_compliance_growth_clear = {
+	set_variable = { ccshtool_modv_compliance_growth = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_compliance_growth }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_compliance_growth }
+		clr_country_flag = ccshtool_modon_compliance_growth
+	}
+}
+
+ccshtool_modon_compliance_growth_on_our_occupied_states_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_compliance_growth_on_our_occupied_states } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_compliance_growth_on_our_occupied_states }
+		set_country_flag = ccshtool_modon_compliance_growth_on_our_occupied_states
+	}
+}
+
+ccshtool_modon_compliance_growth_on_our_occupied_states_clear = {
+	set_variable = { ccshtool_modv_compliance_growth_on_our_occupied_states = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_compliance_growth_on_our_occupied_states }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_compliance_growth_on_our_occupied_states }
+		clr_country_flag = ccshtool_modon_compliance_growth_on_our_occupied_states
+	}
+}
+
+ccshtool_modon_max_command_power_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_max_command_power } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_max_command_power }
+		set_country_flag = ccshtool_modon_max_command_power
+	}
+}
+
+ccshtool_modon_max_command_power_clear = {
+	set_variable = { ccshtool_modv_max_command_power = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_max_command_power }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_max_command_power }
+		clr_country_flag = ccshtool_modon_max_command_power
+	}
+}
+
+ccshtool_modon_command_power_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_command_power_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_command_power_gain }
+		set_country_flag = ccshtool_modon_command_power_gain
+	}
+}
+
+ccshtool_modon_command_power_gain_clear = {
+	set_variable = { ccshtool_modv_command_power_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_command_power_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_command_power_gain }
+		clr_country_flag = ccshtool_modon_command_power_gain
+	}
+}
+
+ccshtool_modon_command_power_gain_mult_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_command_power_gain_mult } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_command_power_gain_mult }
+		set_country_flag = ccshtool_modon_command_power_gain_mult
+	}
+}
+
+ccshtool_modon_command_power_gain_mult_clear = {
+	set_variable = { ccshtool_modv_command_power_gain_mult = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_command_power_gain_mult }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_command_power_gain_mult }
+		clr_country_flag = ccshtool_modon_command_power_gain_mult
+	}
+}
+
+ccshtool_modon_conscription_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_conscription_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_conscription_factor }
+		set_country_flag = ccshtool_modon_conscription_factor
+	}
+}
+
+ccshtool_modon_conscription_factor_clear = {
+	set_variable = { ccshtool_modv_conscription_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_conscription_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_conscription_factor }
+		clr_country_flag = ccshtool_modon_conscription_factor
+	}
+}
+
+ccshtool_modon_conscription_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_conscription } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_conscription }
+		set_country_flag = ccshtool_modon_conscription
+	}
+}
+
+ccshtool_modon_conscription_clear = {
+	set_variable = { ccshtool_modv_conscription = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_conscription }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_conscription }
+		clr_country_flag = ccshtool_modon_conscription
+	}
+}
+
+ccshtool_modon_non_core_manpower_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_non_core_manpower } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_non_core_manpower }
+		set_country_flag = ccshtool_modon_non_core_manpower
+	}
+}
+
+ccshtool_modon_non_core_manpower_clear = {
+	set_variable = { ccshtool_modv_non_core_manpower = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_non_core_manpower }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_non_core_manpower }
+		clr_country_flag = ccshtool_modon_non_core_manpower
+	}
+}
+
+ccshtool_modon_army_attack_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_attack_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_attack_factor }
+		set_country_flag = ccshtool_modon_army_attack_factor
+	}
+}
+
+ccshtool_modon_army_attack_factor_clear = {
+	set_variable = { ccshtool_modv_army_attack_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_attack_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_attack_factor }
+		clr_country_flag = ccshtool_modon_army_attack_factor
+	}
+}
+
+ccshtool_modon_army_defence_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_defence_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_defence_factor }
+		set_country_flag = ccshtool_modon_army_defence_factor
+	}
+}
+
+ccshtool_modon_army_defence_factor_clear = {
+	set_variable = { ccshtool_modv_army_defence_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_defence_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_defence_factor }
+		clr_country_flag = ccshtool_modon_army_defence_factor
+	}
+}
+
+ccshtool_modon_army_core_attack_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_core_attack_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_core_attack_factor }
+		set_country_flag = ccshtool_modon_army_core_attack_factor
+	}
+}
+
+ccshtool_modon_army_core_attack_factor_clear = {
+	set_variable = { ccshtool_modv_army_core_attack_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_core_attack_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_core_attack_factor }
+		clr_country_flag = ccshtool_modon_army_core_attack_factor
+	}
+}
+
+ccshtool_modon_army_core_defence_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_core_defence_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_core_defence_factor }
+		set_country_flag = ccshtool_modon_army_core_defence_factor
+	}
+}
+
+ccshtool_modon_army_core_defence_factor_clear = {
+	set_variable = { ccshtool_modv_army_core_defence_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_core_defence_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_core_defence_factor }
+		clr_country_flag = ccshtool_modon_army_core_defence_factor
+	}
+}
+
+ccshtool_modon_army_speed_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_speed_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_speed_factor }
+		set_country_flag = ccshtool_modon_army_speed_factor
+	}
+}
+
+ccshtool_modon_army_speed_factor_clear = {
+	set_variable = { ccshtool_modv_army_speed_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_speed_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_speed_factor }
+		clr_country_flag = ccshtool_modon_army_speed_factor
+	}
+}
+
+ccshtool_modon_minimum_training_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_minimum_training_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_minimum_training_level }
+		set_country_flag = ccshtool_modon_minimum_training_level
+	}
+}
+
+ccshtool_modon_minimum_training_level_clear = {
+	set_variable = { ccshtool_modv_minimum_training_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_minimum_training_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_minimum_training_level }
+		clr_country_flag = ccshtool_modon_minimum_training_level
+	}
+}
+
+ccshtool_modon_training_time_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_training_time_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_training_time_factor }
+		set_country_flag = ccshtool_modon_training_time_factor
+	}
+}
+
+ccshtool_modon_training_time_factor_clear = {
+	set_variable = { ccshtool_modv_training_time_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_training_time_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_training_time_factor }
+		clr_country_flag = ccshtool_modon_training_time_factor
+	}
+}
+
+ccshtool_modon_special_forces_min_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_special_forces_min } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_special_forces_min }
+		set_country_flag = ccshtool_modon_special_forces_min
+	}
+}
+
+ccshtool_modon_special_forces_min_clear = {
+	set_variable = { ccshtool_modv_special_forces_min = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_special_forces_min }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_special_forces_min }
+		clr_country_flag = ccshtool_modon_special_forces_min
+	}
+}
+
+ccshtool_modon_special_forces_cap_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_special_forces_cap } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_special_forces_cap }
+		set_country_flag = ccshtool_modon_special_forces_cap
+	}
+}
+
+ccshtool_modon_special_forces_cap_clear = {
+	set_variable = { ccshtool_modv_special_forces_cap = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_special_forces_cap }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_special_forces_cap }
+		clr_country_flag = ccshtool_modon_special_forces_cap
+	}
+}
+
+ccshtool_modon_experience_gain_army_unit_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_army_unit } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army_unit }
+		set_country_flag = ccshtool_modon_experience_gain_army_unit
+	}
+}
+
+ccshtool_modon_experience_gain_army_unit_clear = {
+	set_variable = { ccshtool_modv_experience_gain_army_unit = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_army_unit }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army_unit }
+		clr_country_flag = ccshtool_modon_experience_gain_army_unit
+	}
+}
+
+ccshtool_modon_experience_gain_army_unit_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_army_unit_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army_unit_factor }
+		set_country_flag = ccshtool_modon_experience_gain_army_unit_factor
+	}
+}
+
+ccshtool_modon_experience_gain_army_unit_factor_clear = {
+	set_variable = { ccshtool_modv_experience_gain_army_unit_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_army_unit_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army_unit_factor }
+		clr_country_flag = ccshtool_modon_experience_gain_army_unit_factor
+	}
+}
+
+ccshtool_modon_experience_loss_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_loss_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_loss_factor }
+		set_country_flag = ccshtool_modon_experience_loss_factor
+	}
+}
+
+ccshtool_modon_experience_loss_factor_clear = {
+	set_variable = { ccshtool_modv_experience_loss_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_loss_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_loss_factor }
+		clr_country_flag = ccshtool_modon_experience_loss_factor
+	}
+}
+
+ccshtool_modon_army_org_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_org } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_org }
+		set_country_flag = ccshtool_modon_army_org
+	}
+}
+
+ccshtool_modon_army_org_clear = {
+	set_variable = { ccshtool_modv_army_org = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_org }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_org }
+		clr_country_flag = ccshtool_modon_army_org
+	}
+}
+
+ccshtool_modon_army_org_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_org_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_org_factor }
+		set_country_flag = ccshtool_modon_army_org_factor
+	}
+}
+
+ccshtool_modon_army_org_factor_clear = {
+	set_variable = { ccshtool_modv_army_org_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_org_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_org_factor }
+		clr_country_flag = ccshtool_modon_army_org_factor
+	}
+}
+
+ccshtool_modon_army_org_regain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_org_regain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_org_regain }
+		set_country_flag = ccshtool_modon_army_org_regain
+	}
+}
+
+ccshtool_modon_army_org_regain_clear = {
+	set_variable = { ccshtool_modv_army_org_regain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_org_regain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_org_regain }
+		clr_country_flag = ccshtool_modon_army_org_regain
+	}
+}
+
+ccshtool_modon_org_loss_when_moving_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_org_loss_when_moving } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_org_loss_when_moving }
+		set_country_flag = ccshtool_modon_org_loss_when_moving
+	}
+}
+
+ccshtool_modon_org_loss_when_moving_clear = {
+	set_variable = { ccshtool_modv_org_loss_when_moving = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_org_loss_when_moving }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_org_loss_when_moving }
+		clr_country_flag = ccshtool_modon_org_loss_when_moving
+	}
+}
+
+ccshtool_modon_army_morale_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_morale } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_morale }
+		set_country_flag = ccshtool_modon_army_morale
+	}
+}
+
+ccshtool_modon_army_morale_clear = {
+	set_variable = { ccshtool_modv_army_morale = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_morale }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_morale }
+		clr_country_flag = ccshtool_modon_army_morale
+	}
+}
+
+ccshtool_modon_army_morale_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_morale_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_morale_factor }
+		set_country_flag = ccshtool_modon_army_morale_factor
+	}
+}
+
+ccshtool_modon_army_morale_factor_clear = {
+	set_variable = { ccshtool_modv_army_morale_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_morale_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_morale_factor }
+		clr_country_flag = ccshtool_modon_army_morale_factor
+	}
+}
+
+ccshtool_modon_land_reinforce_rate_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_land_reinforce_rate } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_land_reinforce_rate }
+		set_country_flag = ccshtool_modon_land_reinforce_rate
+	}
+}
+
+ccshtool_modon_land_reinforce_rate_clear = {
+	set_variable = { ccshtool_modv_land_reinforce_rate = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_land_reinforce_rate }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_land_reinforce_rate }
+		clr_country_flag = ccshtool_modon_land_reinforce_rate
+	}
+}
+
+ccshtool_modon_max_planning_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_max_planning } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_max_planning }
+		set_country_flag = ccshtool_modon_max_planning
+	}
+}
+
+ccshtool_modon_max_planning_clear = {
+	set_variable = { ccshtool_modv_max_planning = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_max_planning }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_max_planning }
+		clr_country_flag = ccshtool_modon_max_planning
+	}
+}
+
+ccshtool_modon_planning_speed_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_planning_speed } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_planning_speed }
+		set_country_flag = ccshtool_modon_planning_speed
+	}
+}
+
+ccshtool_modon_planning_speed_clear = {
+	set_variable = { ccshtool_modv_planning_speed = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_planning_speed }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_planning_speed }
+		clr_country_flag = ccshtool_modon_planning_speed
+	}
+}
+
+ccshtool_modon_attrition_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_attrition } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_attrition }
+		set_country_flag = ccshtool_modon_attrition
+	}
+}
+
+ccshtool_modon_attrition_clear = {
+	set_variable = { ccshtool_modv_attrition = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_attrition }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_attrition }
+		clr_country_flag = ccshtool_modon_attrition
+	}
+}
+
+ccshtool_modon_heat_attrition_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_heat_attrition_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_heat_attrition_factor }
+		set_country_flag = ccshtool_modon_heat_attrition_factor
+	}
+}
+
+ccshtool_modon_heat_attrition_factor_clear = {
+	set_variable = { ccshtool_modv_heat_attrition_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_heat_attrition_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_heat_attrition_factor }
+		clr_country_flag = ccshtool_modon_heat_attrition_factor
+	}
+}
+
+ccshtool_modon_winter_attrition_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_winter_attrition_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_winter_attrition_factor }
+		set_country_flag = ccshtool_modon_winter_attrition_factor
+	}
+}
+
+ccshtool_modon_winter_attrition_factor_clear = {
+	set_variable = { ccshtool_modv_winter_attrition_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_winter_attrition_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_winter_attrition_factor }
+		clr_country_flag = ccshtool_modon_winter_attrition_factor
+	}
+}
+
+ccshtool_modon_acclimatization_cold_climate_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_acclimatization_cold_climate_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_acclimatization_cold_climate_gain_factor }
+		set_country_flag = ccshtool_modon_acclimatization_cold_climate_gain_factor
+	}
+}
+
+ccshtool_modon_acclimatization_cold_climate_gain_factor_clear = {
+	set_variable = { ccshtool_modv_acclimatization_cold_climate_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_acclimatization_cold_climate_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_acclimatization_cold_climate_gain_factor }
+		clr_country_flag = ccshtool_modon_acclimatization_cold_climate_gain_factor
+	}
+}
+
+ccshtool_modon_acclimatization_hot_climate_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_acclimatization_hot_climate_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_acclimatization_hot_climate_gain_factor }
+		set_country_flag = ccshtool_modon_acclimatization_hot_climate_gain_factor
+	}
+}
+
+ccshtool_modon_acclimatization_hot_climate_gain_factor_clear = {
+	set_variable = { ccshtool_modv_acclimatization_hot_climate_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_acclimatization_hot_climate_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_acclimatization_hot_climate_gain_factor }
+		clr_country_flag = ccshtool_modon_acclimatization_hot_climate_gain_factor
+	}
+}
+
+ccshtool_modon_terrain_penalty_reduction_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_terrain_penalty_reduction } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_terrain_penalty_reduction }
+		set_country_flag = ccshtool_modon_terrain_penalty_reduction
+	}
+}
+
+ccshtool_modon_terrain_penalty_reduction_clear = {
+	set_variable = { ccshtool_modv_terrain_penalty_reduction = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_terrain_penalty_reduction }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_terrain_penalty_reduction }
+		clr_country_flag = ccshtool_modon_terrain_penalty_reduction
+	}
+}
+
+ccshtool_modon_max_dig_in_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_max_dig_in } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_max_dig_in }
+		set_country_flag = ccshtool_modon_max_dig_in
+	}
+}
+
+ccshtool_modon_max_dig_in_clear = {
+	set_variable = { ccshtool_modv_max_dig_in = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_max_dig_in }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_max_dig_in }
+		clr_country_flag = ccshtool_modon_max_dig_in
+	}
+}
+
+ccshtool_modon_max_dig_in_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_max_dig_in_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_max_dig_in_factor }
+		set_country_flag = ccshtool_modon_max_dig_in_factor
+	}
+}
+
+ccshtool_modon_max_dig_in_factor_clear = {
+	set_variable = { ccshtool_modv_max_dig_in_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_max_dig_in_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_max_dig_in_factor }
+		clr_country_flag = ccshtool_modon_max_dig_in_factor
+	}
+}
+
+ccshtool_modon_dig_in_speed_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_dig_in_speed } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_dig_in_speed }
+		set_country_flag = ccshtool_modon_dig_in_speed
+	}
+}
+
+ccshtool_modon_dig_in_speed_clear = {
+	set_variable = { ccshtool_modv_dig_in_speed = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_dig_in_speed }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_dig_in_speed }
+		clr_country_flag = ccshtool_modon_dig_in_speed
+	}
+}
+
+ccshtool_modon_dig_in_speed_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_dig_in_speed_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_dig_in_speed_factor }
+		set_country_flag = ccshtool_modon_dig_in_speed_factor
+	}
+}
+
+ccshtool_modon_dig_in_speed_factor_clear = {
+	set_variable = { ccshtool_modv_dig_in_speed_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_dig_in_speed_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_dig_in_speed_factor }
+		clr_country_flag = ccshtool_modon_dig_in_speed_factor
+	}
+}
+
+ccshtool_modon_supply_consumption_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_supply_consumption_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_supply_consumption_factor }
+		set_country_flag = ccshtool_modon_supply_consumption_factor
+	}
+}
+
+ccshtool_modon_supply_consumption_factor_clear = {
+	set_variable = { ccshtool_modv_supply_consumption_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_supply_consumption_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_supply_consumption_factor }
+		clr_country_flag = ccshtool_modon_supply_consumption_factor
+	}
+}
+
+ccshtool_modon_out_of_supply_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_out_of_supply_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_out_of_supply_factor }
+		set_country_flag = ccshtool_modon_out_of_supply_factor
+	}
+}
+
+ccshtool_modon_out_of_supply_factor_clear = {
+	set_variable = { ccshtool_modv_out_of_supply_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_out_of_supply_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_out_of_supply_factor }
+		clr_country_flag = ccshtool_modon_out_of_supply_factor
+	}
+}
+
+ccshtool_modon_no_supply_grace_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_no_supply_grace } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_no_supply_grace }
+		set_country_flag = ccshtool_modon_no_supply_grace
+	}
+}
+
+ccshtool_modon_no_supply_grace_clear = {
+	set_variable = { ccshtool_modv_no_supply_grace = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_no_supply_grace }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_no_supply_grace }
+		clr_country_flag = ccshtool_modon_no_supply_grace
+	}
+}
+
+ccshtool_modon_amphibious_invasion_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_amphibious_invasion } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_amphibious_invasion }
+		set_country_flag = ccshtool_modon_amphibious_invasion
+	}
+}
+
+ccshtool_modon_amphibious_invasion_clear = {
+	set_variable = { ccshtool_modv_amphibious_invasion = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_amphibious_invasion }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_amphibious_invasion }
+		clr_country_flag = ccshtool_modon_amphibious_invasion
+	}
+}
+
+ccshtool_modon_invasion_preparation_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_invasion_preparation } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_invasion_preparation }
+		set_country_flag = ccshtool_modon_invasion_preparation
+	}
+}
+
+ccshtool_modon_invasion_preparation_clear = {
+	set_variable = { ccshtool_modv_invasion_preparation = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_invasion_preparation }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_invasion_preparation }
+		clr_country_flag = ccshtool_modon_invasion_preparation
+	}
+}
+
+ccshtool_modon_land_night_attack_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_land_night_attack } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_land_night_attack }
+		set_country_flag = ccshtool_modon_land_night_attack
+	}
+}
+
+ccshtool_modon_land_night_attack_clear = {
+	set_variable = { ccshtool_modv_land_night_attack = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_land_night_attack }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_land_night_attack }
+		clr_country_flag = ccshtool_modon_land_night_attack
+	}
+}
+
+ccshtool_modon_army_leader_start_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_leader_start_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_level }
+		set_country_flag = ccshtool_modon_army_leader_start_level
+	}
+}
+
+ccshtool_modon_army_leader_start_level_clear = {
+	set_variable = { ccshtool_modv_army_leader_start_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_leader_start_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_level }
+		clr_country_flag = ccshtool_modon_army_leader_start_level
+	}
+}
+
+ccshtool_modon_army_leader_start_attack_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_leader_start_attack_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_attack_level }
+		set_country_flag = ccshtool_modon_army_leader_start_attack_level
+	}
+}
+
+ccshtool_modon_army_leader_start_attack_level_clear = {
+	set_variable = { ccshtool_modv_army_leader_start_attack_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_leader_start_attack_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_attack_level }
+		clr_country_flag = ccshtool_modon_army_leader_start_attack_level
+	}
+}
+
+ccshtool_modon_army_leader_start_defense_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_leader_start_defense_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_defense_level }
+		set_country_flag = ccshtool_modon_army_leader_start_defense_level
+	}
+}
+
+ccshtool_modon_army_leader_start_defense_level_clear = {
+	set_variable = { ccshtool_modv_army_leader_start_defense_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_leader_start_defense_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_defense_level }
+		clr_country_flag = ccshtool_modon_army_leader_start_defense_level
+	}
+}
+
+ccshtool_modon_army_leader_start_planning_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_leader_start_planning_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_planning_level }
+		set_country_flag = ccshtool_modon_army_leader_start_planning_level
+	}
+}
+
+ccshtool_modon_army_leader_start_planning_level_clear = {
+	set_variable = { ccshtool_modv_army_leader_start_planning_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_leader_start_planning_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_planning_level }
+		clr_country_flag = ccshtool_modon_army_leader_start_planning_level
+	}
+}
+
+ccshtool_modon_army_leader_start_logistics_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_leader_start_logistics_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_logistics_level }
+		set_country_flag = ccshtool_modon_army_leader_start_logistics_level
+	}
+}
+
+ccshtool_modon_army_leader_start_logistics_level_clear = {
+	set_variable = { ccshtool_modv_army_leader_start_logistics_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_leader_start_logistics_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_leader_start_logistics_level }
+		clr_country_flag = ccshtool_modon_army_leader_start_logistics_level
+	}
+}
+
+ccshtool_modon_experience_gain_navy_unit_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_navy_unit } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy_unit }
+		set_country_flag = ccshtool_modon_experience_gain_navy_unit
+	}
+}
+
+ccshtool_modon_experience_gain_navy_unit_clear = {
+	set_variable = { ccshtool_modv_experience_gain_navy_unit = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_navy_unit }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy_unit }
+		clr_country_flag = ccshtool_modon_experience_gain_navy_unit
+	}
+}
+
+ccshtool_modon_experience_gain_navy_unit_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_navy_unit_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy_unit_factor }
+		set_country_flag = ccshtool_modon_experience_gain_navy_unit_factor
+	}
+}
+
+ccshtool_modon_experience_gain_navy_unit_factor_clear = {
+	set_variable = { ccshtool_modv_experience_gain_navy_unit_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_navy_unit_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy_unit_factor }
+		clr_country_flag = ccshtool_modon_experience_gain_navy_unit_factor
+	}
+}
+
+ccshtool_modon_naval_speed_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_speed_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_speed_factor }
+		set_country_flag = ccshtool_modon_naval_speed_factor
+	}
+}
+
+ccshtool_modon_naval_speed_factor_clear = {
+	set_variable = { ccshtool_modv_naval_speed_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_speed_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_speed_factor }
+		clr_country_flag = ccshtool_modon_naval_speed_factor
+	}
+}
+
+ccshtool_modon_navy_max_range_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_max_range_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_max_range_factor }
+		set_country_flag = ccshtool_modon_navy_max_range_factor
+	}
+}
+
+ccshtool_modon_navy_max_range_factor_clear = {
+	set_variable = { ccshtool_modv_navy_max_range_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_max_range_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_max_range_factor }
+		clr_country_flag = ccshtool_modon_navy_max_range_factor
+	}
+}
+
+ccshtool_modon_sortie_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_sortie_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_sortie_efficiency }
+		set_country_flag = ccshtool_modon_sortie_efficiency
+	}
+}
+
+ccshtool_modon_sortie_efficiency_clear = {
+	set_variable = { ccshtool_modv_sortie_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_sortie_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_sortie_efficiency }
+		clr_country_flag = ccshtool_modon_sortie_efficiency
+	}
+}
+
+ccshtool_modon_naval_hit_chance_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_hit_chance } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_hit_chance }
+		set_country_flag = ccshtool_modon_naval_hit_chance
+	}
+}
+
+ccshtool_modon_naval_hit_chance_clear = {
+	set_variable = { ccshtool_modv_naval_hit_chance = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_hit_chance }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_hit_chance }
+		clr_country_flag = ccshtool_modon_naval_hit_chance
+	}
+}
+
+ccshtool_modon_naval_coordination_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_coordination } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_coordination }
+		set_country_flag = ccshtool_modon_naval_coordination
+	}
+}
+
+ccshtool_modon_naval_coordination_clear = {
+	set_variable = { ccshtool_modv_naval_coordination = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_coordination }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_coordination }
+		clr_country_flag = ccshtool_modon_naval_coordination
+	}
+}
+
+ccshtool_modon_ships_at_battle_start_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_ships_at_battle_start } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_ships_at_battle_start }
+		set_country_flag = ccshtool_modon_ships_at_battle_start
+	}
+}
+
+ccshtool_modon_ships_at_battle_start_clear = {
+	set_variable = { ccshtool_modv_ships_at_battle_start = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_ships_at_battle_start }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_ships_at_battle_start }
+		clr_country_flag = ccshtool_modon_ships_at_battle_start
+	}
+}
+
+ccshtool_modon_naval_retreat_speed_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_retreat_speed } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_retreat_speed }
+		set_country_flag = ccshtool_modon_naval_retreat_speed
+	}
+}
+
+ccshtool_modon_naval_retreat_speed_clear = {
+	set_variable = { ccshtool_modv_naval_retreat_speed = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_retreat_speed }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_retreat_speed }
+		clr_country_flag = ccshtool_modon_naval_retreat_speed
+	}
+}
+
+ccshtool_modon_naval_retreat_chance_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_retreat_chance } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_retreat_chance }
+		set_country_flag = ccshtool_modon_naval_retreat_chance
+	}
+}
+
+ccshtool_modon_naval_retreat_chance_clear = {
+	set_variable = { ccshtool_modv_naval_retreat_chance = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_retreat_chance }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_retreat_chance }
+		clr_country_flag = ccshtool_modon_naval_retreat_chance
+	}
+}
+
+ccshtool_modon_convoy_escort_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_convoy_escort_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_convoy_escort_efficiency }
+		set_country_flag = ccshtool_modon_convoy_escort_efficiency
+	}
+}
+
+ccshtool_modon_convoy_escort_efficiency_clear = {
+	set_variable = { ccshtool_modv_convoy_escort_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_convoy_escort_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_convoy_escort_efficiency }
+		clr_country_flag = ccshtool_modon_convoy_escort_efficiency
+	}
+}
+
+ccshtool_modon_convoy_raiding_efficiency_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_convoy_raiding_efficiency_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_convoy_raiding_efficiency_factor }
+		set_country_flag = ccshtool_modon_convoy_raiding_efficiency_factor
+	}
+}
+
+ccshtool_modon_convoy_raiding_efficiency_factor_clear = {
+	set_variable = { ccshtool_modv_convoy_raiding_efficiency_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_convoy_raiding_efficiency_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_convoy_raiding_efficiency_factor }
+		clr_country_flag = ccshtool_modon_convoy_raiding_efficiency_factor
+	}
+}
+
+ccshtool_modon_navy_submarine_detection_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_submarine_detection_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_submarine_detection_factor }
+		set_country_flag = ccshtool_modon_navy_submarine_detection_factor
+	}
+}
+
+ccshtool_modon_navy_submarine_detection_factor_clear = {
+	set_variable = { ccshtool_modv_navy_submarine_detection_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_submarine_detection_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_submarine_detection_factor }
+		clr_country_flag = ccshtool_modon_navy_submarine_detection_factor
+	}
+}
+
+ccshtool_modon_navy_anti_air_attack_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_anti_air_attack_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_anti_air_attack_factor }
+		set_country_flag = ccshtool_modon_navy_anti_air_attack_factor
+	}
+}
+
+ccshtool_modon_navy_anti_air_attack_factor_clear = {
+	set_variable = { ccshtool_modv_navy_anti_air_attack_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_anti_air_attack_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_anti_air_attack_factor }
+		clr_country_flag = ccshtool_modon_navy_anti_air_attack_factor
+	}
+}
+
+ccshtool_modon_naval_invasion_capacity_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_invasion_capacity } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_invasion_capacity }
+		set_country_flag = ccshtool_modon_naval_invasion_capacity
+	}
+}
+
+ccshtool_modon_naval_invasion_capacity_clear = {
+	set_variable = { ccshtool_modv_naval_invasion_capacity = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_invasion_capacity }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_invasion_capacity }
+		clr_country_flag = ccshtool_modon_naval_invasion_capacity
+	}
+}
+
+ccshtool_modon_carrier_capacity_penalty_reduction_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_carrier_capacity_penalty_reduction } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_carrier_capacity_penalty_reduction }
+		set_country_flag = ccshtool_modon_carrier_capacity_penalty_reduction
+	}
+}
+
+ccshtool_modon_carrier_capacity_penalty_reduction_clear = {
+	set_variable = { ccshtool_modv_carrier_capacity_penalty_reduction = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_carrier_capacity_penalty_reduction }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_carrier_capacity_penalty_reduction }
+		clr_country_flag = ccshtool_modon_carrier_capacity_penalty_reduction
+	}
+}
+
+ccshtool_modon_port_strike_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_port_strike } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_port_strike }
+		set_country_flag = ccshtool_modon_port_strike
+	}
+}
+
+ccshtool_modon_port_strike_clear = {
+	set_variable = { ccshtool_modv_port_strike = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_port_strike }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_port_strike }
+		clr_country_flag = ccshtool_modon_port_strike
+	}
+}
+
+ccshtool_modon_navy_leader_start_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_leader_start_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_level }
+		set_country_flag = ccshtool_modon_navy_leader_start_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_level_clear = {
+	set_variable = { ccshtool_modv_navy_leader_start_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_leader_start_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_level }
+		clr_country_flag = ccshtool_modon_navy_leader_start_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_attack_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_leader_start_attack_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_attack_level }
+		set_country_flag = ccshtool_modon_navy_leader_start_attack_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_attack_level_clear = {
+	set_variable = { ccshtool_modv_navy_leader_start_attack_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_leader_start_attack_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_attack_level }
+		clr_country_flag = ccshtool_modon_navy_leader_start_attack_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_defense_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_leader_start_defense_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_defense_level }
+		set_country_flag = ccshtool_modon_navy_leader_start_defense_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_defense_level_clear = {
+	set_variable = { ccshtool_modv_navy_leader_start_defense_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_leader_start_defense_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_defense_level }
+		clr_country_flag = ccshtool_modon_navy_leader_start_defense_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_maneuvering_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_leader_start_maneuvering_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_maneuvering_level }
+		set_country_flag = ccshtool_modon_navy_leader_start_maneuvering_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_maneuvering_level_clear = {
+	set_variable = { ccshtool_modv_navy_leader_start_maneuvering_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_leader_start_maneuvering_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_maneuvering_level }
+		clr_country_flag = ccshtool_modon_navy_leader_start_maneuvering_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_coordination_level_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_leader_start_coordination_level } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_coordination_level }
+		set_country_flag = ccshtool_modon_navy_leader_start_coordination_level
+	}
+}
+
+ccshtool_modon_navy_leader_start_coordination_level_clear = {
+	set_variable = { ccshtool_modv_navy_leader_start_coordination_level = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_leader_start_coordination_level }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_leader_start_coordination_level }
+		clr_country_flag = ccshtool_modon_navy_leader_start_coordination_level
+	}
+}
+
+ccshtool_modon_air_range_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_range_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_range_factor }
+		set_country_flag = ccshtool_modon_air_range_factor
+	}
+}
+
+ccshtool_modon_air_range_factor_clear = {
+	set_variable = { ccshtool_modv_air_range_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_range_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_range_factor }
+		clr_country_flag = ccshtool_modon_air_range_factor
+	}
+}
+
+ccshtool_modon_air_training_xp_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_training_xp_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_training_xp_gain_factor }
+		set_country_flag = ccshtool_modon_air_training_xp_gain_factor
+	}
+}
+
+ccshtool_modon_air_training_xp_gain_factor_clear = {
+	set_variable = { ccshtool_modv_air_training_xp_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_training_xp_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_training_xp_gain_factor }
+		clr_country_flag = ccshtool_modon_air_training_xp_gain_factor
+	}
+}
+
+ccshtool_modon_air_mission_xp_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_mission_xp_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_mission_xp_gain_factor }
+		set_country_flag = ccshtool_modon_air_mission_xp_gain_factor
+	}
+}
+
+ccshtool_modon_air_mission_xp_gain_factor_clear = {
+	set_variable = { ccshtool_modv_air_mission_xp_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_mission_xp_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_mission_xp_gain_factor }
+		clr_country_flag = ccshtool_modon_air_mission_xp_gain_factor
+	}
+}
+
+ccshtool_modon_army_bonus_air_superiority_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_bonus_air_superiority_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_bonus_air_superiority_factor }
+		set_country_flag = ccshtool_modon_army_bonus_air_superiority_factor
+	}
+}
+
+ccshtool_modon_army_bonus_air_superiority_factor_clear = {
+	set_variable = { ccshtool_modv_army_bonus_air_superiority_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_bonus_air_superiority_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_bonus_air_superiority_factor }
+		clr_country_flag = ccshtool_modon_army_bonus_air_superiority_factor
+	}
+}
+
+ccshtool_modon_enemy_army_bonus_air_superiority_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_enemy_army_bonus_air_superiority_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_army_bonus_air_superiority_factor }
+		set_country_flag = ccshtool_modon_enemy_army_bonus_air_superiority_factor
+	}
+}
+
+ccshtool_modon_enemy_army_bonus_air_superiority_factor_clear = {
+	set_variable = { ccshtool_modv_enemy_army_bonus_air_superiority_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_enemy_army_bonus_air_superiority_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_army_bonus_air_superiority_factor }
+		clr_country_flag = ccshtool_modon_enemy_army_bonus_air_superiority_factor
+	}
+}
+
+ccshtool_modon_air_night_penalty_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_night_penalty } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_night_penalty }
+		set_country_flag = ccshtool_modon_air_night_penalty
+	}
+}
+
+ccshtool_modon_air_night_penalty_clear = {
+	set_variable = { ccshtool_modv_air_night_penalty = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_night_penalty }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_night_penalty }
+		clr_country_flag = ccshtool_modon_air_night_penalty
+	}
+}
+
+ccshtool_modon_air_weather_penalty_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_weather_penalty } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_weather_penalty }
+		set_country_flag = ccshtool_modon_air_weather_penalty
+	}
+}
+
+ccshtool_modon_air_weather_penalty_clear = {
+	set_variable = { ccshtool_modv_air_weather_penalty = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_weather_penalty }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_weather_penalty }
+		clr_country_flag = ccshtool_modon_air_weather_penalty
+	}
+}
+
+ccshtool_modon_air_accidents_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_accidents_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_accidents_factor }
+		set_country_flag = ccshtool_modon_air_accidents_factor
+	}
+}
+
+ccshtool_modon_air_accidents_factor_clear = {
+	set_variable = { ccshtool_modv_air_accidents_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_accidents_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_accidents_factor }
+		clr_country_flag = ccshtool_modon_air_accidents_factor
+	}
+}
+
+ccshtool_modon_air_strategic_bomber_night_penalty_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_strategic_bomber_night_penalty } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_strategic_bomber_night_penalty }
+		set_country_flag = ccshtool_modon_air_strategic_bomber_night_penalty
+	}
+}
+
+ccshtool_modon_air_strategic_bomber_night_penalty_clear = {
+	set_variable = { ccshtool_modv_air_strategic_bomber_night_penalty = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_strategic_bomber_night_penalty }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_strategic_bomber_night_penalty }
+		clr_country_flag = ccshtool_modon_air_strategic_bomber_night_penalty
+	}
+}
+
+ccshtool_modon_air_ace_generation_chance_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_ace_generation_chance_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_ace_generation_chance_factor }
+		set_country_flag = ccshtool_modon_air_ace_generation_chance_factor
+	}
+}
+
+ccshtool_modon_air_ace_generation_chance_factor_clear = {
+	set_variable = { ccshtool_modv_air_ace_generation_chance_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_ace_generation_chance_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_ace_generation_chance_factor }
+		clr_country_flag = ccshtool_modon_air_ace_generation_chance_factor
+	}
+}
+
+ccshtool_modon_air_cas_present_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_cas_present_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_cas_present_factor }
+		set_country_flag = ccshtool_modon_air_cas_present_factor
+	}
+}
+
+ccshtool_modon_air_cas_present_factor_clear = {
+	set_variable = { ccshtool_modv_air_cas_present_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_cas_present_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_cas_present_factor }
+		clr_country_flag = ccshtool_modon_air_cas_present_factor
+	}
+}
+
+ccshtool_modon_air_strategic_bomber_bombing_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_strategic_bomber_bombing_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_strategic_bomber_bombing_factor }
+		set_country_flag = ccshtool_modon_air_strategic_bomber_bombing_factor
+	}
+}
+
+ccshtool_modon_air_strategic_bomber_bombing_factor_clear = {
+	set_variable = { ccshtool_modv_air_strategic_bomber_bombing_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_strategic_bomber_bombing_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_strategic_bomber_bombing_factor }
+		clr_country_flag = ccshtool_modon_air_strategic_bomber_bombing_factor
+	}
+}
+
+ccshtool_modon_air_mission_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_mission_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_mission_efficiency }
+		set_country_flag = ccshtool_modon_air_mission_efficiency
+	}
+}
+
+ccshtool_modon_air_mission_efficiency_clear = {
+	set_variable = { ccshtool_modv_air_mission_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_mission_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_mission_efficiency }
+		clr_country_flag = ccshtool_modon_air_mission_efficiency
+	}
+}
+
+ccshtool_modon_air_superiority_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_superiority_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_superiority_efficiency }
+		set_country_flag = ccshtool_modon_air_superiority_efficiency
+	}
+}
+
+ccshtool_modon_air_superiority_efficiency_clear = {
+	set_variable = { ccshtool_modv_air_superiority_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_superiority_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_superiority_efficiency }
+		clr_country_flag = ccshtool_modon_air_superiority_efficiency
+	}
+}
+
+ccshtool_modon_air_escort_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_escort_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_escort_efficiency }
+		set_country_flag = ccshtool_modon_air_escort_efficiency
+	}
+}
+
+ccshtool_modon_air_escort_efficiency_clear = {
+	set_variable = { ccshtool_modv_air_escort_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_escort_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_escort_efficiency }
+		clr_country_flag = ccshtool_modon_air_escort_efficiency
+	}
+}
+
+ccshtool_modon_air_intercept_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_intercept_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_intercept_efficiency }
+		set_country_flag = ccshtool_modon_air_intercept_efficiency
+	}
+}
+
+ccshtool_modon_air_intercept_efficiency_clear = {
+	set_variable = { ccshtool_modv_air_intercept_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_intercept_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_intercept_efficiency }
+		clr_country_flag = ccshtool_modon_air_intercept_efficiency
+	}
+}
+
+ccshtool_modon_air_cas_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_cas_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_cas_efficiency }
+		set_country_flag = ccshtool_modon_air_cas_efficiency
+	}
+}
+
+ccshtool_modon_air_cas_efficiency_clear = {
+	set_variable = { ccshtool_modv_air_cas_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_cas_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_cas_efficiency }
+		clr_country_flag = ccshtool_modon_air_cas_efficiency
+	}
+}
+
+ccshtool_modon_air_nav_efficiency_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_nav_efficiency } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_nav_efficiency }
+		set_country_flag = ccshtool_modon_air_nav_efficiency
+	}
+}
+
+ccshtool_modon_air_nav_efficiency_clear = {
+	set_variable = { ccshtool_modv_air_nav_efficiency = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_nav_efficiency }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_nav_efficiency }
+		clr_country_flag = ccshtool_modon_air_nav_efficiency
+	}
+}
+
+ccshtool_modon_naval_strike_targetting_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_naval_strike_targetting_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_naval_strike_targetting_factor }
+		set_country_flag = ccshtool_modon_naval_strike_targetting_factor
+	}
+}
+
+ccshtool_modon_naval_strike_targetting_factor_clear = {
+	set_variable = { ccshtool_modv_naval_strike_targetting_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_naval_strike_targetting_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_naval_strike_targetting_factor }
+		clr_country_flag = ccshtool_modon_naval_strike_targetting_factor
+	}
+}
+
+ccshtool_modon_air_bombing_targetting_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_bombing_targetting } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_bombing_targetting }
+		set_country_flag = ccshtool_modon_air_bombing_targetting
+	}
+}
+
+ccshtool_modon_air_bombing_targetting_clear = {
+	set_variable = { ccshtool_modv_air_bombing_targetting = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_bombing_targetting }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_bombing_targetting }
+		clr_country_flag = ccshtool_modon_air_bombing_targetting
+	}
+}
+
+ccshtool_modon_air_detection_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_detection } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_detection }
+		set_country_flag = ccshtool_modon_air_detection
+	}
+}
+
+ccshtool_modon_air_detection_clear = {
+	set_variable = { ccshtool_modv_air_detection = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_detection }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_detection }
+		clr_country_flag = ccshtool_modon_air_detection
+	}
+}
+
+ccshtool_modon_air_interception_detect_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_interception_detect_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_interception_detect_factor }
+		set_country_flag = ccshtool_modon_air_interception_detect_factor
+	}
+}
+
+ccshtool_modon_air_interception_detect_factor_clear = {
+	set_variable = { ccshtool_modv_air_interception_detect_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_interception_detect_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_interception_detect_factor }
+		clr_country_flag = ccshtool_modon_air_interception_detect_factor
+	}
+}
+
+ccshtool_modon_air_superiority_detect_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_air_superiority_detect_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_air_superiority_detect_factor }
+		set_country_flag = ccshtool_modon_air_superiority_detect_factor
+	}
+}
+
+ccshtool_modon_air_superiority_detect_factor_clear = {
+	set_variable = { ccshtool_modv_air_superiority_detect_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_air_superiority_detect_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_air_superiority_detect_factor }
+		clr_country_flag = ccshtool_modon_air_superiority_detect_factor
+	}
+}
+
+ccshtool_modon_research_speed_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_research_speed_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_research_speed_factor }
+		set_country_flag = ccshtool_modon_research_speed_factor
+	}
+}
+
+ccshtool_modon_research_speed_factor_clear = {
+	set_variable = { ccshtool_modv_research_speed_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_research_speed_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_research_speed_factor }
+		clr_country_flag = ccshtool_modon_research_speed_factor
+	}
+}
+
+ccshtool_modon_experience_gain_army_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_army } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army }
+		set_country_flag = ccshtool_modon_experience_gain_army
+	}
+}
+
+ccshtool_modon_experience_gain_army_clear = {
+	set_variable = { ccshtool_modv_experience_gain_army = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_army }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army }
+		clr_country_flag = ccshtool_modon_experience_gain_army
+	}
+}
+
+ccshtool_modon_experience_gain_army_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_army_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army_factor }
+		set_country_flag = ccshtool_modon_experience_gain_army_factor
+	}
+}
+
+ccshtool_modon_experience_gain_army_factor_clear = {
+	set_variable = { ccshtool_modv_experience_gain_army_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_army_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_army_factor }
+		clr_country_flag = ccshtool_modon_experience_gain_army_factor
+	}
+}
+
+ccshtool_modon_experience_gain_navy_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_navy } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy }
+		set_country_flag = ccshtool_modon_experience_gain_navy
+	}
+}
+
+ccshtool_modon_experience_gain_navy_clear = {
+	set_variable = { ccshtool_modv_experience_gain_navy = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_navy }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy }
+		clr_country_flag = ccshtool_modon_experience_gain_navy
+	}
+}
+
+ccshtool_modon_experience_gain_navy_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_navy_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy_factor }
+		set_country_flag = ccshtool_modon_experience_gain_navy_factor
+	}
+}
+
+ccshtool_modon_experience_gain_navy_factor_clear = {
+	set_variable = { ccshtool_modv_experience_gain_navy_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_navy_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_navy_factor }
+		clr_country_flag = ccshtool_modon_experience_gain_navy_factor
+	}
+}
+
+ccshtool_modon_experience_gain_air_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_air } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_air }
+		set_country_flag = ccshtool_modon_experience_gain_air
+	}
+}
+
+ccshtool_modon_experience_gain_air_clear = {
+	set_variable = { ccshtool_modv_experience_gain_air = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_air }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_air }
+		clr_country_flag = ccshtool_modon_experience_gain_air
+	}
+}
+
+ccshtool_modon_experience_gain_air_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_experience_gain_air_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_air_factor }
+		set_country_flag = ccshtool_modon_experience_gain_air_factor
+	}
+}
+
+ccshtool_modon_experience_gain_air_factor_clear = {
+	set_variable = { ccshtool_modv_experience_gain_air_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_experience_gain_air_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_experience_gain_air_factor }
+		clr_country_flag = ccshtool_modon_experience_gain_air_factor
+	}
+}
+
+ccshtool_modon_decryption_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_decryption_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_decryption_factor }
+		set_country_flag = ccshtool_modon_decryption_factor
+	}
+}
+
+ccshtool_modon_decryption_factor_clear = {
+	set_variable = { ccshtool_modv_decryption_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_decryption_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_decryption_factor }
+		clr_country_flag = ccshtool_modon_decryption_factor
+	}
+}
+
+ccshtool_modon_encryption_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_encryption_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_encryption_factor }
+		set_country_flag = ccshtool_modon_encryption_factor
+	}
+}
+
+ccshtool_modon_encryption_factor_clear = {
+	set_variable = { ccshtool_modv_encryption_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_encryption_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_encryption_factor }
+		clr_country_flag = ccshtool_modon_encryption_factor
+	}
+}
+
+ccshtool_modon_civilian_intel_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_civilian_intel_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_civilian_intel_factor }
+		set_country_flag = ccshtool_modon_civilian_intel_factor
+	}
+}
+
+ccshtool_modon_civilian_intel_factor_clear = {
+	set_variable = { ccshtool_modv_civilian_intel_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_civilian_intel_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_civilian_intel_factor }
+		clr_country_flag = ccshtool_modon_civilian_intel_factor
+	}
+}
+
+ccshtool_modon_army_intel_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_intel_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_intel_factor }
+		set_country_flag = ccshtool_modon_army_intel_factor
+	}
+}
+
+ccshtool_modon_army_intel_factor_clear = {
+	set_variable = { ccshtool_modv_army_intel_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_intel_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_intel_factor }
+		clr_country_flag = ccshtool_modon_army_intel_factor
+	}
+}
+
+ccshtool_modon_navy_intel_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_intel_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_intel_factor }
+		set_country_flag = ccshtool_modon_navy_intel_factor
+	}
+}
+
+ccshtool_modon_navy_intel_factor_clear = {
+	set_variable = { ccshtool_modv_navy_intel_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_intel_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_intel_factor }
+		clr_country_flag = ccshtool_modon_navy_intel_factor
+	}
+}
+
+ccshtool_modon_airforce_intel_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_airforce_intel_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_airforce_intel_factor }
+		set_country_flag = ccshtool_modon_airforce_intel_factor
+	}
+}
+
+ccshtool_modon_airforce_intel_factor_clear = {
+	set_variable = { ccshtool_modv_airforce_intel_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_airforce_intel_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_airforce_intel_factor }
+		clr_country_flag = ccshtool_modon_airforce_intel_factor
+	}
+}
+
+ccshtool_modon_operative_slot_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_operative_slot } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_operative_slot }
+		set_country_flag = ccshtool_modon_operative_slot
+	}
+}
+
+ccshtool_modon_operative_slot_clear = {
+	set_variable = { ccshtool_modv_operative_slot = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_operative_slot }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_operative_slot }
+		clr_country_flag = ccshtool_modon_operative_slot
+	}
+}
+
+ccshtool_modon_new_operative_slot_bonus_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_new_operative_slot_bonus } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_new_operative_slot_bonus }
+		set_country_flag = ccshtool_modon_new_operative_slot_bonus
+	}
+}
+
+ccshtool_modon_new_operative_slot_bonus_clear = {
+	set_variable = { ccshtool_modv_new_operative_slot_bonus = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_new_operative_slot_bonus }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_new_operative_slot_bonus }
+		clr_country_flag = ccshtool_modon_new_operative_slot_bonus
+	}
+}
+
+ccshtool_modon_agency_upgrade_time_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_agency_upgrade_time } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_agency_upgrade_time }
+		set_country_flag = ccshtool_modon_agency_upgrade_time
+	}
+}
+
+ccshtool_modon_agency_upgrade_time_clear = {
+	set_variable = { ccshtool_modv_agency_upgrade_time = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_agency_upgrade_time }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_agency_upgrade_time }
+		clr_country_flag = ccshtool_modon_agency_upgrade_time
+	}
+}
+
+ccshtool_modon_intelligence_agency_defense_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_intelligence_agency_defense } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_intelligence_agency_defense }
+		set_country_flag = ccshtool_modon_intelligence_agency_defense
+	}
+}
+
+ccshtool_modon_intelligence_agency_defense_clear = {
+	set_variable = { ccshtool_modv_intelligence_agency_defense = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_intelligence_agency_defense }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_intelligence_agency_defense }
+		clr_country_flag = ccshtool_modon_intelligence_agency_defense
+	}
+}
+
+ccshtool_modon_defense_impact_on_blueprint_stealing_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_defense_impact_on_blueprint_stealing } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_defense_impact_on_blueprint_stealing }
+		set_country_flag = ccshtool_modon_defense_impact_on_blueprint_stealing
+	}
+}
+
+ccshtool_modon_defense_impact_on_blueprint_stealing_clear = {
+	set_variable = { ccshtool_modv_defense_impact_on_blueprint_stealing = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_defense_impact_on_blueprint_stealing }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_defense_impact_on_blueprint_stealing }
+		clr_country_flag = ccshtool_modon_defense_impact_on_blueprint_stealing
+	}
+}
+
+ccshtool_modon_intel_network_gain_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_intel_network_gain } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_intel_network_gain }
+		set_country_flag = ccshtool_modon_intel_network_gain
+	}
+}
+
+ccshtool_modon_intel_network_gain_clear = {
+	set_variable = { ccshtool_modv_intel_network_gain = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_intel_network_gain }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_intel_network_gain }
+		clr_country_flag = ccshtool_modon_intel_network_gain
+	}
+}
+
+ccshtool_modon_intel_network_gain_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_intel_network_gain_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_intel_network_gain_factor }
+		set_country_flag = ccshtool_modon_intel_network_gain_factor
+	}
+}
+
+ccshtool_modon_intel_network_gain_factor_clear = {
+	set_variable = { ccshtool_modv_intel_network_gain_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_intel_network_gain_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_intel_network_gain_factor }
+		clr_country_flag = ccshtool_modon_intel_network_gain_factor
+	}
+}
+
+ccshtool_modon_intel_from_operatives_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_intel_from_operatives_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_intel_from_operatives_factor }
+		set_country_flag = ccshtool_modon_intel_from_operatives_factor
+	}
+}
+
+ccshtool_modon_intel_from_operatives_factor_clear = {
+	set_variable = { ccshtool_modv_intel_from_operatives_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_intel_from_operatives_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_intel_from_operatives_factor }
+		clr_country_flag = ccshtool_modon_intel_from_operatives_factor
+	}
+}
+
+ccshtool_modon_boost_ideology_mission_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_boost_ideology_mission_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_boost_ideology_mission_factor }
+		set_country_flag = ccshtool_modon_boost_ideology_mission_factor
+	}
+}
+
+ccshtool_modon_boost_ideology_mission_factor_clear = {
+	set_variable = { ccshtool_modv_boost_ideology_mission_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_boost_ideology_mission_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_boost_ideology_mission_factor }
+		clr_country_flag = ccshtool_modon_boost_ideology_mission_factor
+	}
+}
+
+ccshtool_modon_control_trade_mission_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_control_trade_mission_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_control_trade_mission_factor }
+		set_country_flag = ccshtool_modon_control_trade_mission_factor
+	}
+}
+
+ccshtool_modon_control_trade_mission_factor_clear = {
+	set_variable = { ccshtool_modv_control_trade_mission_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_control_trade_mission_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_control_trade_mission_factor }
+		clr_country_flag = ccshtool_modon_control_trade_mission_factor
+	}
+}
+
+ccshtool_modon_propaganda_mission_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_propaganda_mission_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_propaganda_mission_factor }
+		set_country_flag = ccshtool_modon_propaganda_mission_factor
+	}
+}
+
+ccshtool_modon_propaganda_mission_factor_clear = {
+	set_variable = { ccshtool_modv_propaganda_mission_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_propaganda_mission_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_propaganda_mission_factor }
+		clr_country_flag = ccshtool_modon_propaganda_mission_factor
+	}
+}
+
+ccshtool_modon_diplomatic_pressure_mission_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_diplomatic_pressure_mission_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_diplomatic_pressure_mission_factor }
+		set_country_flag = ccshtool_modon_diplomatic_pressure_mission_factor
+	}
+}
+
+ccshtool_modon_diplomatic_pressure_mission_factor_clear = {
+	set_variable = { ccshtool_modv_diplomatic_pressure_mission_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_diplomatic_pressure_mission_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_diplomatic_pressure_mission_factor }
+		clr_country_flag = ccshtool_modon_diplomatic_pressure_mission_factor
+	}
+}
+
+ccshtool_modon_boost_resistance_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_boost_resistance_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_boost_resistance_factor }
+		set_country_flag = ccshtool_modon_boost_resistance_factor
+	}
+}
+
+ccshtool_modon_boost_resistance_factor_clear = {
+	set_variable = { ccshtool_modv_boost_resistance_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_boost_resistance_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_boost_resistance_factor }
+		clr_country_flag = ccshtool_modon_boost_resistance_factor
+	}
+}
+
+ccshtool_modon_root_out_resistance_effectiveness_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_root_out_resistance_effectiveness_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_root_out_resistance_effectiveness_factor }
+		set_country_flag = ccshtool_modon_root_out_resistance_effectiveness_factor
+	}
+}
+
+ccshtool_modon_root_out_resistance_effectiveness_factor_clear = {
+	set_variable = { ccshtool_modv_root_out_resistance_effectiveness_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_root_out_resistance_effectiveness_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_root_out_resistance_effectiveness_factor }
+		clr_country_flag = ccshtool_modon_root_out_resistance_effectiveness_factor
+	}
+}
+
+ccshtool_modon_army_intel_decryption_bonus_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_army_intel_decryption_bonus } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_army_intel_decryption_bonus }
+		set_country_flag = ccshtool_modon_army_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_army_intel_decryption_bonus_clear = {
+	set_variable = { ccshtool_modv_army_intel_decryption_bonus = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_army_intel_decryption_bonus }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_army_intel_decryption_bonus }
+		clr_country_flag = ccshtool_modon_army_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_navy_intel_decryption_bonus_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_navy_intel_decryption_bonus } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_navy_intel_decryption_bonus }
+		set_country_flag = ccshtool_modon_navy_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_navy_intel_decryption_bonus_clear = {
+	set_variable = { ccshtool_modv_navy_intel_decryption_bonus = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_navy_intel_decryption_bonus }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_navy_intel_decryption_bonus }
+		clr_country_flag = ccshtool_modon_navy_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_airforce_intel_decryption_bonus_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_airforce_intel_decryption_bonus } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_airforce_intel_decryption_bonus }
+		set_country_flag = ccshtool_modon_airforce_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_airforce_intel_decryption_bonus_clear = {
+	set_variable = { ccshtool_modv_airforce_intel_decryption_bonus = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_airforce_intel_decryption_bonus }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_airforce_intel_decryption_bonus }
+		clr_country_flag = ccshtool_modon_airforce_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_civilian_intel_decryption_bonus_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_civilian_intel_decryption_bonus } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_civilian_intel_decryption_bonus }
+		set_country_flag = ccshtool_modon_civilian_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_civilian_intel_decryption_bonus_clear = {
+	set_variable = { ccshtool_modv_civilian_intel_decryption_bonus = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_civilian_intel_decryption_bonus }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_civilian_intel_decryption_bonus }
+		clr_country_flag = ccshtool_modon_civilian_intel_decryption_bonus
+	}
+}
+
+ccshtool_modon_own_operative_detection_chance_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_own_operative_detection_chance } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_own_operative_detection_chance }
+		set_country_flag = ccshtool_modon_own_operative_detection_chance
+	}
+}
+
+ccshtool_modon_own_operative_detection_chance_clear = {
+	set_variable = { ccshtool_modv_own_operative_detection_chance = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_own_operative_detection_chance }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_own_operative_detection_chance }
+		clr_country_flag = ccshtool_modon_own_operative_detection_chance
+	}
+}
+
+ccshtool_modon_own_operative_detection_chance_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_own_operative_detection_chance_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_own_operative_detection_chance_factor }
+		set_country_flag = ccshtool_modon_own_operative_detection_chance_factor
+	}
+}
+
+ccshtool_modon_own_operative_detection_chance_factor_clear = {
+	set_variable = { ccshtool_modv_own_operative_detection_chance_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_own_operative_detection_chance_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_own_operative_detection_chance_factor }
+		clr_country_flag = ccshtool_modon_own_operative_detection_chance_factor
+	}
+}
+
+ccshtool_modon_enemy_operative_recruitment_chance_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_enemy_operative_recruitment_chance } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_operative_recruitment_chance }
+		set_country_flag = ccshtool_modon_enemy_operative_recruitment_chance
+	}
+}
+
+ccshtool_modon_enemy_operative_recruitment_chance_clear = {
+	set_variable = { ccshtool_modv_enemy_operative_recruitment_chance = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_enemy_operative_recruitment_chance }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_operative_recruitment_chance }
+		clr_country_flag = ccshtool_modon_enemy_operative_recruitment_chance
+	}
+}
+
+ccshtool_modon_enemy_operative_detection_chance_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_enemy_operative_detection_chance } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_operative_detection_chance }
+		set_country_flag = ccshtool_modon_enemy_operative_detection_chance
+	}
+}
+
+ccshtool_modon_enemy_operative_detection_chance_clear = {
+	set_variable = { ccshtool_modv_enemy_operative_detection_chance = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_enemy_operative_detection_chance }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_operative_detection_chance }
+		clr_country_flag = ccshtool_modon_enemy_operative_detection_chance
+	}
+}
+
+ccshtool_modon_enemy_operative_detection_chance_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_enemy_operative_detection_chance_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_operative_detection_chance_factor }
+		set_country_flag = ccshtool_modon_enemy_operative_detection_chance_factor
+	}
+}
+
+ccshtool_modon_enemy_operative_detection_chance_factor_clear = {
+	set_variable = { ccshtool_modv_enemy_operative_detection_chance_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_enemy_operative_detection_chance_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_enemy_operative_detection_chance_factor }
+		clr_country_flag = ccshtool_modon_enemy_operative_detection_chance_factor
+	}
+}
+
+ccshtool_modon_crypto_strength_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_crypto_strength } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_crypto_strength }
+		set_country_flag = ccshtool_modon_crypto_strength
+	}
+}
+
+ccshtool_modon_crypto_strength_clear = {
+	set_variable = { ccshtool_modv_crypto_strength = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_crypto_strength }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_crypto_strength }
+		clr_country_flag = ccshtool_modon_crypto_strength
+	}
+}
+
+ccshtool_modon_decryption_power_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_decryption_power } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_decryption_power }
+		set_country_flag = ccshtool_modon_decryption_power
+	}
+}
+
+ccshtool_modon_decryption_power_clear = {
+	set_variable = { ccshtool_modv_decryption_power = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_decryption_power }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_decryption_power }
+		clr_country_flag = ccshtool_modon_decryption_power
+	}
+}
+
+ccshtool_modon_decryption_power_factor_post = {
+	if = {
+		limit = { NOT = { has_country_flag = ccshtool_modon_decryption_power_factor } }
+		add_dynamic_modifier = { modifier = ccshtool_dynmod_decryption_power_factor }
+		set_country_flag = ccshtool_modon_decryption_power_factor
+	}
+}
+
+ccshtool_modon_decryption_power_factor_clear = {
+	set_variable = { ccshtool_modv_decryption_power_factor = 0 }
+	if = {
+		limit = { has_country_flag = ccshtool_modon_decryption_power_factor }
+		remove_dynamic_modifier = { modifier = ccshtool_dynmod_decryption_power_factor }
+		clr_country_flag = ccshtool_modon_decryption_power_factor
+	}
+}
+
+# Mirror the Target's values onto the globals the panel prints.
+# Runs in the TARGET's scope: the right-hand side resolves on the
+# current scope, the left-hand side is global either way.
+ccshtool_modsync = {
+	set_variable = { global.ccshtool_modshow_political_power_factor = ccshtool_modv_political_power_factor }
+	set_variable = { global.ccshtool_modshow_political_power_gain = ccshtool_modv_political_power_gain }
+	set_variable = { global.ccshtool_modshow_legitimacy_daily = ccshtool_modv_legitimacy_daily }
+	set_variable = { global.ccshtool_modshow_legitimacy_gain_factor = ccshtool_modv_legitimacy_gain_factor }
+	set_variable = { global.ccshtool_modshow_stability_factor = ccshtool_modv_stability_factor }
+	set_variable = { global.ccshtool_modshow_stability_weekly = ccshtool_modv_stability_weekly }
+	set_variable = { global.ccshtool_modshow_war_support_factor = ccshtool_modv_war_support_factor }
+	set_variable = { global.ccshtool_modshow_war_support_weekly = ccshtool_modv_war_support_weekly }
+	set_variable = { global.ccshtool_modshow_surrender_limit = ccshtool_modv_surrender_limit }
+	set_variable = { global.ccshtool_modshow_max_surrender_limit_offset = ccshtool_modv_max_surrender_limit_offset }
+	set_variable = { global.ccshtool_modshow_totalist_drift = ccshtool_modv_totalist_drift }
+	set_variable = { global.ccshtool_modshow_syndicalist_drift = ccshtool_modv_syndicalist_drift }
+	set_variable = { global.ccshtool_modshow_radical_socialist_drift = ccshtool_modv_radical_socialist_drift }
+	set_variable = { global.ccshtool_modshow_social_democrat_drift = ccshtool_modv_social_democrat_drift }
+	set_variable = { global.ccshtool_modshow_social_liberal_drift = ccshtool_modv_social_liberal_drift }
+	set_variable = { global.ccshtool_modshow_market_liberal_drift = ccshtool_modv_market_liberal_drift }
+	set_variable = { global.ccshtool_modshow_social_conservative_drift = ccshtool_modv_social_conservative_drift }
+	set_variable = { global.ccshtool_modshow_authoritarian_democrat_drift = ccshtool_modv_authoritarian_democrat_drift }
+	set_variable = { global.ccshtool_modshow_paternal_autocrat_drift = ccshtool_modv_paternal_autocrat_drift }
+	set_variable = { global.ccshtool_modshow_national_populist_drift = ccshtool_modv_national_populist_drift }
+	set_variable = { global.ccshtool_modshow_autonomy_gain = ccshtool_modv_autonomy_gain }
+	set_variable = { global.ccshtool_modshow_subjects_autonomy_gain = ccshtool_modv_subjects_autonomy_gain }
+	set_variable = { global.ccshtool_modshow_justify_war_goal_time = ccshtool_modv_justify_war_goal_time }
+	set_variable = { global.ccshtool_modshow_enemy_justify_war_goal_time = ccshtool_modv_enemy_justify_war_goal_time }
+	set_variable = { global.ccshtool_modshow_foreign_subversive_activites = ccshtool_modv_foreign_subversive_activites }
+	set_variable = { global.ccshtool_modshow_subversive_activites_upkeep = ccshtool_modv_subversive_activites_upkeep }
+	set_variable = { global.ccshtool_modshow_guarantee_cost = ccshtool_modv_guarantee_cost }
+	set_variable = { global.ccshtool_modshow_send_volunteer_divisions_required = ccshtool_modv_send_volunteer_divisions_required }
+	set_variable = { global.ccshtool_modshow_send_volunteer_size = ccshtool_modv_send_volunteer_size }
+	set_variable = { global.ccshtool_modshow_air_volunteer_cap = ccshtool_modv_air_volunteer_cap }
+	set_variable = { global.ccshtool_modshow_guarantee_tension = ccshtool_modv_guarantee_tension }
+	set_variable = { global.ccshtool_modshow_lend_lease_tension = ccshtool_modv_lend_lease_tension }
+	set_variable = { global.ccshtool_modshow_send_volunteers_tension = ccshtool_modv_send_volunteers_tension }
+	set_variable = { global.ccshtool_modshow_join_faction_tension = ccshtool_modv_join_faction_tension }
+	set_variable = { global.ccshtool_modshow_generate_wargoal_tension = ccshtool_modv_generate_wargoal_tension }
+	set_variable = { global.ccshtool_modshow_global_building_slots_factor = ccshtool_modv_global_building_slots_factor }
+	set_variable = { global.ccshtool_modshow_production_speed_buildings_factor = ccshtool_modv_production_speed_buildings_factor }
+	set_variable = { global.ccshtool_modshow_industry_repair_factor = ccshtool_modv_industry_repair_factor }
+	set_variable = { global.ccshtool_modshow_industry_free_repair_factor = ccshtool_modv_industry_free_repair_factor }
+	set_variable = { global.ccshtool_modshow_local_resources_factor = ccshtool_modv_local_resources_factor }
+	set_variable = { global.ccshtool_modshow_fuel_gain_factor = ccshtool_modv_fuel_gain_factor }
+	set_variable = { global.ccshtool_modshow_fuel_gain_factor_from_states = ccshtool_modv_fuel_gain_factor_from_states }
+	set_variable = { global.ccshtool_modshow_base_fuel_gain = ccshtool_modv_base_fuel_gain }
+	set_variable = { global.ccshtool_modshow_base_fuel_gain_factor = ccshtool_modv_base_fuel_gain_factor }
+	set_variable = { global.ccshtool_modshow_production_factory_max_efficiency_factor = ccshtool_modv_production_factory_max_efficiency_factor }
+	set_variable = { global.ccshtool_modshow_production_factory_efficiency_gain_factor = ccshtool_modv_production_factory_efficiency_gain_factor }
+	set_variable = { global.ccshtool_modshow_production_factory_start_efficiency_factor = ccshtool_modv_production_factory_start_efficiency_factor }
+	set_variable = { global.ccshtool_modshow_industrial_capacity_factory = ccshtool_modv_industrial_capacity_factory }
+	set_variable = { global.ccshtool_modshow_industrial_capacity_dockyard = ccshtool_modv_industrial_capacity_dockyard }
+	set_variable = { global.ccshtool_modshow_nuclear_production = ccshtool_modv_nuclear_production }
+	set_variable = { global.ccshtool_modshow_nuclear_production_factor = ccshtool_modv_nuclear_production_factor }
+	set_variable = { global.ccshtool_modshow_monthly_population = ccshtool_modv_monthly_population }
+	set_variable = { global.ccshtool_modshow_consumer_goods_factor = ccshtool_modv_consumer_goods_factor }
+	set_variable = { global.ccshtool_modshow_min_export = ccshtool_modv_min_export }
+	set_variable = { global.ccshtool_modshow_resistance_target = ccshtool_modv_resistance_target }
+	set_variable = { global.ccshtool_modshow_resistance_target_on_our_occupied_states = ccshtool_modv_resistance_target_on_our_occupied_states }
+	set_variable = { global.ccshtool_modshow_resistance_growth = ccshtool_modv_resistance_growth }
+	set_variable = { global.ccshtool_modshow_resistance_damage_to_garrison = ccshtool_modv_resistance_damage_to_garrison }
+	set_variable = { global.ccshtool_modshow_starting_compliance = ccshtool_modv_starting_compliance }
+	set_variable = { global.ccshtool_modshow_compliance_gain = ccshtool_modv_compliance_gain }
+	set_variable = { global.ccshtool_modshow_compliance_growth = ccshtool_modv_compliance_growth }
+	set_variable = { global.ccshtool_modshow_compliance_growth_on_our_occupied_states = ccshtool_modv_compliance_growth_on_our_occupied_states }
+	set_variable = { global.ccshtool_modshow_max_command_power = ccshtool_modv_max_command_power }
+	set_variable = { global.ccshtool_modshow_command_power_gain = ccshtool_modv_command_power_gain }
+	set_variable = { global.ccshtool_modshow_command_power_gain_mult = ccshtool_modv_command_power_gain_mult }
+	set_variable = { global.ccshtool_modshow_conscription_factor = ccshtool_modv_conscription_factor }
+	set_variable = { global.ccshtool_modshow_conscription = ccshtool_modv_conscription }
+	set_variable = { global.ccshtool_modshow_non_core_manpower = ccshtool_modv_non_core_manpower }
+	set_variable = { global.ccshtool_modshow_army_attack_factor = ccshtool_modv_army_attack_factor }
+	set_variable = { global.ccshtool_modshow_army_defence_factor = ccshtool_modv_army_defence_factor }
+	set_variable = { global.ccshtool_modshow_army_core_attack_factor = ccshtool_modv_army_core_attack_factor }
+	set_variable = { global.ccshtool_modshow_army_core_defence_factor = ccshtool_modv_army_core_defence_factor }
+	set_variable = { global.ccshtool_modshow_army_speed_factor = ccshtool_modv_army_speed_factor }
+	set_variable = { global.ccshtool_modshow_minimum_training_level = ccshtool_modv_minimum_training_level }
+	set_variable = { global.ccshtool_modshow_training_time_factor = ccshtool_modv_training_time_factor }
+	set_variable = { global.ccshtool_modshow_special_forces_min = ccshtool_modv_special_forces_min }
+	set_variable = { global.ccshtool_modshow_special_forces_cap = ccshtool_modv_special_forces_cap }
+	set_variable = { global.ccshtool_modshow_experience_gain_army_unit = ccshtool_modv_experience_gain_army_unit }
+	set_variable = { global.ccshtool_modshow_experience_gain_army_unit_factor = ccshtool_modv_experience_gain_army_unit_factor }
+	set_variable = { global.ccshtool_modshow_experience_loss_factor = ccshtool_modv_experience_loss_factor }
+	set_variable = { global.ccshtool_modshow_army_org = ccshtool_modv_army_org }
+	set_variable = { global.ccshtool_modshow_army_org_factor = ccshtool_modv_army_org_factor }
+	set_variable = { global.ccshtool_modshow_army_org_regain = ccshtool_modv_army_org_regain }
+	set_variable = { global.ccshtool_modshow_org_loss_when_moving = ccshtool_modv_org_loss_when_moving }
+	set_variable = { global.ccshtool_modshow_army_morale = ccshtool_modv_army_morale }
+	set_variable = { global.ccshtool_modshow_army_morale_factor = ccshtool_modv_army_morale_factor }
+	set_variable = { global.ccshtool_modshow_land_reinforce_rate = ccshtool_modv_land_reinforce_rate }
+	set_variable = { global.ccshtool_modshow_max_planning = ccshtool_modv_max_planning }
+	set_variable = { global.ccshtool_modshow_planning_speed = ccshtool_modv_planning_speed }
+	set_variable = { global.ccshtool_modshow_attrition = ccshtool_modv_attrition }
+	set_variable = { global.ccshtool_modshow_heat_attrition_factor = ccshtool_modv_heat_attrition_factor }
+	set_variable = { global.ccshtool_modshow_winter_attrition_factor = ccshtool_modv_winter_attrition_factor }
+	set_variable = { global.ccshtool_modshow_acclimatization_cold_climate_gain_factor = ccshtool_modv_acclimatization_cold_climate_gain_factor }
+	set_variable = { global.ccshtool_modshow_acclimatization_hot_climate_gain_factor = ccshtool_modv_acclimatization_hot_climate_gain_factor }
+	set_variable = { global.ccshtool_modshow_terrain_penalty_reduction = ccshtool_modv_terrain_penalty_reduction }
+	set_variable = { global.ccshtool_modshow_max_dig_in = ccshtool_modv_max_dig_in }
+	set_variable = { global.ccshtool_modshow_max_dig_in_factor = ccshtool_modv_max_dig_in_factor }
+	set_variable = { global.ccshtool_modshow_dig_in_speed = ccshtool_modv_dig_in_speed }
+	set_variable = { global.ccshtool_modshow_dig_in_speed_factor = ccshtool_modv_dig_in_speed_factor }
+	set_variable = { global.ccshtool_modshow_supply_consumption_factor = ccshtool_modv_supply_consumption_factor }
+	set_variable = { global.ccshtool_modshow_out_of_supply_factor = ccshtool_modv_out_of_supply_factor }
+	set_variable = { global.ccshtool_modshow_no_supply_grace = ccshtool_modv_no_supply_grace }
+	set_variable = { global.ccshtool_modshow_amphibious_invasion = ccshtool_modv_amphibious_invasion }
+	set_variable = { global.ccshtool_modshow_invasion_preparation = ccshtool_modv_invasion_preparation }
+	set_variable = { global.ccshtool_modshow_land_night_attack = ccshtool_modv_land_night_attack }
+	set_variable = { global.ccshtool_modshow_army_leader_start_level = ccshtool_modv_army_leader_start_level }
+	set_variable = { global.ccshtool_modshow_army_leader_start_attack_level = ccshtool_modv_army_leader_start_attack_level }
+	set_variable = { global.ccshtool_modshow_army_leader_start_defense_level = ccshtool_modv_army_leader_start_defense_level }
+	set_variable = { global.ccshtool_modshow_army_leader_start_planning_level = ccshtool_modv_army_leader_start_planning_level }
+	set_variable = { global.ccshtool_modshow_army_leader_start_logistics_level = ccshtool_modv_army_leader_start_logistics_level }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy_unit = ccshtool_modv_experience_gain_navy_unit }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy_unit_factor = ccshtool_modv_experience_gain_navy_unit_factor }
+	set_variable = { global.ccshtool_modshow_naval_speed_factor = ccshtool_modv_naval_speed_factor }
+	set_variable = { global.ccshtool_modshow_navy_max_range_factor = ccshtool_modv_navy_max_range_factor }
+	set_variable = { global.ccshtool_modshow_sortie_efficiency = ccshtool_modv_sortie_efficiency }
+	set_variable = { global.ccshtool_modshow_naval_hit_chance = ccshtool_modv_naval_hit_chance }
+	set_variable = { global.ccshtool_modshow_naval_coordination = ccshtool_modv_naval_coordination }
+	set_variable = { global.ccshtool_modshow_ships_at_battle_start = ccshtool_modv_ships_at_battle_start }
+	set_variable = { global.ccshtool_modshow_naval_retreat_speed = ccshtool_modv_naval_retreat_speed }
+	set_variable = { global.ccshtool_modshow_naval_retreat_chance = ccshtool_modv_naval_retreat_chance }
+	set_variable = { global.ccshtool_modshow_convoy_escort_efficiency = ccshtool_modv_convoy_escort_efficiency }
+	set_variable = { global.ccshtool_modshow_convoy_raiding_efficiency_factor = ccshtool_modv_convoy_raiding_efficiency_factor }
+	set_variable = { global.ccshtool_modshow_navy_submarine_detection_factor = ccshtool_modv_navy_submarine_detection_factor }
+	set_variable = { global.ccshtool_modshow_navy_anti_air_attack_factor = ccshtool_modv_navy_anti_air_attack_factor }
+	set_variable = { global.ccshtool_modshow_naval_invasion_capacity = ccshtool_modv_naval_invasion_capacity }
+	set_variable = { global.ccshtool_modshow_carrier_capacity_penalty_reduction = ccshtool_modv_carrier_capacity_penalty_reduction }
+	set_variable = { global.ccshtool_modshow_port_strike = ccshtool_modv_port_strike }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_level = ccshtool_modv_navy_leader_start_level }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_attack_level = ccshtool_modv_navy_leader_start_attack_level }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_defense_level = ccshtool_modv_navy_leader_start_defense_level }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_maneuvering_level = ccshtool_modv_navy_leader_start_maneuvering_level }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_coordination_level = ccshtool_modv_navy_leader_start_coordination_level }
+	set_variable = { global.ccshtool_modshow_air_range_factor = ccshtool_modv_air_range_factor }
+	set_variable = { global.ccshtool_modshow_air_training_xp_gain_factor = ccshtool_modv_air_training_xp_gain_factor }
+	set_variable = { global.ccshtool_modshow_air_mission_xp_gain_factor = ccshtool_modv_air_mission_xp_gain_factor }
+	set_variable = { global.ccshtool_modshow_army_bonus_air_superiority_factor = ccshtool_modv_army_bonus_air_superiority_factor }
+	set_variable = { global.ccshtool_modshow_enemy_army_bonus_air_superiority_factor = ccshtool_modv_enemy_army_bonus_air_superiority_factor }
+	set_variable = { global.ccshtool_modshow_air_night_penalty = ccshtool_modv_air_night_penalty }
+	set_variable = { global.ccshtool_modshow_air_weather_penalty = ccshtool_modv_air_weather_penalty }
+	set_variable = { global.ccshtool_modshow_air_accidents_factor = ccshtool_modv_air_accidents_factor }
+	set_variable = { global.ccshtool_modshow_air_strategic_bomber_night_penalty = ccshtool_modv_air_strategic_bomber_night_penalty }
+	set_variable = { global.ccshtool_modshow_air_ace_generation_chance_factor = ccshtool_modv_air_ace_generation_chance_factor }
+	set_variable = { global.ccshtool_modshow_air_cas_present_factor = ccshtool_modv_air_cas_present_factor }
+	set_variable = { global.ccshtool_modshow_air_strategic_bomber_bombing_factor = ccshtool_modv_air_strategic_bomber_bombing_factor }
+	set_variable = { global.ccshtool_modshow_air_mission_efficiency = ccshtool_modv_air_mission_efficiency }
+	set_variable = { global.ccshtool_modshow_air_superiority_efficiency = ccshtool_modv_air_superiority_efficiency }
+	set_variable = { global.ccshtool_modshow_air_escort_efficiency = ccshtool_modv_air_escort_efficiency }
+	set_variable = { global.ccshtool_modshow_air_intercept_efficiency = ccshtool_modv_air_intercept_efficiency }
+	set_variable = { global.ccshtool_modshow_air_cas_efficiency = ccshtool_modv_air_cas_efficiency }
+	set_variable = { global.ccshtool_modshow_air_nav_efficiency = ccshtool_modv_air_nav_efficiency }
+	set_variable = { global.ccshtool_modshow_naval_strike_targetting_factor = ccshtool_modv_naval_strike_targetting_factor }
+	set_variable = { global.ccshtool_modshow_air_bombing_targetting = ccshtool_modv_air_bombing_targetting }
+	set_variable = { global.ccshtool_modshow_air_detection = ccshtool_modv_air_detection }
+	set_variable = { global.ccshtool_modshow_air_interception_detect_factor = ccshtool_modv_air_interception_detect_factor }
+	set_variable = { global.ccshtool_modshow_air_superiority_detect_factor = ccshtool_modv_air_superiority_detect_factor }
+	set_variable = { global.ccshtool_modshow_research_speed_factor = ccshtool_modv_research_speed_factor }
+	set_variable = { global.ccshtool_modshow_experience_gain_army = ccshtool_modv_experience_gain_army }
+	set_variable = { global.ccshtool_modshow_experience_gain_army_factor = ccshtool_modv_experience_gain_army_factor }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy = ccshtool_modv_experience_gain_navy }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy_factor = ccshtool_modv_experience_gain_navy_factor }
+	set_variable = { global.ccshtool_modshow_experience_gain_air = ccshtool_modv_experience_gain_air }
+	set_variable = { global.ccshtool_modshow_experience_gain_air_factor = ccshtool_modv_experience_gain_air_factor }
+	set_variable = { global.ccshtool_modshow_decryption_factor = ccshtool_modv_decryption_factor }
+	set_variable = { global.ccshtool_modshow_encryption_factor = ccshtool_modv_encryption_factor }
+	set_variable = { global.ccshtool_modshow_civilian_intel_factor = ccshtool_modv_civilian_intel_factor }
+	set_variable = { global.ccshtool_modshow_army_intel_factor = ccshtool_modv_army_intel_factor }
+	set_variable = { global.ccshtool_modshow_navy_intel_factor = ccshtool_modv_navy_intel_factor }
+	set_variable = { global.ccshtool_modshow_airforce_intel_factor = ccshtool_modv_airforce_intel_factor }
+	set_variable = { global.ccshtool_modshow_operative_slot = ccshtool_modv_operative_slot }
+	set_variable = { global.ccshtool_modshow_new_operative_slot_bonus = ccshtool_modv_new_operative_slot_bonus }
+	set_variable = { global.ccshtool_modshow_agency_upgrade_time = ccshtool_modv_agency_upgrade_time }
+	set_variable = { global.ccshtool_modshow_intelligence_agency_defense = ccshtool_modv_intelligence_agency_defense }
+	set_variable = { global.ccshtool_modshow_defense_impact_on_blueprint_stealing = ccshtool_modv_defense_impact_on_blueprint_stealing }
+	set_variable = { global.ccshtool_modshow_intel_network_gain = ccshtool_modv_intel_network_gain }
+	set_variable = { global.ccshtool_modshow_intel_network_gain_factor = ccshtool_modv_intel_network_gain_factor }
+	set_variable = { global.ccshtool_modshow_intel_from_operatives_factor = ccshtool_modv_intel_from_operatives_factor }
+	set_variable = { global.ccshtool_modshow_boost_ideology_mission_factor = ccshtool_modv_boost_ideology_mission_factor }
+	set_variable = { global.ccshtool_modshow_control_trade_mission_factor = ccshtool_modv_control_trade_mission_factor }
+	set_variable = { global.ccshtool_modshow_propaganda_mission_factor = ccshtool_modv_propaganda_mission_factor }
+	set_variable = { global.ccshtool_modshow_diplomatic_pressure_mission_factor = ccshtool_modv_diplomatic_pressure_mission_factor }
+	set_variable = { global.ccshtool_modshow_boost_resistance_factor = ccshtool_modv_boost_resistance_factor }
+	set_variable = { global.ccshtool_modshow_root_out_resistance_effectiveness_factor = ccshtool_modv_root_out_resistance_effectiveness_factor }
+	set_variable = { global.ccshtool_modshow_army_intel_decryption_bonus = ccshtool_modv_army_intel_decryption_bonus }
+	set_variable = { global.ccshtool_modshow_navy_intel_decryption_bonus = ccshtool_modv_navy_intel_decryption_bonus }
+	set_variable = { global.ccshtool_modshow_airforce_intel_decryption_bonus = ccshtool_modv_airforce_intel_decryption_bonus }
+	set_variable = { global.ccshtool_modshow_civilian_intel_decryption_bonus = ccshtool_modv_civilian_intel_decryption_bonus }
+	set_variable = { global.ccshtool_modshow_own_operative_detection_chance = ccshtool_modv_own_operative_detection_chance }
+	set_variable = { global.ccshtool_modshow_own_operative_detection_chance_factor = ccshtool_modv_own_operative_detection_chance_factor }
+	set_variable = { global.ccshtool_modshow_enemy_operative_recruitment_chance = ccshtool_modv_enemy_operative_recruitment_chance }
+	set_variable = { global.ccshtool_modshow_enemy_operative_detection_chance = ccshtool_modv_enemy_operative_detection_chance }
+	set_variable = { global.ccshtool_modshow_enemy_operative_detection_chance_factor = ccshtool_modv_enemy_operative_detection_chance_factor }
+	set_variable = { global.ccshtool_modshow_crypto_strength = ccshtool_modv_crypto_strength }
+	set_variable = { global.ccshtool_modshow_decryption_power = ccshtool_modv_decryption_power }
+	set_variable = { global.ccshtool_modshow_decryption_power_factor = ccshtool_modv_decryption_power_factor }
+}
+
+# The same globals back to zero, for when there is no Target at
+# all. Without it the panel would keep printing the numbers of
+# the country that WAS the Target.
+ccshtool_modsync_clear = {
+	set_variable = { global.ccshtool_modshow_political_power_factor = 0 }
+	set_variable = { global.ccshtool_modshow_political_power_gain = 0 }
+	set_variable = { global.ccshtool_modshow_legitimacy_daily = 0 }
+	set_variable = { global.ccshtool_modshow_legitimacy_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_stability_factor = 0 }
+	set_variable = { global.ccshtool_modshow_stability_weekly = 0 }
+	set_variable = { global.ccshtool_modshow_war_support_factor = 0 }
+	set_variable = { global.ccshtool_modshow_war_support_weekly = 0 }
+	set_variable = { global.ccshtool_modshow_surrender_limit = 0 }
+	set_variable = { global.ccshtool_modshow_max_surrender_limit_offset = 0 }
+	set_variable = { global.ccshtool_modshow_totalist_drift = 0 }
+	set_variable = { global.ccshtool_modshow_syndicalist_drift = 0 }
+	set_variable = { global.ccshtool_modshow_radical_socialist_drift = 0 }
+	set_variable = { global.ccshtool_modshow_social_democrat_drift = 0 }
+	set_variable = { global.ccshtool_modshow_social_liberal_drift = 0 }
+	set_variable = { global.ccshtool_modshow_market_liberal_drift = 0 }
+	set_variable = { global.ccshtool_modshow_social_conservative_drift = 0 }
+	set_variable = { global.ccshtool_modshow_authoritarian_democrat_drift = 0 }
+	set_variable = { global.ccshtool_modshow_paternal_autocrat_drift = 0 }
+	set_variable = { global.ccshtool_modshow_national_populist_drift = 0 }
+	set_variable = { global.ccshtool_modshow_autonomy_gain = 0 }
+	set_variable = { global.ccshtool_modshow_subjects_autonomy_gain = 0 }
+	set_variable = { global.ccshtool_modshow_justify_war_goal_time = 0 }
+	set_variable = { global.ccshtool_modshow_enemy_justify_war_goal_time = 0 }
+	set_variable = { global.ccshtool_modshow_foreign_subversive_activites = 0 }
+	set_variable = { global.ccshtool_modshow_subversive_activites_upkeep = 0 }
+	set_variable = { global.ccshtool_modshow_guarantee_cost = 0 }
+	set_variable = { global.ccshtool_modshow_send_volunteer_divisions_required = 0 }
+	set_variable = { global.ccshtool_modshow_send_volunteer_size = 0 }
+	set_variable = { global.ccshtool_modshow_air_volunteer_cap = 0 }
+	set_variable = { global.ccshtool_modshow_guarantee_tension = 0 }
+	set_variable = { global.ccshtool_modshow_lend_lease_tension = 0 }
+	set_variable = { global.ccshtool_modshow_send_volunteers_tension = 0 }
+	set_variable = { global.ccshtool_modshow_join_faction_tension = 0 }
+	set_variable = { global.ccshtool_modshow_generate_wargoal_tension = 0 }
+	set_variable = { global.ccshtool_modshow_global_building_slots_factor = 0 }
+	set_variable = { global.ccshtool_modshow_production_speed_buildings_factor = 0 }
+	set_variable = { global.ccshtool_modshow_industry_repair_factor = 0 }
+	set_variable = { global.ccshtool_modshow_industry_free_repair_factor = 0 }
+	set_variable = { global.ccshtool_modshow_local_resources_factor = 0 }
+	set_variable = { global.ccshtool_modshow_fuel_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_fuel_gain_factor_from_states = 0 }
+	set_variable = { global.ccshtool_modshow_base_fuel_gain = 0 }
+	set_variable = { global.ccshtool_modshow_base_fuel_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_production_factory_max_efficiency_factor = 0 }
+	set_variable = { global.ccshtool_modshow_production_factory_efficiency_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_production_factory_start_efficiency_factor = 0 }
+	set_variable = { global.ccshtool_modshow_industrial_capacity_factory = 0 }
+	set_variable = { global.ccshtool_modshow_industrial_capacity_dockyard = 0 }
+	set_variable = { global.ccshtool_modshow_nuclear_production = 0 }
+	set_variable = { global.ccshtool_modshow_nuclear_production_factor = 0 }
+	set_variable = { global.ccshtool_modshow_monthly_population = 0 }
+	set_variable = { global.ccshtool_modshow_consumer_goods_factor = 0 }
+	set_variable = { global.ccshtool_modshow_min_export = 0 }
+	set_variable = { global.ccshtool_modshow_resistance_target = 0 }
+	set_variable = { global.ccshtool_modshow_resistance_target_on_our_occupied_states = 0 }
+	set_variable = { global.ccshtool_modshow_resistance_growth = 0 }
+	set_variable = { global.ccshtool_modshow_resistance_damage_to_garrison = 0 }
+	set_variable = { global.ccshtool_modshow_starting_compliance = 0 }
+	set_variable = { global.ccshtool_modshow_compliance_gain = 0 }
+	set_variable = { global.ccshtool_modshow_compliance_growth = 0 }
+	set_variable = { global.ccshtool_modshow_compliance_growth_on_our_occupied_states = 0 }
+	set_variable = { global.ccshtool_modshow_max_command_power = 0 }
+	set_variable = { global.ccshtool_modshow_command_power_gain = 0 }
+	set_variable = { global.ccshtool_modshow_command_power_gain_mult = 0 }
+	set_variable = { global.ccshtool_modshow_conscription_factor = 0 }
+	set_variable = { global.ccshtool_modshow_conscription = 0 }
+	set_variable = { global.ccshtool_modshow_non_core_manpower = 0 }
+	set_variable = { global.ccshtool_modshow_army_attack_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_defence_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_core_attack_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_core_defence_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_speed_factor = 0 }
+	set_variable = { global.ccshtool_modshow_minimum_training_level = 0 }
+	set_variable = { global.ccshtool_modshow_training_time_factor = 0 }
+	set_variable = { global.ccshtool_modshow_special_forces_min = 0 }
+	set_variable = { global.ccshtool_modshow_special_forces_cap = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_army_unit = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_army_unit_factor = 0 }
+	set_variable = { global.ccshtool_modshow_experience_loss_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_org = 0 }
+	set_variable = { global.ccshtool_modshow_army_org_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_org_regain = 0 }
+	set_variable = { global.ccshtool_modshow_org_loss_when_moving = 0 }
+	set_variable = { global.ccshtool_modshow_army_morale = 0 }
+	set_variable = { global.ccshtool_modshow_army_morale_factor = 0 }
+	set_variable = { global.ccshtool_modshow_land_reinforce_rate = 0 }
+	set_variable = { global.ccshtool_modshow_max_planning = 0 }
+	set_variable = { global.ccshtool_modshow_planning_speed = 0 }
+	set_variable = { global.ccshtool_modshow_attrition = 0 }
+	set_variable = { global.ccshtool_modshow_heat_attrition_factor = 0 }
+	set_variable = { global.ccshtool_modshow_winter_attrition_factor = 0 }
+	set_variable = { global.ccshtool_modshow_acclimatization_cold_climate_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_acclimatization_hot_climate_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_terrain_penalty_reduction = 0 }
+	set_variable = { global.ccshtool_modshow_max_dig_in = 0 }
+	set_variable = { global.ccshtool_modshow_max_dig_in_factor = 0 }
+	set_variable = { global.ccshtool_modshow_dig_in_speed = 0 }
+	set_variable = { global.ccshtool_modshow_dig_in_speed_factor = 0 }
+	set_variable = { global.ccshtool_modshow_supply_consumption_factor = 0 }
+	set_variable = { global.ccshtool_modshow_out_of_supply_factor = 0 }
+	set_variable = { global.ccshtool_modshow_no_supply_grace = 0 }
+	set_variable = { global.ccshtool_modshow_amphibious_invasion = 0 }
+	set_variable = { global.ccshtool_modshow_invasion_preparation = 0 }
+	set_variable = { global.ccshtool_modshow_land_night_attack = 0 }
+	set_variable = { global.ccshtool_modshow_army_leader_start_level = 0 }
+	set_variable = { global.ccshtool_modshow_army_leader_start_attack_level = 0 }
+	set_variable = { global.ccshtool_modshow_army_leader_start_defense_level = 0 }
+	set_variable = { global.ccshtool_modshow_army_leader_start_planning_level = 0 }
+	set_variable = { global.ccshtool_modshow_army_leader_start_logistics_level = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy_unit = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy_unit_factor = 0 }
+	set_variable = { global.ccshtool_modshow_naval_speed_factor = 0 }
+	set_variable = { global.ccshtool_modshow_navy_max_range_factor = 0 }
+	set_variable = { global.ccshtool_modshow_sortie_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_naval_hit_chance = 0 }
+	set_variable = { global.ccshtool_modshow_naval_coordination = 0 }
+	set_variable = { global.ccshtool_modshow_ships_at_battle_start = 0 }
+	set_variable = { global.ccshtool_modshow_naval_retreat_speed = 0 }
+	set_variable = { global.ccshtool_modshow_naval_retreat_chance = 0 }
+	set_variable = { global.ccshtool_modshow_convoy_escort_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_convoy_raiding_efficiency_factor = 0 }
+	set_variable = { global.ccshtool_modshow_navy_submarine_detection_factor = 0 }
+	set_variable = { global.ccshtool_modshow_navy_anti_air_attack_factor = 0 }
+	set_variable = { global.ccshtool_modshow_naval_invasion_capacity = 0 }
+	set_variable = { global.ccshtool_modshow_carrier_capacity_penalty_reduction = 0 }
+	set_variable = { global.ccshtool_modshow_port_strike = 0 }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_level = 0 }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_attack_level = 0 }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_defense_level = 0 }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_maneuvering_level = 0 }
+	set_variable = { global.ccshtool_modshow_navy_leader_start_coordination_level = 0 }
+	set_variable = { global.ccshtool_modshow_air_range_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_training_xp_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_mission_xp_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_bonus_air_superiority_factor = 0 }
+	set_variable = { global.ccshtool_modshow_enemy_army_bonus_air_superiority_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_night_penalty = 0 }
+	set_variable = { global.ccshtool_modshow_air_weather_penalty = 0 }
+	set_variable = { global.ccshtool_modshow_air_accidents_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_strategic_bomber_night_penalty = 0 }
+	set_variable = { global.ccshtool_modshow_air_ace_generation_chance_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_cas_present_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_strategic_bomber_bombing_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_mission_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_air_superiority_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_air_escort_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_air_intercept_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_air_cas_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_air_nav_efficiency = 0 }
+	set_variable = { global.ccshtool_modshow_naval_strike_targetting_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_bombing_targetting = 0 }
+	set_variable = { global.ccshtool_modshow_air_detection = 0 }
+	set_variable = { global.ccshtool_modshow_air_interception_detect_factor = 0 }
+	set_variable = { global.ccshtool_modshow_air_superiority_detect_factor = 0 }
+	set_variable = { global.ccshtool_modshow_research_speed_factor = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_army = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_army_factor = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_navy_factor = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_air = 0 }
+	set_variable = { global.ccshtool_modshow_experience_gain_air_factor = 0 }
+	set_variable = { global.ccshtool_modshow_decryption_factor = 0 }
+	set_variable = { global.ccshtool_modshow_encryption_factor = 0 }
+	set_variable = { global.ccshtool_modshow_civilian_intel_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_intel_factor = 0 }
+	set_variable = { global.ccshtool_modshow_navy_intel_factor = 0 }
+	set_variable = { global.ccshtool_modshow_airforce_intel_factor = 0 }
+	set_variable = { global.ccshtool_modshow_operative_slot = 0 }
+	set_variable = { global.ccshtool_modshow_new_operative_slot_bonus = 0 }
+	set_variable = { global.ccshtool_modshow_agency_upgrade_time = 0 }
+	set_variable = { global.ccshtool_modshow_intelligence_agency_defense = 0 }
+	set_variable = { global.ccshtool_modshow_defense_impact_on_blueprint_stealing = 0 }
+	set_variable = { global.ccshtool_modshow_intel_network_gain = 0 }
+	set_variable = { global.ccshtool_modshow_intel_network_gain_factor = 0 }
+	set_variable = { global.ccshtool_modshow_intel_from_operatives_factor = 0 }
+	set_variable = { global.ccshtool_modshow_boost_ideology_mission_factor = 0 }
+	set_variable = { global.ccshtool_modshow_control_trade_mission_factor = 0 }
+	set_variable = { global.ccshtool_modshow_propaganda_mission_factor = 0 }
+	set_variable = { global.ccshtool_modshow_diplomatic_pressure_mission_factor = 0 }
+	set_variable = { global.ccshtool_modshow_boost_resistance_factor = 0 }
+	set_variable = { global.ccshtool_modshow_root_out_resistance_effectiveness_factor = 0 }
+	set_variable = { global.ccshtool_modshow_army_intel_decryption_bonus = 0 }
+	set_variable = { global.ccshtool_modshow_navy_intel_decryption_bonus = 0 }
+	set_variable = { global.ccshtool_modshow_airforce_intel_decryption_bonus = 0 }
+	set_variable = { global.ccshtool_modshow_civilian_intel_decryption_bonus = 0 }
+	set_variable = { global.ccshtool_modshow_own_operative_detection_chance = 0 }
+	set_variable = { global.ccshtool_modshow_own_operative_detection_chance_factor = 0 }
+	set_variable = { global.ccshtool_modshow_enemy_operative_recruitment_chance = 0 }
+	set_variable = { global.ccshtool_modshow_enemy_operative_detection_chance = 0 }
+	set_variable = { global.ccshtool_modshow_enemy_operative_detection_chance_factor = 0 }
+	set_variable = { global.ccshtool_modshow_crypto_strength = 0 }
+	set_variable = { global.ccshtool_modshow_decryption_power = 0 }
+	set_variable = { global.ccshtool_modshow_decryption_power_factor = 0 }
+}
+
+# Everything back to zero, and every dynamic modifier removed -
+# not merely set to 0, so the target's modifier list comes back
+# empty rather than carrying 188 entries worth nothing.
+ccshtool_modreset_all = {
+	ccshtool_modon_political_power_factor_clear = yes
+	ccshtool_modon_political_power_gain_clear = yes
+	ccshtool_modon_legitimacy_daily_clear = yes
+	ccshtool_modon_legitimacy_gain_factor_clear = yes
+	ccshtool_modon_stability_factor_clear = yes
+	ccshtool_modon_stability_weekly_clear = yes
+	ccshtool_modon_war_support_factor_clear = yes
+	ccshtool_modon_war_support_weekly_clear = yes
+	ccshtool_modon_surrender_limit_clear = yes
+	ccshtool_modon_max_surrender_limit_offset_clear = yes
+	ccshtool_modon_totalist_drift_clear = yes
+	ccshtool_modon_syndicalist_drift_clear = yes
+	ccshtool_modon_radical_socialist_drift_clear = yes
+	ccshtool_modon_social_democrat_drift_clear = yes
+	ccshtool_modon_social_liberal_drift_clear = yes
+	ccshtool_modon_market_liberal_drift_clear = yes
+	ccshtool_modon_social_conservative_drift_clear = yes
+	ccshtool_modon_authoritarian_democrat_drift_clear = yes
+	ccshtool_modon_paternal_autocrat_drift_clear = yes
+	ccshtool_modon_national_populist_drift_clear = yes
+	ccshtool_modon_autonomy_gain_clear = yes
+	ccshtool_modon_subjects_autonomy_gain_clear = yes
+	ccshtool_modon_justify_war_goal_time_clear = yes
+	ccshtool_modon_enemy_justify_war_goal_time_clear = yes
+	ccshtool_modon_foreign_subversive_activites_clear = yes
+	ccshtool_modon_subversive_activites_upkeep_clear = yes
+	ccshtool_modon_guarantee_cost_clear = yes
+	ccshtool_modon_send_volunteer_divisions_required_clear = yes
+	ccshtool_modon_send_volunteer_size_clear = yes
+	ccshtool_modon_air_volunteer_cap_clear = yes
+	ccshtool_modon_guarantee_tension_clear = yes
+	ccshtool_modon_lend_lease_tension_clear = yes
+	ccshtool_modon_send_volunteers_tension_clear = yes
+	ccshtool_modon_join_faction_tension_clear = yes
+	ccshtool_modon_generate_wargoal_tension_clear = yes
+	ccshtool_modon_global_building_slots_factor_clear = yes
+	ccshtool_modon_production_speed_buildings_factor_clear = yes
+	ccshtool_modon_industry_repair_factor_clear = yes
+	ccshtool_modon_industry_free_repair_factor_clear = yes
+	ccshtool_modon_local_resources_factor_clear = yes
+	ccshtool_modon_fuel_gain_factor_clear = yes
+	ccshtool_modon_fuel_gain_factor_from_states_clear = yes
+	ccshtool_modon_base_fuel_gain_clear = yes
+	ccshtool_modon_base_fuel_gain_factor_clear = yes
+	ccshtool_modon_production_factory_max_efficiency_factor_clear = yes
+	ccshtool_modon_production_factory_efficiency_gain_factor_clear = yes
+	ccshtool_modon_production_factory_start_efficiency_factor_clear = yes
+	ccshtool_modon_industrial_capacity_factory_clear = yes
+	ccshtool_modon_industrial_capacity_dockyard_clear = yes
+	ccshtool_modon_nuclear_production_clear = yes
+	ccshtool_modon_nuclear_production_factor_clear = yes
+	ccshtool_modon_monthly_population_clear = yes
+	ccshtool_modon_consumer_goods_factor_clear = yes
+	ccshtool_modon_min_export_clear = yes
+	ccshtool_modon_resistance_target_clear = yes
+	ccshtool_modon_resistance_target_on_our_occupied_states_clear = yes
+	ccshtool_modon_resistance_growth_clear = yes
+	ccshtool_modon_resistance_damage_to_garrison_clear = yes
+	ccshtool_modon_starting_compliance_clear = yes
+	ccshtool_modon_compliance_gain_clear = yes
+	ccshtool_modon_compliance_growth_clear = yes
+	ccshtool_modon_compliance_growth_on_our_occupied_states_clear = yes
+	ccshtool_modon_max_command_power_clear = yes
+	ccshtool_modon_command_power_gain_clear = yes
+	ccshtool_modon_command_power_gain_mult_clear = yes
+	ccshtool_modon_conscription_factor_clear = yes
+	ccshtool_modon_conscription_clear = yes
+	ccshtool_modon_non_core_manpower_clear = yes
+	ccshtool_modon_army_attack_factor_clear = yes
+	ccshtool_modon_army_defence_factor_clear = yes
+	ccshtool_modon_army_core_attack_factor_clear = yes
+	ccshtool_modon_army_core_defence_factor_clear = yes
+	ccshtool_modon_army_speed_factor_clear = yes
+	ccshtool_modon_minimum_training_level_clear = yes
+	ccshtool_modon_training_time_factor_clear = yes
+	ccshtool_modon_special_forces_min_clear = yes
+	ccshtool_modon_special_forces_cap_clear = yes
+	ccshtool_modon_experience_gain_army_unit_clear = yes
+	ccshtool_modon_experience_gain_army_unit_factor_clear = yes
+	ccshtool_modon_experience_loss_factor_clear = yes
+	ccshtool_modon_army_org_clear = yes
+	ccshtool_modon_army_org_factor_clear = yes
+	ccshtool_modon_army_org_regain_clear = yes
+	ccshtool_modon_org_loss_when_moving_clear = yes
+	ccshtool_modon_army_morale_clear = yes
+	ccshtool_modon_army_morale_factor_clear = yes
+	ccshtool_modon_land_reinforce_rate_clear = yes
+	ccshtool_modon_max_planning_clear = yes
+	ccshtool_modon_planning_speed_clear = yes
+	ccshtool_modon_attrition_clear = yes
+	ccshtool_modon_heat_attrition_factor_clear = yes
+	ccshtool_modon_winter_attrition_factor_clear = yes
+	ccshtool_modon_acclimatization_cold_climate_gain_factor_clear = yes
+	ccshtool_modon_acclimatization_hot_climate_gain_factor_clear = yes
+	ccshtool_modon_terrain_penalty_reduction_clear = yes
+	ccshtool_modon_max_dig_in_clear = yes
+	ccshtool_modon_max_dig_in_factor_clear = yes
+	ccshtool_modon_dig_in_speed_clear = yes
+	ccshtool_modon_dig_in_speed_factor_clear = yes
+	ccshtool_modon_supply_consumption_factor_clear = yes
+	ccshtool_modon_out_of_supply_factor_clear = yes
+	ccshtool_modon_no_supply_grace_clear = yes
+	ccshtool_modon_amphibious_invasion_clear = yes
+	ccshtool_modon_invasion_preparation_clear = yes
+	ccshtool_modon_land_night_attack_clear = yes
+	ccshtool_modon_army_leader_start_level_clear = yes
+	ccshtool_modon_army_leader_start_attack_level_clear = yes
+	ccshtool_modon_army_leader_start_defense_level_clear = yes
+	ccshtool_modon_army_leader_start_planning_level_clear = yes
+	ccshtool_modon_army_leader_start_logistics_level_clear = yes
+	ccshtool_modon_experience_gain_navy_unit_clear = yes
+	ccshtool_modon_experience_gain_navy_unit_factor_clear = yes
+	ccshtool_modon_naval_speed_factor_clear = yes
+	ccshtool_modon_navy_max_range_factor_clear = yes
+	ccshtool_modon_sortie_efficiency_clear = yes
+	ccshtool_modon_naval_hit_chance_clear = yes
+	ccshtool_modon_naval_coordination_clear = yes
+	ccshtool_modon_ships_at_battle_start_clear = yes
+	ccshtool_modon_naval_retreat_speed_clear = yes
+	ccshtool_modon_naval_retreat_chance_clear = yes
+	ccshtool_modon_convoy_escort_efficiency_clear = yes
+	ccshtool_modon_convoy_raiding_efficiency_factor_clear = yes
+	ccshtool_modon_navy_submarine_detection_factor_clear = yes
+	ccshtool_modon_navy_anti_air_attack_factor_clear = yes
+	ccshtool_modon_naval_invasion_capacity_clear = yes
+	ccshtool_modon_carrier_capacity_penalty_reduction_clear = yes
+	ccshtool_modon_port_strike_clear = yes
+	ccshtool_modon_navy_leader_start_level_clear = yes
+	ccshtool_modon_navy_leader_start_attack_level_clear = yes
+	ccshtool_modon_navy_leader_start_defense_level_clear = yes
+	ccshtool_modon_navy_leader_start_maneuvering_level_clear = yes
+	ccshtool_modon_navy_leader_start_coordination_level_clear = yes
+	ccshtool_modon_air_range_factor_clear = yes
+	ccshtool_modon_air_training_xp_gain_factor_clear = yes
+	ccshtool_modon_air_mission_xp_gain_factor_clear = yes
+	ccshtool_modon_army_bonus_air_superiority_factor_clear = yes
+	ccshtool_modon_enemy_army_bonus_air_superiority_factor_clear = yes
+	ccshtool_modon_air_night_penalty_clear = yes
+	ccshtool_modon_air_weather_penalty_clear = yes
+	ccshtool_modon_air_accidents_factor_clear = yes
+	ccshtool_modon_air_strategic_bomber_night_penalty_clear = yes
+	ccshtool_modon_air_ace_generation_chance_factor_clear = yes
+	ccshtool_modon_air_cas_present_factor_clear = yes
+	ccshtool_modon_air_strategic_bomber_bombing_factor_clear = yes
+	ccshtool_modon_air_mission_efficiency_clear = yes
+	ccshtool_modon_air_superiority_efficiency_clear = yes
+	ccshtool_modon_air_escort_efficiency_clear = yes
+	ccshtool_modon_air_intercept_efficiency_clear = yes
+	ccshtool_modon_air_cas_efficiency_clear = yes
+	ccshtool_modon_air_nav_efficiency_clear = yes
+	ccshtool_modon_naval_strike_targetting_factor_clear = yes
+	ccshtool_modon_air_bombing_targetting_clear = yes
+	ccshtool_modon_air_detection_clear = yes
+	ccshtool_modon_air_interception_detect_factor_clear = yes
+	ccshtool_modon_air_superiority_detect_factor_clear = yes
+	ccshtool_modon_research_speed_factor_clear = yes
+	ccshtool_modon_experience_gain_army_clear = yes
+	ccshtool_modon_experience_gain_army_factor_clear = yes
+	ccshtool_modon_experience_gain_navy_clear = yes
+	ccshtool_modon_experience_gain_navy_factor_clear = yes
+	ccshtool_modon_experience_gain_air_clear = yes
+	ccshtool_modon_experience_gain_air_factor_clear = yes
+	ccshtool_modon_decryption_factor_clear = yes
+	ccshtool_modon_encryption_factor_clear = yes
+	ccshtool_modon_civilian_intel_factor_clear = yes
+	ccshtool_modon_army_intel_factor_clear = yes
+	ccshtool_modon_navy_intel_factor_clear = yes
+	ccshtool_modon_airforce_intel_factor_clear = yes
+	ccshtool_modon_operative_slot_clear = yes
+	ccshtool_modon_new_operative_slot_bonus_clear = yes
+	ccshtool_modon_agency_upgrade_time_clear = yes
+	ccshtool_modon_intelligence_agency_defense_clear = yes
+	ccshtool_modon_defense_impact_on_blueprint_stealing_clear = yes
+	ccshtool_modon_intel_network_gain_clear = yes
+	ccshtool_modon_intel_network_gain_factor_clear = yes
+	ccshtool_modon_intel_from_operatives_factor_clear = yes
+	ccshtool_modon_boost_ideology_mission_factor_clear = yes
+	ccshtool_modon_control_trade_mission_factor_clear = yes
+	ccshtool_modon_propaganda_mission_factor_clear = yes
+	ccshtool_modon_diplomatic_pressure_mission_factor_clear = yes
+	ccshtool_modon_boost_resistance_factor_clear = yes
+	ccshtool_modon_root_out_resistance_effectiveness_factor_clear = yes
+	ccshtool_modon_army_intel_decryption_bonus_clear = yes
+	ccshtool_modon_navy_intel_decryption_bonus_clear = yes
+	ccshtool_modon_airforce_intel_decryption_bonus_clear = yes
+	ccshtool_modon_civilian_intel_decryption_bonus_clear = yes
+	ccshtool_modon_own_operative_detection_chance_clear = yes
+	ccshtool_modon_own_operative_detection_chance_factor_clear = yes
+	ccshtool_modon_enemy_operative_recruitment_chance_clear = yes
+	ccshtool_modon_enemy_operative_detection_chance_clear = yes
+	ccshtool_modon_enemy_operative_detection_chance_factor_clear = yes
+	ccshtool_modon_crypto_strength_clear = yes
+	ccshtool_modon_decryption_power_clear = yes
+	ccshtool_modon_decryption_power_factor_clear = yes
+}
+

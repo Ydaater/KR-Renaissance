@@ -1,0 +1,1082 @@
+defined_text = {
+	name = CCSHTOOL_OPEN_CLOSE_SCRIPTLOC
+
+	text = {
+		trigger = {
+			NOT = { has_country_flag = ccshtool_open_cflag }
+		}
+		localization_key = ccshtool_toggle_visibility_on
+	}
+	text = {
+		trigger = {
+			has_country_flag = ccshtool_open_cflag
+		}
+		localization_key = ccshtool_toggle_visibility_off
+	}
+}
+defined_text = {
+	name = CCSHTOOL_TARGET_NAME_SCRIPTLOC
+
+	text = {
+		trigger = {
+			NOT = { check_variable = { global.ccshtool_target_var = 0 } }
+		}
+		localization_key = ccshtool_target_name_locked
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_target_var = 0 }
+		}
+		localization_key = ccshtool_target_name_unlocked
+	}
+}
+defined_text = {
+	name = CCSHTOOL_RECEIVER_NAME_SCRIPTLOC
+
+	text = {
+		trigger = {
+			NOT = { check_variable = { global.ccshtool_receiver_var = 0 } }
+		}
+		localization_key = ccshtool_receiver_name_locked
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_receiver_var = 0 }
+		}
+		localization_key = ccshtool_receiver_name_unlocked
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_RESOURCE_NAME_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 1 }
+		}
+		localization_key = ccshtool_resource_oil_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 2 }
+		}
+		localization_key = ccshtool_resource_aluminium_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 3 }
+		}
+		localization_key = ccshtool_resource_rubber_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 4 }
+		}
+		localization_key = ccshtool_resource_tungsten_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 5 }
+		}
+		localization_key = ccshtool_resource_steel_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 6 }
+		}
+		localization_key = ccshtool_resource_chromium_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_resource_var = 7 }
+		}
+		localization_key = ccshtool_resource_coal_name
+	}
+	text = {
+		localization_key = ccshtool_resource_none
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_BUILDING_NAME_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 1 }
+		}
+		localization_key = ccshtool_building_industrial_complex_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 2 }
+		}
+		localization_key = ccshtool_building_arms_factory_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 3 }
+		}
+		localization_key = ccshtool_building_dockyard_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 4 }
+		}
+		localization_key = ccshtool_building_infrastructure_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 5 }
+		}
+		localization_key = ccshtool_building_air_base_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 6 }
+		}
+		localization_key = ccshtool_building_anti_air_building_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 7 }
+		}
+		localization_key = ccshtool_building_radar_station_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 8 }
+		}
+		localization_key = ccshtool_building_synthetic_refinery_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 9 }
+		}
+		localization_key = ccshtool_building_fuel_silo_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 10 }
+		}
+		localization_key = ccshtool_building_rocket_site_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 11 }
+		}
+		localization_key = ccshtool_building_nuclear_reactor_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 12 }
+		}
+		localization_key = ccshtool_building_energy_infrastructure_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 13 }
+		}
+		localization_key = ccshtool_building_industrial_infrastructure_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 14 }
+		}
+		localization_key = ccshtool_building_commercial_nuclear_reactor_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 15 }
+		}
+		localization_key = ccshtool_building_nuclear_reactor_heavy_water_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 16 }
+		}
+		localization_key = ccshtool_building_stronghold_network_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 17 }
+		}
+		localization_key = ccshtool_building_mega_gun_emplacement_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 18 }
+		}
+		localization_key = ccshtool_building_land_facility_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 19 }
+		}
+		localization_key = ccshtool_building_air_facility_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 20 }
+		}
+		localization_key = ccshtool_building_naval_facility_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 21 }
+		}
+		localization_key = ccshtool_building_nuclear_facility_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 22 }
+		}
+		localization_key = ccshtool_building_supply_node_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 23 }
+		}
+		localization_key = ccshtool_building_naval_supply_hub_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 24 }
+		}
+		localization_key = ccshtool_building_naval_base_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_building_var = 25 }
+		}
+		localization_key = ccshtool_building_naval_headquarters_name
+	}
+	text = {
+		localization_key = ccshtool_building_none
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQUIPMENT_NAME_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 1 }
+		}
+		localization_key = ccshtool_equipment_infantry_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 2 }
+		}
+		localization_key = ccshtool_equipment_support_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 3 }
+		}
+		localization_key = ccshtool_equipment_artillery_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 4 }
+		}
+		localization_key = ccshtool_equipment_anti_tank_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 5 }
+		}
+		localization_key = ccshtool_equipment_anti_air_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 6 }
+		}
+		localization_key = ccshtool_equipment_motorized_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 7 }
+		}
+		localization_key = ccshtool_equipment_mechanized_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_light_tank_chassis_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_medium_tank_chassis_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_heavy_tank_chassis_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 11 }
+		}
+		localization_key = ccshtool_equipment_small_plane_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 12 }
+		}
+		localization_key = ccshtool_equipment_small_plane_cas_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 13 }
+		}
+		localization_key = ccshtool_equipment_small_plane_naval_bomber_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 14 }
+		}
+		localization_key = ccshtool_equipment_medium_plane_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 15 }
+		}
+		localization_key = ccshtool_equipment_medium_plane_fighter_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 16 }
+		}
+		localization_key = ccshtool_equipment_medium_plane_scout_plane_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 17 }
+		}
+		localization_key = ccshtool_equipment_large_plane_airframe_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 18 }
+		}
+		localization_key = ccshtool_equipment_transport_plane_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 19 }
+		}
+		localization_key = ccshtool_equipment_convoy_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 20 }
+		}
+		localization_key = ccshtool_equipment_train_equipment_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_equipment_special_projects_name
+	}
+	text = {
+		localization_key = ccshtool_equipment_none
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB0_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 1 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 2 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 3 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 4 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 5 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 6 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 7 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 11 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 12 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 13 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 14 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 15 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 16 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 17 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 18 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 19 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 20 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_armored_support_vehicle_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB1_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_destroyer
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_destroyer
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_destroyer
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_guided_missile_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB2_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_aa
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_aa
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_aa
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_helicopter_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB3_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_artillery
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_artillery
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_artillery
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_mothership_equipment_0
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB4_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_amphibious
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_amphibious
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_amphibious
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_nuclear_missile_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB5_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_nuclear_missile_equipment_2
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB6_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_sam_missile_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB7_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_self_propelled_super_heavy_artillery_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB8_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_strat_bomber_intercontinental_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB9_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_super_heavy_artillery_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_SUB10_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_super_heavy_railway_gun_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME0_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 1 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 2 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 3 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 4 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 5 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 6 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 7 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 11 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 12 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 13 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 14 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 15 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 16 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 17 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 18 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 19 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 20 }
+		}
+		localization_key = ccshtool_equipment_subname_std
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_armored_support_vehicle_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME1_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_destroyer
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_destroyer
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_destroyer
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_guided_missile_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME2_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_aa
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_aa
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_aa
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_helicopter_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME3_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_artillery
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_artillery
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_artillery
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_mothership_equipment_0
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME4_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 8 }
+		}
+		localization_key = ccshtool_equipment_subname_amphibious
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 9 }
+		}
+		localization_key = ccshtool_equipment_subname_amphibious
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 10 }
+		}
+		localization_key = ccshtool_equipment_subname_amphibious
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_nuclear_missile_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME5_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_nuclear_missile_equipment_2
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME6_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_sam_missile_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME7_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_self_propelled_super_heavy_artillery_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME8_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_strat_bomber_intercontinental_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME9_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_super_heavy_artillery_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}
+
+defined_text = {
+	name = CCSHTOOL_EQ_NAME10_SCRIPTLOC
+
+	text = {
+		trigger = {
+			check_variable = { global.ccshtool_equipment_var = 21 }
+		}
+		localization_key = ccshtool_eqname_super_heavy_railway_gun_equipment_1
+	}
+	text = {
+		localization_key = ccshtool_equipment_subnone
+	}
+}

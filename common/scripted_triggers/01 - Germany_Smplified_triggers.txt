@@ -1,0 +1,99 @@
+has_active_army_chief = {
+	any_character = {
+		is_hired_as_advisor = yes
+		OR = {
+			has_trait = KR_army_chief_defensive_1
+			has_trait = KR_army_chief_defensive_2
+			has_trait = KR_army_chief_defensive_3
+			has_trait = KR_army_chief_offensive_1
+			has_trait = KR_army_chief_offensive_2
+			has_trait = KR_army_chief_offensive_3
+			has_trait = KR_army_chief_old_guard
+			has_trait = KR_army_chief_planning_1
+			has_trait = KR_army_chief_planning_2
+			has_trait = KR_army_chief_planning_3
+			has_trait = KR_army_chief_drill_1
+			has_trait = KR_army_chief_drill_2
+			has_trait = KR_army_chief_drill_3
+			has_trait = KR_army_chief_reform_1
+			has_trait = KR_army_chief_reform_2
+			has_trait = KR_army_chief_reform_3
+			has_trait = KR_army_chief_organisational_1
+			has_trait = KR_army_chief_organisational_2
+			has_trait = KR_army_chief_organisational_3
+			has_trait = KR_army_chief_morale_1
+			has_trait = KR_army_chief_morale_2
+			has_trait = KR_army_chief_morale_3
+			has_trait = KR_army_chief_manoeuvre_1
+			has_trait = KR_army_chief_manoeuvre_2
+			has_trait = KR_army_chief_manoeuvre_3
+			has_trait = KR_army_chief_entrenchment_1
+			has_trait = KR_army_chief_entrenchment_2
+			has_trait = KR_army_chief_entrenchment_3
+			has_trait =	KR_army_chief_imperial_commissioner 
+		    has_trait = KR_resented_attache 
+		    has_trait = KR_marshal_of_tianjin 
+		    has_trait = RUS_tsar_maker 
+		    has_trait = RUS_court_schemer 
+		    has_trait = KR_army_leadership_kornilov 
+		    has_trait = KR_army_management_2
+		    has_trait = KR_army_breakthrough_2 
+			has_trait = KR_army_chief_kurbashi 
+		}
+	}
+}
+has_active_air_chief = {
+	any_character = {
+		is_hired_as_advisor = yes
+		OR = {
+			has_trait = KR_air_chief_reform_1
+			has_trait = KR_air_chief_reform_2
+			has_trait = KR_air_chief_reform_3
+			has_trait = KR_air_chief_safety_1
+			has_trait = KR_air_chief_safety_2
+			has_trait = KR_air_chief_safety_3
+			has_trait = KR_air_chief_old_guard
+			has_trait = KR_air_chief_night_operations_1
+			has_trait = KR_air_chief_night_operations_2
+			has_trait = KR_air_chief_night_operations_3
+			has_trait = KR_air_chief_ground_support_1
+			has_trait = KR_air_chief_ground_support_2
+			has_trait = KR_air_chief_ground_support_3
+			has_trait = KR_air_chief_all_weather_1
+			has_trait = KR_air_chief_all_weather_2
+			has_trait = KR_air_chief_all_weather_3
+			has_trait = KR_air_chief_pursuit_doctrine_1
+			has_trait = KR_air_chief_pursuit_doctrine_2
+			has_trait = KR_air_chief_pursuit_doctrine_3
+			has_trait = KR_air_chief_red_baron
+			has_trait = KR_air_chief_air_council
+			has_trait = KR_air_chief_strategic_bomber
+		}
+	}
+}
+has_active_navy_chief = {
+	any_character = {
+		is_hired_as_advisor = yes
+		OR = {
+			has_trait = KR_navy_chief_naval_aviation_1
+			has_trait = KR_navy_chief_naval_aviation_2
+			has_trait = KR_navy_chief_naval_aviation_3
+			has_trait = KR_navy_chief_decisive_battle_1
+			has_trait = KR_navy_chief_decisive_battle_2
+			has_trait = KR_navy_chief_decisive_battle_3
+			has_trait = KR_navy_chief_commerce_raiding_1
+			has_trait = KR_navy_chief_commerce_raiding_2
+			has_trait = KR_navy_chief_commerce_raiding_3
+			has_trait = KR_navy_chief_old_guard 
+			has_trait = KR_navy_chief_reform_1
+			has_trait = KR_navy_chief_reform_2
+			has_trait = KR_navy_chief_reform_3
+			has_trait = KR_navy_chief_manoeuvre_1
+			has_trait = KR_navy_chief_manoeuvre_2
+			has_trait = KR_navy_chief_manoeuvre_3
+			has_trait = KR_navy_chief_navy_council
+			has_trait = KR_navy_leadership_kolchak
+			has_trait = KR_opportunistic_naval_reformer
+		}
+	}
+}

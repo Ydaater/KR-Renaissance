@@ -1,0 +1,60 @@
+{
+    // cwtools valide le script HOI4 en direct : tokens d'effet/trigger inconnus,
+    // cles de localisation manquantes, references cassees. Sans cache genere il ne
+    // connait pas le jeu de base et ne signale rien.
+    // Generer une fois : palette de commandes > "CWTools: Generate vanilla cache".
+    "cwtools.cache.hoi4": "/Users/bejnamin/Library/Application Support/Steam/steamapps/common/Hearts of Iron IV",
+
+    // Ne pas afficher les erreurs du jeu de base : ce mod n'en est pas responsable
+    // et elles noient les siennes.
+    "cwtools.errors.vanilla": false,
+
+    "cwtools.localisation.languages": [
+        "english",
+        "french"
+    ],
+
+    // ATTENTION, limite reelle sur cette version : cwtools ne connait que le jeu de
+    // base, pas Kaiserreich. Or KR fait replace_path sur common/ideologies,
+    // common/autonomous_states, common/country_tags et common/game_rules : les
+    // tokens vanilla disparaissent et les siens (totalist, default_puppet, les 332
+    // tags) sont introuvables pour l'extension. Elle va donc les signaler comme
+    // inconnus alors qu'ils sont corrects.
+    //
+    // Ces faux positifs se verifient avec le script d'audit, qui lit KR lui-meme :
+    //   ~/Library/Application Support/Steam/steamapps/workshop/content/394360/1521695605
+    // Dernier passage : 10 partis, 26 statuts d'autonomie, 332 tags -> 0 invalide.
+    //
+    // Ne PAS ajouter KR a cwtools.rules_folder : ce champ attend des regles .cwt,
+    // pas un dossier de mod.
+    "cwtools.errors.ignorefiles": [],
+
+    "hoi4ModUtilities.installPath": "/Users/bejnamin/Library/Application Support/Steam/steamapps/common/Hearts of Iron IV",
+    "hoi4ModUtilities.modFile": "descriptor.mod",
+    "hoi4ModUtilities.loadDlcContents": true,
+
+    "files.associations": {
+        "*.gui": "hoi4",
+        "*.gfx": "hoi4",
+        "descriptor.mod": "hoi4"
+    },
+
+    // Les fichiers du jeu sont en tabulations ; s'en ecarter rend les diffs illisibles.
+    "[hoi4]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
+    },
+
+    // Pas de reglage global d'encodage ici : la localisation exige UTF-8 AVEC BOM,
+    // le descriptor.mod le refuse (Steam signale "fichiers corrompus"). Un seul
+    // "files.encoding" casserait forcement l'un des deux, donc c'est par motif.
+    "[yaml]": {
+        "files.encoding": "utf8bom"
+    },
+    "files.eol": "\n",
+
+    "files.exclude": {
+        "**/.DS_Store": true
+    }
+}

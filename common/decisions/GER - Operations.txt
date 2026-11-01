@@ -1,0 +1,329 @@
+###########################
+# Germany Operations Decisions
+###########################
+operations = {
+	#GER_operation_dawns_glow = {
+	#	icon = GFX_decision_hol_draw_up_staff_plans
+#
+	#	allowed = { always = no } #activated by effect
+#
+	#	available = {
+	#		has_war_with = INT 
+	#	}
+	#	custom_cost_text = CP_50
+	#	custom_cost_trigger = {
+	#		NOT = { command_power < 50 }
+	#	}
+#
+	#	fire_only_once = yes
+	#	custom_cost_trigger = {
+	#		NOT = { has_equipment = { infantry_equipment < 20000 } }
+	#		NOT = { has_equipment = { support_equipment < 5000 } }
+	#		NOT = { has_equipment = { motorized_equipment < 5000 } }
+	#		NOT = { has_equipment = { train_equipment < 100 } }
+	#	}
+	#	custom_cost_text = GER_offensive_chit_cost
+	#	days_remove = 90
+	#	complete_effect = {
+	#		log = "[GetLogRoot]: Decision complete GER_offensive_chit"
+	#		add_command_power = -50
+	#		hidden_effect = {
+	#			add_equipment_to_stockpile = {
+	#				type = infantry_equipment
+	#				amount = -20000
+	#			}
+	#			add_equipment_to_stockpile = {
+	#				type = support_equipment
+	#				amount = -5000
+	#			}
+	#			add_equipment_to_stockpile = {
+	#				type = motorized_equipment
+	#				amount = 5000
+	#			}
+	#			add_equipment_to_stockpile = {
+	#				type = train_equipment
+	#				amount = 100
+	#			}
+	#		}
+	#	}
+	#	modifier = {
+	#		breakthrough_factor = 0.15
+	#		army_speed_factor = 0.15
+	#		army_org_factor = 0.10
+	#		army_attack_factor = 0.15
+	#		supply_consumption_factor = -0.15
+	#	}
+#
+	#	ai_will_do = { base = 100 }
+	#	fixed_random_seed = no
+	#}
+	GER_operation_alpenrose = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = { always = no } #activated by effect
+
+		available = {
+			if = {
+				limit = { NOT = { has_country_flag = GER_first_OHL_operation } }
+				custom_trigger_tooltip = {
+					tooltip = GER_OHL_operation_lock_tt
+					has_country_flag = {
+						flag = GER_OHL_operation_lock
+						days > 150
+					}
+				}
+			}
+			OR = {
+			    has_war_with = SRI
+			    has_war_with = SIC
+			    has_war_with = SRD
+			    has_war_with = ITA
+			}
+		}
+		visible = {
+			OR = {
+				SRI = {
+					exists = yes 
+					has_war_with = ROOT
+				}
+				ITA = {
+					exists = yes 
+					has_war_with = ROOT
+				}
+				SRD = {
+					exists = yes 
+					has_war_with = ROOT
+				}
+				SIC = {
+					exists = yes 
+					has_war_with = ROOT
+				}
+			}
+		}
+		custom_cost_text = CP_50
+		custom_cost_trigger = {
+			NOT = { command_power < 50 }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 90
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = GER_first_OHL_operation } 
+				clr_country_flag = GER_first_OHL_operation
+			}
+			set_country_flag = {
+			    flag = GER_OHL_operation_lock
+			    days = 0
+			}
+			add_command_power = -50
+			if = {
+				limit = { has_war_with = SRI }
+				every_allied_country = {
+					add_timed_idea = {
+						idea = GER_operation_alpenrose_SRI_idea
+						days = 90
+					}
+				}
+			}
+			else_if = {
+				limit = { has_war_with = ITA }
+				every_allied_country = {
+					add_timed_idea = {
+						idea = GER_operation_alpenrose_ITA_idea
+						days = 90
+					}
+				}
+			}
+			else_if = {
+				limit = { has_war_with = SIC }
+				every_allied_country = {
+					add_timed_idea = {
+						idea = GER_operation_alpenrose_SIC_idea
+						days = 90
+					}
+				}
+			}
+			else_if = {
+				limit = { has_war_with = SRD }
+				every_allied_country = {
+					add_timed_idea = {
+						idea = GER_operation_alpenrose_SRD_idea
+						days = 90
+					}
+				}
+			}
+		}
+		modifier = {
+			command_power_gain = -0.1
+		}
+
+		ai_will_do = { base = 0 }
+		fixed_random_seed = no
+	}
+	GER_operation_sedan = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = { always = no } #activated by effect
+
+		available = {
+			if = {
+				limit = { NOT = { has_country_flag = GER_first_OHL_operation } }
+				custom_trigger_tooltip = {
+					tooltip = GER_OHL_operation_lock_tt
+					has_country_flag = {
+						flag = GER_OHL_operation_lock
+						days > 150
+					}
+				}
+			}
+			has_war_with = FRA
+		}
+		custom_cost_text = CP_50
+		custom_cost_trigger = {
+			NOT = { command_power < 50 }
+		}
+		visible = {
+			country_exists =  FRA
+		}
+
+		fire_only_once = yes
+
+		days_remove = 90
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = GER_first_OHL_operation } 
+				clr_country_flag = GER_first_OHL_operation
+			}
+			set_country_flag = {
+			    flag = GER_OHL_operation_lock
+			    days = 0
+			}
+			add_command_power = -50
+			every_allied_country = {
+				add_timed_idea = {
+					idea = GER_operation_sedan_idea
+					days = 90
+				}
+			}
+		}
+		modifier = {
+			command_power_gain = -0.1
+		}
+
+		ai_will_do = { base = 0 }
+		fixed_random_seed = no
+	}
+	GER_operation_hanse = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = { always = no } #activated by effect
+
+		available = {
+			if = {
+				limit = { NOT = { has_country_flag = GER_first_OHL_operation } }
+				custom_trigger_tooltip = {
+					tooltip = GER_OHL_operation_lock_tt
+					has_country_flag = {
+						flag = GER_OHL_operation_lock
+						days > 150
+					}
+				}
+			}
+			has_war_with = NOR 
+			is_in_faction_with = SWE
+		}
+		visible = {
+			country_exists = NOR
+		}
+		custom_cost_text = CP_50
+		custom_cost_trigger = {
+			NOT = { command_power < 50 }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 90
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = GER_first_OHL_operation } 
+				clr_country_flag = GER_first_OHL_operation
+			}
+			set_country_flag = {
+			    flag = GER_OHL_operation_lock
+			    days = 0
+			}
+			add_command_power = -50
+			every_allied_country = {
+				add_timed_idea = {
+					idea = GER_operation_hanse_idea
+					days = 90
+				}
+			}
+		}
+		modifier = {
+			command_power_gain = -0.1
+		}
+
+		ai_will_do = { base = 0 }
+		fixed_random_seed = no
+	}
+	GER_operation_mackensen = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+
+		allowed = { always = no } #activated by effect
+
+		available = {
+			if = {
+				limit = { NOT = { has_country_flag = GER_first_OHL_operation } }
+				custom_trigger_tooltip = {
+					tooltip = GER_OHL_operation_lock_tt
+					has_country_flag = {
+						flag = GER_OHL_operation_lock
+						days > 150
+					}
+				}
+			}
+			has_war_with = RUS
+			UKR = { 
+				surrender_progress > 0.2 
+				is_in_faction_with = ROOT
+			} 
+		}
+		visible = {
+			country_exists = RUS
+		}
+		custom_cost_text = CP_50
+		custom_cost_trigger = {
+			NOT = { command_power < 50 }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 90
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = GER_first_OHL_operation } 
+				clr_country_flag = GER_first_OHL_operation
+			}
+			set_country_flag = {
+			    flag = GER_OHL_operation_lock
+			    days = 0
+			}
+			add_command_power = -50
+			every_allied_country = {
+				add_timed_idea = {
+					idea = GER_operation_mackensen_idea
+					days = 90
+				}
+			}
+		}
+		modifier = {
+			command_power_gain = -0.1
+		}
+
+		ai_will_do = { base = 0 }
+		fixed_random_seed = no
+	}
+}

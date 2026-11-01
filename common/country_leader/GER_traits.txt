@@ -1,0 +1,229 @@
+#####################
+# Company traits
+#####################
+leader_traits = {
+	GER_heer_advocate = {
+		sprite = 5
+		random = no
+		war_support_factor = 0.1
+		land_doctrine_cost_factor = -0.1
+		equipment_bonus = {
+			infantry_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			support_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	GER_navy_league_leader = {
+		sprite = 12
+		random = no
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dvlp_tt
+		production_speed_naval_base_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		equipment_bonus = {
+			capital_ship = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 10
+				tag = GER
+				check_variable = { GER_swr_coalition_balance < 50 }
+				NOT = {
+					has_idea = civilian_economy
+					has_idea = volunteer_only
+					amount_taken_ideas = { amount < 1 slots = { army_chief } }
+				}
+			}
+		}
+	}
+	GER_architect_of_the_neue_staat_sic = {
+		sprite = 13
+		random = no
+		political_power_factor = 0.15
+		war_stability_factor = 0.1
+		army_morale_factor = 0.05
+		consumer_goods_factor = 0.1
+		#production_factory_max_efficiency_factor = -0.05
+	}
+	KR_catholic_unionist_nerfed = {
+		sprite = 12
+		random = no
+		production_factory_max_efficiency_factor = 0.075
+		consumer_goods_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_ruhrlade_leader_nerfed = {
+		sprite = 10
+		random = no
+		consumer_goods_factor = -0.1
+		local_resources_factor = 0.1
+
+		ai_will_do = { factor = 2 }
+	}
+	GER_austro_marxist = {
+		sprite = 10
+		random = no
+		political_power_factor = 0.05
+		#production_factory_max_efficiency_factor = 0.075
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		social_democrat_drift = 0.02
+
+		ai_will_do = { factor = 1 }
+	}
+	GER_authoritarian_autarkist = {
+		sprite = 10
+		random = no
+		war_support_factor = 0.1
+		political_power_factor = -0.05
+		min_export = -0.1
+		production_speed_arms_factory_factor = 0.1
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dvlp_tt
+
+		ai_will_do = { factor = 1 }
+	}
+
+	GER_neglected_position = {
+		random = no
+		political_power_gain = -0.05
+		#conscription_factor = -0.05
+	}
+
+	GER_army_chief_reorganisation = {
+		sprite = 5
+		army_org_factor = 0.05
+		experience_gain_army_factor = 0.05
+		experience_gain_army = 0.3
+		command_cap_increase = 30
+
+		ai_will_do = { factor = 2 }
+	}
+	GER_army_chief_mobilisation = {
+		sprite = 5
+		mobilization_speed = 0.1
+		#training_time_army_factor = -0.10
+        conscription_factor = 0.05
+        land_reinforce_rate = 0.02
+        #army_morale_factor = 0.05
+		experience_gain_army = 0.3
+		command_cap_increase = 30
+
+		ai_will_do = { factor = 2 }
+	}
+	
+	GER_air_chief_red_baron = {  # Unique trait for Manfred von Richthofen
+		sprite = 2
+		war_support_factor = 0.05
+		air_home_defence_factor = 0.05
+		air_superiority_efficiency = 0.05
+		air_ace_generation_chance_factor = 0.05
+		experience_gain_air = 0.40
+
+		command_cap_increase = 30
+
+		ai_will_do = {
+			factor = 1.25
+			modifier = {
+				factor = 0.1
+				has_deployed_air_force_size = { size < 200 }
+			}
+		}
+	}
+	GER_national_socialist  = {
+		sprite = 12
+		random = no
+		political_power_factor = 0.1
+		national_populist_drift = 0.02
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dvlp_tt
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 10
+				tag = GER
+				check_variable = { GER_swr_coalition_balance < 50 }
+				NOT = {
+					has_idea = civilian_economy
+					has_idea = volunteer_only
+					amount_taken_ideas = { amount < 1 slots = { army_chief } }
+				}
+			}
+		}
+	}
+	GER_conservative_grandee = {
+		sprite = 12
+		random = no
+		stability_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		authoritarian_democrat_drift = 0.02
+		#political_power_factor = 0.05
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dkp_tt
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 10
+				tag = GER
+				check_variable = { GER_swr_coalition_balance > 50 }
+				NOT = {
+					has_idea = civilian_economy
+					has_idea = volunteer_only
+					amount_taken_ideas = { amount < 1 slots = { army_chief } }
+				}
+			}
+		}
+	}
+	GER_prussian_conservative = {
+		sprite = 12
+		random = no
+		mobilization_speed = 0.10
+		training_time_factor = -0.05
+		army_morale_factor = 0.05
+		political_power_factor = 0.05
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dkp_tt
+
+		ai_will_do = { factor = 1 }
+	}
+	GER_national_catholic = {
+		sprite = 12
+		random = no
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dvlp_tt
+		custom_modifier_tooltip = GER_national_catholic_tt
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 10
+				tag = GER
+				check_variable = { GER_swr_coalition_balance < 50 }
+				NOT = {
+					has_idea = civilian_economy
+					has_idea = volunteer_only
+					amount_taken_ideas = { amount < 1 slots = { army_chief } }
+				}
+			}
+		}
+	}
+	GER_bridge = {
+		sprite = 12
+		random = no
+		political_power_factor = 0.15
+		production_factory_max_efficiency_factor = 0.05
+		custom_modifier_tooltip = GER_hiring_advisor_increases_dkp_tt
+
+		ai_will_do = { factor = 2 }
+	}
+}

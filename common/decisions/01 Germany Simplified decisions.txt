@@ -1,0 +1,184 @@
+special_projects = {
+	radar_proliferation = {
+		icon = GFX_decision_radar
+
+		#allowed = {
+		#	FROM = {  }
+		#}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		visible = {
+			has_global_flag = competitive_setup
+			has_tech = radio_detection
+			any_allied_country = { 
+				NOT = { has_tech = radio_detection }
+			}
+			OR = {
+				is_in_tech_sharing_group = german_research
+				is_in_tech_sharing_group = entente_research 
+				is_in_tech_sharing_group = phalanstere_research 
+				is_in_tech_sharing_group = russian_research 
+				is_in_tech_sharing_group = japan_research
+			}
+		}
+
+		days_remove = 90
+		fire_only_once = no
+		cost = 50
+
+		complete_effect = {
+
+			if = {
+				limit = { is_in_tech_sharing_group = german_research }
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						NOT = { has_tech = radio_detection }
+						OR = {
+							is_in_tech_sharing_group = german_research 
+							is_subject_of = ROOT
+						}
+					}
+					effect_tooltip = {
+						custom_override_tooltip = {
+							tooltip = tech_effect|radio_detection
+							set_technology = {
+								radio_detection = 1
+								popup = no
+							}
+						}
+						custom_effect_tooltip = {
+							localization_key = SP_UNLOCK_TECH
+							TECH = cavity_magnatron
+						}
+					}
+					hidden_effect = { 
+						country_event = ger_simplified.1
+
+					}
+ 				}
+			}
+			else_if = {
+				limit = { is_in_tech_sharing_group = entente_research }
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						NOT = { has_tech = radio_detection }
+						OR = {
+							is_in_tech_sharing_group = entente_research
+							is_subject_of = ROOT
+						}
+					}
+					effect_tooltip = {
+						custom_override_tooltip = {
+							tooltip = tech_effect|radio_detection
+							set_technology = {
+								radio_detection = 1
+								popup = no
+							}
+						}
+						custom_effect_tooltip = {
+							localization_key = SP_UNLOCK_TECH
+							TECH = cavity_magnatron
+						}
+					}
+					hidden_effect = { country_event = ger_simplified.1 }
+				}
+			}
+			else_if = {
+				limit = { is_in_tech_sharing_group = phalanstere_research }
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						NOT = { has_tech = radio_detection }
+						OR = {
+							is_in_tech_sharing_group = phalanstere_research 
+							is_subject_of = ROOT
+						}
+					}
+					effect_tooltip = {
+						custom_override_tooltip = {
+							tooltip = tech_effect|radio_detection
+							set_technology = {
+								radio_detection = 1
+								popup = no
+							}
+						}
+						custom_effect_tooltip = {
+							localization_key = SP_UNLOCK_TECH
+							TECH = cavity_magnatron
+						}
+					}
+					hidden_effect = { country_event = ger_simplified.1
+ }
+				}
+			}
+			else_if = {
+				limit = { is_in_tech_sharing_group = russian_research }
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						NOT = { has_tech = radio_detection }
+						OR = {
+							is_in_tech_sharing_group = russian_research
+							is_subject_of = ROOT
+						}
+					}
+					effect_tooltip = {
+						custom_override_tooltip = {
+							tooltip = tech_effect|radio_detection
+							set_technology = {
+								radio_detection = 1
+								popup = no
+							}
+						}
+						custom_effect_tooltip = {
+							localization_key = SP_UNLOCK_TECH
+							TECH = cavity_magnatron
+						}
+					}
+					hidden_effect = { country_event = ger_simplified.1
+ }
+				}
+			}
+			else_if = {
+				limit = { is_in_tech_sharing_group = japan_research }
+				every_country = {
+					limit = { 
+						NOT = { tag = ROOT }
+						NOT = { has_tech = radio_detection }
+						OR = {
+							is_in_tech_sharing_group = japan_research
+							is_subject_of = ROOT
+						}
+					}
+					effect_tooltip = {
+						custom_override_tooltip = {
+							tooltip = tech_effect|radio_detection
+							set_technology = {
+								radio_detection = 1
+								popup = no
+							}
+						}
+						custom_effect_tooltip = {
+							localization_key = SP_UNLOCK_TECH
+							TECH = cavity_magnatron
+						}
+					}
+					hidden_effect = { country_event = ger_simplified.1
+ }
+				}
+			}
+		}
+
+		modifier = {
+			production_speed_radar_station_factor = 0.15
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+}
